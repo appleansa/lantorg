@@ -1,5 +1,6 @@
 $blue: #007CC3;
 $lblue: #0f8fd8;
+$dblue: #03659D;
 
 html {
     box-sizing: border-box;
@@ -1766,4 +1767,22 @@ input[type="submit"] {
 
 
 
+}
+
+
+
+.mt-scroll {
+
+     white-space: nowrap;
+     overflow: auto;
+     transition: all 0.3s ease;
+     display: flex;
+
+     button {  display: block; vertical-align: top;}
+
+    &.blue {
+         background:  $blue;
+
+         button.active {  background: $dblue;  }
+    }
 }
