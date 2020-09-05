@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html')
+
+<body>
+    <div class="page page-contacts">
+        @@include('components/_header.html')
+        <!-- WRITE CODE HERE -->
+        <section class="section contacts">
+            <div class="container">
+                <div class="section-header show-on-desktop">
+                    <div class="h2">Контакты</div>
+                </div>
+                <div class="j-tabs-container">
+                    <div class="mt-controls">
+                        <div class="mt-btn j-mt-btn active" data-target="tab-1">Контакты</div>
+                        <div class="mt-btn j-mt-btn" data-target="tab-2">На карте</div>
+                    </div>
+                    <div class="mt-tabs tabs-container j-tabs">
+                        <div class="mt-tab tab mt-info-box active">
+                            <div class="mt-info">
+                                <div class="mt-info_item">
+                                    <strong>Адрес</strong>
+                                    <span class="cl-black">г. Харьков, Московский проспект, 122</span>
+                                    <span class="cl-gray">(метро "Завод им. Малышева")</span>
+                                </div>
+                                <div class="mt-info_item">
+                                    <strong>Режим работы</strong>
+                                    <span class="cl-black">понедельник-пятница, с 09:00 до 18:00</span>
+                                </div>
+                                <div class="mt-info_item">
+                                    <strong>Адрес для писем</strong>
+                                    <span class="cl-black">LanTorg.com, а/с 12066, м. Харків-37, 61037.</span>
+                                </div>
+                                <div class="mt-info_item">
+                                    <strong>Городской телефон</strong>
+                                    <span class="cl-black">+38 (057) 780-40-63</span>
+                                </div>
+                                <div class="mt-info_item">
+                                    <strong>Telegram</strong>
+                                    <span class="cl-black"><a href="#">@SalesLantorgBot</a></span>
+                                    <span class="cl-gray">(отвечают наши менеджеры с 9-00 до 18-00).</span>
+                                </div>
+                                <div class="mt-info_item">
+                                    <strong>Viber</strong>
+                                    <span><a href="#">Viber</a></span>
+                                    <span class="cl-black">(отвечают наши менеджеры с 9-00 до 18-00).</span>
+                                </div>
+                            </div>
+                            <div class="mt-form show-on-desktop">
+                                <header class="modal__header">
+                                    <h2 class="modal__title" id="modal-11-title">
+                                        Связаться с нами
+                                    </h2>
+                                </header>
+                                <form action="#">
+                                    <main class="modal__content modal__grid modal">
+                                        <div class="modal__left">
+                                            <div class="modal__field form-field">
+                                                <input class="text-input" type="text" placeholder="ФИО, организация">
+                                            </div>
+                                            <div class="modal__field form-field">
+                                                <input class="text-input" type="text" placeholder="Номер телефона">
+                                            </div>
+                                            <div class="modal__field form-field last">
+                                                <input class="text-input" type="text" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <div class="modal__right">
+                                            <div class="modal__area form-field align-right">
+                                                <textarea class="text-area h100" name="tarea" id="tarea" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                            </div>
+                                        </div>
+                                    </main>
+                                    <footer class="modal__footer d-ta-right">
+                                        <button class="modal__btn btn btn-blue">Отправить</button>
+                                    </footer>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mt-tab tab mt-map-box" data-item="tab-2">
+                            <div class="mt-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.7455048388397!2d36.2837265765664!3d49.978631055717344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a712976b9ed%3A0x6eaafbac4aa949ec!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0L_RgNC-0YHQvy4sIDEyMiwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1598015471687!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <div class="mt-map-btn">
+                                    <button class="btn" data-micromodal-trigger="modal-findus">Как нас найти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-btn-container hide-on-desktop">
+                    <button class="btn btn-blue mobile-fw" data-micromodal-trigger="modal-contact">Связаться с нами</button>
+                </div>
+            </div>
+        </section>
+        <section class="stuff section">
+            <div class="j-tabs-container">
+                <div class="stuff-controls">
+                    <div class="container-mfw">
+                        
+                   
+                    <div class="stuff-mobile-scroll">
+                        <button class="j-mt-btn stuff-toggle_btn active" data-target="vipslider">
+                            <span>Менеджеры VIP-клиентов</span>
+                        </button>
+                        <button class="j-mt-btn stuff-toggle_btn" data-target="optslider">
+                            <span>Менеджеры розничных и мелкооптовых клиентов</span>
+                        </button>
+                        <button class="j-mt-btn stuff-toggle_btn" data-target="askslider">
+                            <span>другие вопросы</span>
+                        </button>
+                        <button class="j-mt-btn stuff-toggle_btn" data-target="headslider">
+                            <span>руководство</span>
+                        </button>
+                    </div>
+                     </div>
+                </div>
+                <div class="j-tabs tabs-container container-mfw">
+                    <div class="tab active">
+                        <div class=" j-stuff-slider stuff-slider swiper-container">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-pagination"></div>
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/samoylenko.png" alt=""></div>
+                                    <div class="stuff-item_name">Алексей Самойленко</div>
+                                    <div class="stuff-item_seat">Ведущий менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tg://resolve?domain=SalesLantorgBot">
+                                                <i class="icon-telegram2 va-middle"></i>
+                                                <span>@SalesLantorgBot</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tg://resolve?domain=LantorgMaksym">
+                                                <i class="icon-telegram2 va-middle"></i>
+                                                <span>@LantorgMaksym</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="lantorg1">
+                                                <i class="icon-skype va-middle"></i>
+                                                <span>lantorg1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:238612@lantorg.com">
+                                                <i class="icon-mail2 va-middle"></i>
+                                                <span>238612@lantorg.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/starik.png" alt=""></div>
+                                    <div class="stuff-item_name">Александр Старик</div>
+                                    <div class="stuff-item_seat">Менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/martinovchenko.png" alt=""></div>
+                                    <div class="stuff-item_name">Дмитрий Мартыновченко</div>
+                                    <div class="stuff-item_seat">Менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/poddubnaya.png" alt=""></div>
+                                    <div class="stuff-item_name">Ангелина Поддубная</div>
+                                    <div class="stuff-item_seat">Менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/golikov.png" alt=""></div>
+                                    <div class="stuff-item_name">Валентин Голиков</div>
+                                    <div class="stuff-item_seat">Менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                 <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/kozachek.png" alt=""></div>
+                                    <div class="stuff-item_name">Константин Козачок</div>
+                                    <div class="stuff-item_seat">Ведущий менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                 <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/shehovtsova.png" alt=""></div>
+                                    <div class="stuff-item_name">Элина Шеховцова</div>
+                                    <div class="stuff-item_seat">Ведущий менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="j-stuff-slider stuff-slider swiper-container">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-pagination"></div>
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/lobuzov.png" alt=""></div>
+                                    <div class="stuff-item_name">Максим Лабузов</div>
+                                    <div class="stuff-item_seat">Менеджер</div>
+                                    <ul class="stuff-item_contacts">
+                                        <li>
+                                            <a href="tel:+380997884167">
+                                                <i class="icon-vodaphone va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+380977884167">
+                                                <i class="icon-ks va-middle"></i>
+                                                <span>+38 (097) 788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="viber://pa?chatURI=lantorg-kh">
+                                                <i class="icon-viber va-middle"></i>
+                                                <span>097-788-41-67</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tg://resolve?domain=SalesLantorgBot">
+                                                <i class="icon-telegram2 va-middle"></i>
+                                                <span>@SalesLantorgBot</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tg://resolve?domain=LantorgMaksym">
+                                                <i class="icon-telegram2 va-middle"></i>
+                                                <span>@LantorgMaksym</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="lantorg1">
+                                                <i class="icon-skype va-middle"></i>
+                                                <span>lantorg1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:238612@lantorg.com">
+                                                <i class="icon-mail2 va-middle"></i>
+                                                <span>238612@lantorg.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="j-stuff-slider stuff-slider swiper-container">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-pagination"></div>
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/kluchko.png" alt=""></div>
+                                    <div class="stuff-item_name">Андрей Ключко</div>
+                                    <div class="stuff-item_seat">Коммерческий директор</div>
+                                    <ul class="stuff-item_contacts">
+                                        
+                                       
+                                        <li>
+                                            <a href="mailto:noz@lantorg.com">
+                                                <i class="icon-mail2 va-middle"></i>
+                                                <span>noz@lantorg.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                  <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/starik.png" alt=""></div>
+                                    <div class="stuff-item_name">Александр Старик</div>
+                                    <div class="stuff-item_seat">Руководитель группы отдела продаж</div>
+                                    <ul class="stuff-item_contacts">
+                                        
+                                       
+                                        <li>
+                                            <a href="">
+                                                <i class="icon-skype va-middle"></i>
+                                                <span>live:31316_2</span>
+                                            </a>
+                                        </li> <li>
+                                            <a href="mailto:31316@lantorg.com">
+                                                <i class="icon-mail2 va-middle"></i>
+                                                <span>31316@lantorg.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section mfb hide-on-desktop">
+            <div class="mfb-box">
+                <div class="mfb-item j-modal-open" data-micromodal-trigger="modal-price">
+                    <div class="mfb-item_inner">
+                        <i class="icon-arrow-topr"></i>
+                        <div class="mfb-item_icon"><i class="icon-price mfb-icon"></i></div>
+                        <div class="mfb-item_title">Запросить прайс</div>
+                    </div>
+                </div>
+                <div class="mfb-item j-modal-open" data-micromodal-trigger="modal-newsletter">
+                    <div class="mfb-item_inner">
+                        <i class="icon-arrow-topr"></i>
+                        <div class="mfb-item_icon"><i class="icon-newsletter mfb-icon"></i></div>
+                        <div class="mfb-item_title">Подписаться на новости</div>
+                    </div>
+                </div>
+                <div class="mfb-item j-modal-open" data-micromodal-trigger="modal-ask">
+                    <div class="mfb-item_inner">
+                        <i class="icon-arrow-topr"></i>
+                        <div class="mfb-item_icon"><i class="icon-ask mfb-icon"></i></div>
+                        <div class="mfb-item_title">Задать вопрос</div>
+                    </div>
+                </div>
+                <div class="mfb-item j-modal-open" data-micromodal-trigger="modal-headmaster">
+                    <div class="mfb-item_inner">
+                        <i class="icon-arrow-topr"></i>
+                        <div class="mfb-item_icon"><i class="icon-email mfb-icon"></i></div>
+                        <div class="mfb-item_title">Написать директору</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('components/_newsletter.html')
+        <!-- STOP WRITE CODE -->
+        @@include('components/_footer.html')
+        @@include('components/_modals.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

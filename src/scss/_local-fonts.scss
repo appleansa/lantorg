@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'ProximaLight';
+	src: url('/fonts/proximanova/ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('/fonts/proximanova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/proximanova/ProximaNova-Light.woff') format('woff'),
+		url('/fonts/proximanova/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaRegular';
+	src: url('/fonts/proximanova/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('/fonts/proximanova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/proximanova/ProximaNova-Regular.woff') format('woff'),
+		url('/fonts/proximanova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaBlack';
+	src: url('/fonts/proximanova/ProximaNova-Black.eot');
+	src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+		url('/fonts/proximanova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/proximanova/ProximaNova-Black.woff') format('woff'),
+		url('/fonts/proximanova/ProximaNova-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaSemi';
+	src: url('/fonts/proximanova/ProximaNova-Semibold.eot');
+	src: local('Proxima Nova SemiBold'), local('ProximaNova-SemiBold'),
+		url('/fonts/proximanova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/proximanova/ProximaNova-Semibold.woff') format('woff'),
+		url('/fonts/proximanova/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaBold';
+	src: url('/fonts/proximanova/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('/fonts/proximanova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/proximanova/ProximaNova-Bold.woff') format('woff'),
+		url('/fonts/proximanova/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
