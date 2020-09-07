@@ -2119,11 +2119,40 @@ $blue: #007CC3;
             bottom: 0;
             width: 10%;
 
+            .swiper-btn-next:before, .swiper-btn-prev:before {
+
+
+            }
+
             .us-btn {
                 height: 50%;
                 width: 100%;
                 background: #F2F5F6;
+                cursor: pointer;
+                margin: 0;
+                display: block;
+
+                  &:before {
+                     border-color: #616161;
+                  }
+
+                  &:hover {
+                    background: #d8e6ea;
+                  }
+
+                  &:hover:before {
+                     border-color: #333;
+                  }
+
+
             }
+        }
+    }
+
+    .stuff {
+
+        &-item {
+            width: 20%;
         }
     }
 
@@ -2291,7 +2320,7 @@ $blue: #007CC3;
 @media screen and (min-width: 1600px) {
 
     .container {
-        max-width: 1580px;
+        max-width: 1560px;
         width: 100%;
         margin: 0 auto;
         padding: 0;
@@ -2299,12 +2328,12 @@ $blue: #007CC3;
     }
 
     .ms {
-        margin-left: calc((100% - 1580px)/ 2);
+        margin-left: calc((100% - 1560px)/ 2);
     }
 
     .kb {
         position: relative;
-        margin-left: calc((100% - 1580px) / 2);
+        margin-left: calc((100% - 1560px) / 2);
     }
 
 }
