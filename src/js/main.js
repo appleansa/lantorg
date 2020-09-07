@@ -102,6 +102,8 @@
 
              var myMsSwiper = new Swiper('.ms-inner', {
                  loop: true,
+                  autoHeight: true,
+                 height: 400,
                  pagination: {
                      el: '.ms-navi-custom .swiper-progressbar',
                      type: 'progressbar',
@@ -434,6 +436,9 @@
              
              var myUsSwiper = new Swiper('.j-us-slider', {
                  loop: true,
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                         updateOnWindowResize: true,
                  pagination: {
                      el: '.us-pagination',
                      clickable: true,
@@ -444,14 +449,7 @@
                      prevEl: '.us-buttons .swiper-btn-prev',
                  },
 
-                 breakpoints: {
-                     992: {
-                         slidesPerView: 2,
-                         spaceBetween: 0,
-                         height: '500',
-                         updateOnWindowResize: true,
-                     }
-                 },
+                
              });
 
 

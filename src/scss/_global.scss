@@ -139,6 +139,7 @@ p {
 }
 
 .swiper {
+ 
 
     &-navi-top {
 
@@ -597,6 +598,20 @@ input[type="submit"] {
 
 }
 
+.icon {
+      
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+      }
+}
+
 .icons-gray-blue {
 
      .has-icon:before {
@@ -666,8 +681,6 @@ input[type="submit"] {
         mask-size: 100%;
     }
 
-
-
     &-gray {
 
         @extend .icon-viber;
@@ -703,8 +716,6 @@ input[type="submit"] {
         mask-size: 100%;
     }
 
-
-
     &-gray {
 
         @extend .icon-skype;
@@ -720,6 +731,44 @@ input[type="submit"] {
 
     }
 
+}
+
+.icon-youtube {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/svg/icon-youtube.svg) 50% 50% no-repeat;
+
+    }
+}
+
+.icon-inst {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/svg/icon-instagram.svg) 50% 50% no-repeat;
+
+    }
 }
 
 .icon-vodaphone {
@@ -1489,11 +1538,15 @@ input[type="submit"] {
 
    color: #616161;
 
+   &.cl-white {
+    color: #fff;
+   }
+
     p {
         font-size: 16px;
         line-height: 160%;
         margin-bottom: 16px;
-        color: #616161;
+         
     }
 
     b,
