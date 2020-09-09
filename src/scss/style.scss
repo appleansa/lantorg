@@ -73,6 +73,23 @@ body {
     &-contacts {
         padding-top: 100px;
     }
+
+    &-partners {
+        padding-top: 120px;
+    }
+}
+
+.top-navi {
+
+    position: absolute;
+    top: 62px;
+    z-index: 100;
+    background: #fff;
+
+    &.fixedTop {
+        position: fixed;
+
+    }
 }
 
 .header {
@@ -186,6 +203,8 @@ body {
                 border-color: $blue;
 
 
+
+
                 i:before {
                     background-color: #fff;
                 }
@@ -202,6 +221,11 @@ body {
 
                 background: $blue;
 
+                .shopping-cart-counter {
+                    background: #fff;
+                    color: $blue;
+                }
+
                 i:before {
                     background-color: #fff;
                 }
@@ -211,6 +235,124 @@ body {
 
 
 
+}
+
+
+.autocomplete {
+
+  
+
+    &-w1 {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 48px;
+        background: #fff;
+        border: 1px solid #DBE1E4;
+        border-top: 0px;
+        padding-left: 15px;
+        height: 300px;
+        overflow: auto;
+    }
+
+    &-cat {
+        label {
+            font-family: 'ProximaBold';
+            font-size: 12px;
+            line-height: 20px;
+            color: #333;
+            text-transform: uppercase;
+            border-bottom: 1px solid #DBE1E4;
+            display: block;
+            padding: 32px 0 12px;
+        }
+
+
+    }
+
+    &-product {
+
+         display: flex;
+         justify-content: space-between;
+
+         &-name {
+            padding-right: 15px;
+         }
+
+          .small-text {
+                font-size: 12px;
+                line-height: 15px;
+                color: #616161;
+                display: block; 
+                margin-bottom: 6px;
+            }
+
+
+            b {
+                font-size: 16px;
+                line-height: 19px;
+                color: #333;
+                margin-bottom: 6px;
+            }
+
+           &-price {
+
+            flex-shrink: 0;
+            width: 120px;
+          
+
+        }
+    }
+
+ 
+
+    .searchresult {
+
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            width: 100%;
+            bottom: 0;
+            left: 64px;
+            height: 1px;
+            background: #dbe1e4;
+            display: block;
+            position: absolute;
+
+        }
+
+        .pic {
+
+            position: absolute;
+            left: 3px;
+            top: 15px;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            display: block;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #fff;
+
+            img {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+        }
+
+
+        &.selected,
+        &:hover {
+            background: #F2F5F7;
+        }
+
+        padding: 12px 0 12px 64px;
+    }
 }
 
 
@@ -284,44 +426,50 @@ body {
             position: relative;
         }
 
-        .parent:hover {
 
-            .hc-submenu {
-                display: block;
-            }
+        li:hover>ul.hc-submenu {
+            display: block;
         }
 
 
-        li {
 
-            &:after {
-                content: '';
-                width: 100%;
-                height: 1px;
-                display: block;
-                background: #DBE1E4;
-                position: absolute;
-                bottom: 0;
-            }
+        // .parent:hover > .hc-submenu {
+        //         display: block;
+        //     }
 
-            a {
-                display: block;
-                padding: 16px 24px;
-                margin-left: -24px;
-                font-size: 15px;
-                line-height: 140%;
-                color: #333;
-
-
-            }
-
-            &:hover>a {
-                background: rgba(219, 225, 228, .5);
-
-            }
-
-        }
     }
+
+
+    li {
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            background: #DBE1E4;
+            position: absolute;
+            bottom: 0;
+        }
+
+        a {
+            display: block;
+            padding: 16px 24px;
+            margin-left: -24px;
+            font-size: 15px;
+            line-height: 140%;
+            color: #333;
+
+
+        }
+
+        &:hover>a {
+            background: rgba(219, 225, 228, .5);
+
+        }
+
+    }
+
 
     &-submenu {
         display: none;
@@ -484,14 +632,14 @@ body {
     &-item {
 
         &_info {
-           // margin-left: 100px;
-           // transition: all 1s ease;
+            // margin-left: 100px;
+            // transition: all 1s ease;
         }
 
         &_img {
 
             transform: scale(1);
-          transition: all 0.7s ease;
+            transition: all 0.7s ease;
 
             img {
                 width: 50%;
@@ -533,24 +681,7 @@ body {
 }
 
 
-// .swiper-slide-active {
 
-//     .ms-slide_circle {
-//         width: 95%;
-//         padding-top: 95%;
-//     }
-
-
-//     .ms-item_img {
-
-//         transform: scale(1);
-//     }
-
-//     .ms-item_info {
-//         margin-left: 0;
-//     }
-
-// }
 
 
 .branch {
@@ -1149,6 +1280,7 @@ body {
 .mfb {
 
     margin-bottom: 0;
+    background: $blue;
 
 
     &-box {
@@ -1289,38 +1421,32 @@ body {
     &-navi {
 
         overflow: hidden;
+        width: 100%;
         border-top: 1px solid #DBE1E4;
         border-bottom: 1px solid #DBE1E4;
 
+
+
         &_scroll {
-            overflow-x: auto;
-        }
 
-        &_list {
-            display: table;
+            button {
+                display: block;
 
-            ul {
-                display: table-row;
-            }
+                font-family: 'ProximaSemi';
+                padding: 22px 15px;
+                display: block;
+                width: max-content;
+                font-size: 12px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #000;
+                background: transparent;
 
-            li {
-                display: table-cell;
-
-                a {
-                    font-family: 'ProximaSemi';
-                    padding: 22px 15px;
-                    display: block;
-                    width: max-content;
-                    font-size: 12px;
-                    letter-spacing: 0.08em;
-                    text-transform: uppercase;
-                    color: #000;
-
-                    &:hover,
-                    &.active {
-                        color: $blue;
-                    }
+                &:hover,
+                &.active {
+                    color: $blue;
                 }
+
             }
         }
 
@@ -2464,7 +2590,7 @@ body {
         margin: 0 15px;
     }
 
-    &-item { 
+    &-item {
 
         padding: 30px 0;
 
@@ -2494,7 +2620,7 @@ body {
 
             position: relative;
             width: 100%;
-             transition: all 0.3s ease;
+            transition: all 0.3s ease;
 
             &.soc-icons {
                 display: flex;
@@ -2511,7 +2637,7 @@ body {
 
                     border-left: 1px solid #dbe1e4;
                     border-top: 1px solid #dbe1e4;
-                     transition: all 0.3s ease;
+                    transition: all 0.3s ease;
 
 
                     svg {
@@ -2560,12 +2686,12 @@ body {
 
             &.yt:before {
                 content: '';
-               
+
                 display: block;
                 position: absolute;
                 left: 0;
                 top: 0;
-                 width: 100%;
+                width: 100%;
                 height: 100%;
                 background: url(../images/soc_yt.jpg) 50% 50% no-repeat;
                 background-size: 100%;
@@ -2574,12 +2700,12 @@ body {
 
             &.inst:before {
                 content: '';
-               
+
                 display: block;
                 position: absolute;
                 left: 0;
                 top: 0;
-                 width: 100%;
+                width: 100%;
                 height: 100%;
                 background: url(../images/soc_inst.jpg) 50% 50% no-repeat;
                 background-size: 100%;

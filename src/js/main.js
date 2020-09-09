@@ -17,21 +17,51 @@
              });
 
              $mnavitoggle.on('click', function() {
-
                  if ($isnavi.hasClass('is-mnavi')) {
-
-
                      $isnavi.removeClass('is-mnavi');
                      $mnavitoggle.children().removeClass('active');
-
 
                  } else {
                      $isnavi.addClass('is-mnavi');
                      $mnavitoggle.children().addClass('active');
 
                  }
+             });
 
 
+           var $page = $('html, body');
+
+$('.j-scrollto').click(function() {
+
+    var scrollTo = $(this).position().left;
+                 $(this).parent().scrollLeft(scrollTo);
+
+                  console.log(scrollTo);
+
+
+                 $('.j-scrollto').removeClass('active');
+                 $(this).toggleClass('active');
+
+      // $(this).parent().animate({
+      //    scrollTop: scrollTo       
+      // }, 400);
+
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 60
+    }, 1000);
+    return false;
+});
+
+    // header fixedtop
+             $(document).on("scroll", function() {
+                 var scroll = $(window).scrollTop();
+                 // var height = $(window).height();
+
+                 if ($(this).scrollTop() >= 71) {
+                     $('.header, .j-top-navi').addClass('fixedTop');
+                 } else {
+                     $('.header, .j-top-navi').removeClass('fixedTop');
+                 }
              });
 
 
@@ -50,7 +80,6 @@
                  } else {
 
                      $('.knowlege-slider-container').prepend($('#kb-navi'));
-
                      $('.mobile-accordion').addClass('accordion');
                      $('.mobile-accordion:eq(0)').addClass('active');
                  }
@@ -93,6 +122,9 @@
 
 
              appendNavi();
+
+
+
 
 
 
@@ -386,17 +418,7 @@
 
 
 
-             // header fixedtop
-             $(document).on("scroll", function() {
-                 var scroll = $(window).scrollTop();
-                 // var height = $(window).height();
-
-                 if ($(this).scrollTop() >= 71) {
-                     $('.header').addClass('fixedTop');
-                 } else {
-                     $('.header').removeClass('fixedTop');
-                 }
-             });
+         
 
 
 
@@ -530,10 +552,12 @@
                              if (mySwiper !== undefined) mySwiper.destroy(true, true);
                         }
 
-                        
+
                          // clean up old instances and inline styles when available
                        if( $('.j-pp-slider').length  ) {
-                               this.destroy(true, true);                      
+                               this.destroy(true, true); 
+
+                               }                     
                          
                          // or/and do nothing
                        
@@ -547,8 +571,7 @@
 
                  }
 
-
- 
+            
 
                  const enableSwiper = function() {
 
@@ -564,7 +587,7 @@
                          },
 
                      });
-                 }
+                 };
 
                //  var premsslider = document.querySelectorsAll('.j-pp-slider');
 
@@ -589,7 +612,7 @@
                              },
                          });
                       });
-                 }
+                 };
 
                  // keep an eye on viewport size changes
                  breakpoint.addListener(breakpointChecker);
