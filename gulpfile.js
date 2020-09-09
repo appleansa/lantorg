@@ -128,16 +128,16 @@ gulp.task("minjs", function () {
 	//минифицируем наш main.js и перекидываем в директорию build
 	return gulp
 		.src("src/js/main.js")
-		.pipe(size())
+		//.pipe(size())
 		.pipe(babel())
-		.pipe(uglify())
+	//	.pipe(uglify())
 		.pipe(
 			rename({
 				suffix: ".min",
 			}),
 		)
 		.pipe(gulp.dest("build/js"))
-		.pipe(size());
+	//	.pipe(size());
 });
 
 gulp.task("js", function () {
@@ -267,8 +267,8 @@ gulp.task("deploy", function () {
 	return gulp.src("build/**").pipe(
 		rsync({
 			root: "build/", //откуда берём файлы
-			hostname: "yourLogin@yourIp", //ваш логин на хостинге@IPхостинга
-			destination: "sitePath", //папка, в которую будем загружать
+			hostname: "appleansa@appleansa.myjino.ru", //ваш логин на хостинге@IPхостинга
+			destination: "/home/users/a/appleansa/domains/lantorg.appleansa.myjino.ru/", //папка, в которую будем загружать
 			//port: 25212, //порт, к которому пойдёт подключение. Нужна, если нестандартный порт
 			include: ["*.htaccess"], //файлы, которые нужно включить в передачу
 			exclude: ["**/Thumbs.db", "**/*.DS_Store"], //файлы, которые нужно исключить из передачи
@@ -284,7 +284,7 @@ gulp.task("deploy", function () {
 gulp.task("browser-sync", function () {
 	//настройки лайв-сервера
 	browserSync.init({
-		// proxy: "192.168.0.104",		
+		 // proxy: "192.168.0.104",		
 		server: {
 			baseDir: "build/", //какую папку показывать в браузере
 		},
