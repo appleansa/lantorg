@@ -29,30 +29,27 @@
              });
 
 
-           var $page = $('html, body');
+             var $page = $('html, body');
 
-$('.j-scrollto').click(function() {
+             $('.j-scrollto').click(function() {
 
-    var scrollTo = $(this).position().left;
+                 var scrollTo = $(this).position().left;
                  $(this).parent().scrollLeft(scrollTo);
 
-                  console.log(scrollTo);
+                 console.log(scrollTo);
 
 
                  $('.j-scrollto').removeClass('active');
                  $(this).toggleClass('active');
 
-      // $(this).parent().animate({
-      //    scrollTop: scrollTo       
-      // }, 400);
 
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 60
-    }, 1000);
-    return false;
-});
+                 $page.animate({
+                     scrollTop: $($.attr(this, 'href')).offset().top - 60
+                 }, 1000);
+                 return false;
+             });
 
-    // header fixedtop
+             // header fixedtop
              $(document).on("scroll", function() {
                  var scroll = $(window).scrollTop();
                  // var height = $(window).height();
@@ -63,6 +60,15 @@ $('.j-scrollto').click(function() {
                      $('.header, .j-top-navi').removeClass('fixedTop');
                  }
              });
+
+
+             $('.hc-menu > li').mouseenter(function() {
+                 $('.hc-menu li').removeClass('active');
+                     $(this).addClass('active');
+                 })
+                 .mouseleave(function() {
+                  //  $('.hc-menu li').removeClass('active');
+                 });
 
 
              function appendNavi() {
@@ -418,7 +424,7 @@ $('.j-scrollto').click(function() {
 
 
 
-         
+
 
 
 
@@ -542,36 +548,42 @@ $('.j-scrollto').click(function() {
                  // keep track of swiper instances to destroy later
                  let mySwiper;
                  let myPremsSwiper;
+                 let myReturnSwiper;
 
                  const breakpointChecker = function() {
 
                      // if larger viewport and multi-row layout needed
                      if (breakpoint.matches === true) {
 
-                        if( $('.j-team-slider').length  ) {
+                         if ($('.j-team-slider').length) {
                              if (mySwiper !== undefined) mySwiper.destroy(true, true);
-                        }
-
-
+                         }
                          // clean up old instances and inline styles when available
-                       if( $('.j-pp-slider').length  ) {
-                               this.destroy(true, true); 
+                         if ($('.j-pp-slider').length) {
+                             if (myPremsSwiper !== undefined) myPremsSwiper.detachEvents();
+                             myPremsSwiper = undefined;
+                         }
 
-                               }                     
-                         
+                         if ($('.j-return-slider').length) {
+
+                             if (myReturnSwiper !== undefined) myReturnSwiper.destroy(true, true);
+                         }
+
+                         return;
+
                          // or/and do nothing
-                       
                          // else if a small viewport and single column layout needed
                      } else if (breakpoint.matches === false) {
                          // fire small viewport version of swiper
-                           enableSwiper();
-                           enablePremsSwiper();                    
-                        
+                         enableSwiper();
+                         enablePremsSwiper();
+                         enableReturnSwiper();
+
                      }
 
                  }
 
-            
+
 
                  const enableSwiper = function() {
 
@@ -587,19 +599,17 @@ $('.j-scrollto').click(function() {
                          },
 
                      });
-                 };
+                 }
 
-               //  var premsslider = document.querySelectorsAll('.j-pp-slider');
 
                  var enablePremsSwiper = function() {
-
-                 $('.j-pp-slider').each(function() {
-                        myPremsSwiper = new Swiper( this, {
+                     document.querySelectorAll('.j-pp-slider').forEach(n => {
+                         myPremsSwiper = new Swiper(n, {
                              loop: true,
                              autoHeight: true,
                              slidesPerView: 1,
                              pagination: {
-                                 el: this.querySelector('.j-pp-slider .swiper-pagination'),
+                                 el: n.querySelector('.swiper-pagination'),
                                  clickable: true,
                              },
 
@@ -611,8 +621,50 @@ $('.j-scrollto').click(function() {
                                  },
                              },
                          });
-                      });
-                 };
+                     });
+                 }
+
+
+                 const enableReturnSwiper = function() {
+
+
+
+                     $('.return-slider').each(function() {
+                         var myReturnSwiper = new Swiper('.return-slider', {
+                             loop: true,
+                             mode: 'horizontal',
+                             slidesPerView: 2,
+                             spaceBetween: 0,
+
+                             pagination: {
+                                 el: '.return-navi .swiper-progressbar',
+                                 type: 'progressbar',
+                             },
+                             navigation: {
+                                 nextEl: '.return-navi .swiper-btn-next',
+                                 prevEl: '.return-navi .swiper-btn-prev',
+                                 loop: true,
+                             },
+
+                             on: {
+                                 init: function() {
+
+                                     var totalslide = $('.return-slider .swiper-slide:not(.swiper-slide-duplicate)').length;
+                                     $(".return-navi .swiper-total-slides").html('0' + totalslide);
+
+                                 },
+                             },
+                         });
+
+                         myReturnSwiper.on('slideChange', function() {
+                             var activeslide = myReturnSwiper.realIndex + 1;
+                             $(".return-navi .swiper-active-slides").html('0' + activeslide);
+                         });
+
+                     });
+                 }
+
+
 
                  // keep an eye on viewport size changes
                  breakpoint.addListener(breakpointChecker);

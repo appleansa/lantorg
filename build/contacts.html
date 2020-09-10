@@ -41,79 +41,10 @@
             <a href="/" class="header_logo show-on-desktop">
                 <img src="./images/logo.png" alt="">
             </a>
-            <!--   
+         
             <div class="header-catalog">
                 <div class="mm-toggle header-catalog_toggle dropdown j-dropdown" data-id="catalog-menu">
-                <button class="mm-toggle_btn --j-dropdown-open" data-toggle="catalog-menu">
-                    <div class="mm-toggle_inner">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <i>КАТАЛОГ</i>
-                </button>
-
-                
-                <div class="header-catalog_box dropdown-box">
-                     <div class="hc_close">
-                        <i class="icon-close"></i>
-                     </div>
-                     <div class="hc">  
-                        <div class="hc_header"><b>Каталог</b></div>
-                     <ul class="hc-menu">
-                        <li class="hc-menu_item parent"><a href="#">Беспроводное оборудование</a>
-                            <span class="hc-submenu_toggle"><i class="icon-arrow-right va-middle"></i></span>
-                            <ul class="hc-submenu">
-                                    <div class="hc_header arrow-left">
-                                            <i class="icon-arrow-left va-middle"></i>
-                                        <b>Беспроводное оборудование</b>
-                                    </div>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Антенны Wi-Fi</a></li>
-                                <li><a href="#">Оборудование LTE/3G/4G</a></li>
-                                <li><a href="#">Адаптеры, усилители сигнала, miniPCI</a></li>
-                                <li><a href="#">Аксессуары</a></li>
-                            </ul>
-                        </li>
-                        <li class="hc-menu_item parent"><a href="#">Активное сетевое оборудование</a>
-                           <span class="hc-submenu_toggle"><i class="icon-arrow-right va-middle"></i></span>
-                            <ul class="hc-submenu">
-                                <div class="hc_header arrow-left">
-                                     
-                                            <i class="icon-arrow-left va-middle"></i>
-                                        <b>Активное сетевое оборудование</b>
-                                    </div>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                            </ul>
-                        </li>
-                        <li class="hc-menu_item parent"><a href="#">Оптоволоконное оборудование</a>
-                            <span class="hc-submenu_toggle"><i class="icon-arrow-right va-middle"></i></span>
-                            <ul class="hc-submenu">
-                                <div class="hc_header arrow-left">
-                                     
-                                            <i class="icon-arrow-left va-middle"></i>
-                                        <b>Оптоволоконное оборудование</b>
-                                    </div>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                                <li><a href="#">Точки доступа Wi-Fi</a></li>
-                            </ul>
-                        </li>
-                     </ul>
-                     </div>
-
-                </div>
-               </div>
-            </div> -->
-            <div class="header-catalog">
-                <div class="mm-toggle header-catalog_toggle dropdown j-dropdown" data-id="catalog-menu">
-                    <button class="mm-toggle_btn --j-dropdown-open" data-toggle="catalog-menu">
+                    <button class="mm-toggle_btn j-dropdown-open" data-toggle="catalog-menu">
                         <div class="mm-toggle_inner">
                             <span></span>
                             <span></span>
@@ -122,13 +53,13 @@
                         <i>КАТАЛОГ</i>
                     </button>
                     <div class="header-catalog_box dropdown-box">
-                        <div class="hc_close">
+                       <!--  <div class="hc_close">
                             <i class="icon-close"></i>
-                        </div>
+                        </div> -->
                         <div class="hc">
                             <div class="hc_header"><b>Каталог</b></div>
                             <ul class="hc-menu">
-                                <li class="hc-menu_item parent">
+                                <li class="hc-menu_item parent active">
                                     <a href="https://lantorg.com/catalog/oborudovanie-dlya-besprovodnyh-setej" data-category="222">Оборудование для беспроводных сетей</a>
                                     <span class="hc-submenu_toggle"><i class="icon-arrow-right va-middle"></i></span>
                                     <ul class="hc-submenu">
@@ -538,7 +469,7 @@
                         </button>
                     </div>
                 </form>
-                <div class="autocomplete-w1">
+                <div class="autocomplete-w1" style="display: none;">
                     <div class="autocomplete">
                         <!-- search products -->
                         <div class="autocomplete-cat">
@@ -647,7 +578,7 @@
                 </div>
             </div>
             <div class="header-fixed-item">
-                <div class="header-navi dropdown j-dropdown" data-id="hp-menu">
+                <div class="header-navi dropdown j-dropdown-hover" data-id="hp-menu">
                     <button class="header-navi_toggle --j-dropdown-open" data-toggle="hp-menu"><i class="icon-menu va-middle"></i></button>
                     <div class="dropdown-box">
                         <ul class="dropdown-list">
@@ -659,7 +590,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header-phones dropdown j-dropdown" data-id="hp-phones">
+                <div class="header-phones dropdown j-dropdown-hover" data-id="hp-phones">
                     <button class="header-navi_toggle --j-dropdown-open" data-toggle="hp-phones"><i class="icon-phone va-middle"></i></button>
                     <div class="hp-item --j-dropdown-open" data-toggle="hp-phones"><span>+38 (057) 780 - 40 - 63</span> <i class="icon-arrow-bottom"></i></div>
                     <div class="hp-dropdown dropdown-box">
@@ -684,7 +615,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header-profile dropdown j-dropdown" data-id="hp-user-menu">
+                <div class="header-profile dropdown j-dropdown-hover" data-id="hp-user-menu">
                     <button class="header-navi_btn --j-dropdown-open" data-toggle="hp-user-menu"><i class="icon-user va-middle"></i></button>
                     <div class="dropdown-box">
                         <ul class="dropdown-list">

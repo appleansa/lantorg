@@ -139,7 +139,7 @@ p {
 }
 
 .swiper {
- 
+
 
     &-navi-top {
 
@@ -164,17 +164,17 @@ p {
             width: 160px;
         }
     }
- 
+
     &-pagination.light-bullets {
 
-         .swiper-pagination-bullet {
+        .swiper-pagination-bullet {
             background: #C4C4C4;
             opacity: 1;
 
             &-active {
                 background: $blue;
             }
-         }
+        }
     }
 
 
@@ -413,9 +413,9 @@ input[type="submit"] {
     }
 
     &-white-border {
-         background-color: transparent;
-         border: 1px solid #fff;
-         color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
     }
 
     &.fw {
@@ -438,7 +438,7 @@ input[type="submit"] {
         color: #333;
         position: relative;
         min-width: 160px;
-        background: #fff;  
+        background: #fff;
 
         &:after {
             content: '';
@@ -453,7 +453,7 @@ input[type="submit"] {
         }
 
         &.active:after {
-            transform: rotate(-225deg) translate(-2px, -2px); 
+            transform: rotate(-225deg) translate(-2px, -2px);
         }
 
         &:hover:after {
@@ -474,75 +474,79 @@ input[type="submit"] {
     height: 64px;
     position: relative;
 
-    &:before { 
-         content: '';
-         width: 100%;
-         height: 100%;
-         display: block;
-         position: absolute;
-         background-color: $blue;
-     }
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background-color: $blue;
+    }
 
-     &.icon-construct:before { 
-          mask: url(../images/svg/icon-construct.svg) 50% 50% no-repeat;
-      }
+    &.icon-construct:before {
+        mask: url(../images/svg/icon-construct.svg) 50% 50% no-repeat;
+    }
 
-       &.icon-loop:before { 
-          mask: url(../images/svg/icon-loop.svg) 50% 50% no-repeat;
-      }
+    &.icon-loop:before {
+        mask: url(../images/svg/icon-loop.svg) 50% 50% no-repeat;
+    }
 
-       &.icon-calc:before { 
-          mask: url(../images/svg/icon-calc.svg) 50% 50% no-repeat;
-      }
+    &.icon-calc:before {
+        mask: url(../images/svg/icon-calc.svg) 50% 50% no-repeat;
+    }
 
-       &.icon-list:before { 
-          mask: url(../images/svg/icon-list.svg) 50% 50% no-repeat;
-      }
+    &.icon-list:before {
+        mask: url(../images/svg/icon-list.svg) 50% 50% no-repeat;
+    }
 
-       &.icon-comunicate:before { 
-          mask: url(../images/svg/icon-comunicate.svg) 50% 50% no-repeat;
-      }
+    &.icon-comunicate:before {
+        mask: url(../images/svg/icon-comunicate.svg) 50% 50% no-repeat;
+    }
 
-       &.icon-safe:before { 
-          mask: url(../images/svg/icon-safe.svg) 50% 50% no-repeat;
-      }
+    &.icon-safe:before {
+        mask: url(../images/svg/icon-safe.svg) 50% 50% no-repeat;
+    }
 
-         &.icon-nds:before { 
-          mask: url(../images/svg/icon-nds.svg) 50% 50% no-repeat;
-      }
+    &.icon-nds:before {
+        mask: url(../images/svg/icon-nds.svg) 50% 50% no-repeat;
+    }
 
-          &.icon-boxes:before { 
-          mask: url(../images/svg/icon-boxes.svg) 50% 50% no-repeat;
-      }
-          &.icon-shipping:before { 
-          mask: url(../images/svg/icon-shipping.svg) 50% 50% no-repeat;
-      }
+    &.icon-boxes:before {
+        mask: url(../images/svg/icon-boxes.svg) 50% 50% no-repeat;
+    }
 
-       &.icon-shipping2:before { 
-          mask: url(../images/svg/icon-shipping2.svg) 50% 50% no-repeat;
-          mask-size: 100%;
-      }
-          &.icon-calendar:before { 
-          mask: url(../images/svg/icon-calendar.svg) 50% 50% no-repeat;
-      }
+    &.icon-shipping:before {
+        mask: url(../images/svg/icon-shipping.svg) 50% 50% no-repeat;
+    }
 
-          &.icon-sale:before { 
-          mask: url(../images/svg/icon-sale.svg) 50% 50% no-repeat;
-      }
-          &.icon-vision:before { 
-          mask: url(../images/svg/icon-vision.svg) 50% 50% no-repeat;
-      }
+    &.icon-shipping2:before {
+        mask: url(../images/svg/icon-shipping2.svg) 50% 50% no-repeat;
+        mask-size: 100%;
+    }
 
-             &.icon-server:before { 
-          mask: url(../images/svg/icon-server.svg) 50% 50% no-repeat;
-      }
-          &.icon-tech:before { 
-          mask: url(../images/svg/icon-tech.svg) 50% 50% no-repeat;
-      }
+    &.icon-calendar:before {
+        mask: url(../images/svg/icon-calendar.svg) 50% 50% no-repeat;
+    }
+
+    &.icon-sale:before {
+        mask: url(../images/svg/icon-sale.svg) 50% 50% no-repeat;
+    }
+
+    &.icon-vision:before {
+        mask: url(../images/svg/icon-vision.svg) 50% 50% no-repeat;
+    }
+
+    &.icon-server:before {
+        mask: url(../images/svg/icon-server.svg) 50% 50% no-repeat;
+    }
+
+    &.icon-tech:before {
+        mask: url(../images/svg/icon-tech.svg) 50% 50% no-repeat;
+    }
 }
 
 
- 
+
 
 
 
@@ -599,42 +603,42 @@ input[type="submit"] {
 }
 
 .icon {
-      
-      position: relative;
-      display: inline-block;
 
-      &:before {
+    position: relative;
+    display: inline-block;
+
+    &:before {
         content: '';
         width: 100%;
         height: 100%;
         display: block;
         position: absolute;
-      }
+    }
 }
 
 .icons-gray-blue {
 
-     .has-icon:before {
-        background: #858E93; 
+    .has-icon:before {
+        background: #858E93;
         opacity: 1;
-     }
+    }
 
-     .has-icon:hover:before {
+    .has-icon:hover:before {
         background-color: $blue;
-     }
+    }
 }
 
 
 .icons-gray-white {
 
-     .has-icon:before {
-       background-color: #fff;
-            opacity: 0.3;
-     }
+    .has-icon:before {
+        background-color: #fff;
+        opacity: 0.3;
+    }
 
-     .has-icon:hover:before {
+    .has-icon:hover:before {
         opacity: 1;
-     }
+    }
 }
 
 
@@ -1320,15 +1324,15 @@ input[type="submit"] {
         position: relative;
         cursor: pointer;
 
-          a {
-                color: $blue; 
-                text-decoration: underline;
+        a {
+            color: $blue;
+            text-decoration: underline;
 
 
-                &:hover {
-                    text-decoration: none;
-                }
+            &:hover {
+                text-decoration: none;
             }
+        }
     }
 
     input[type="checkbox"]+label span {
@@ -1477,10 +1481,7 @@ input[type="submit"] {
     &-toggle {
         cursor: pointer;
 
-        &.active {
-
-             
-        }
+        &.active {}
     }
 
     &.active {
@@ -1536,17 +1537,17 @@ input[type="submit"] {
 
 .content {
 
-   color: #616161;
+    color: #616161;
 
-   &.cl-white {
-    color: #fff;
-   }
+    &.cl-white {
+        color: #fff;
+    }
 
     p {
         font-size: 16px;
         line-height: 160%;
         margin-bottom: 16px;
-         
+
     }
 
     b,
@@ -1826,16 +1827,89 @@ input[type="submit"] {
 
 .mt-scroll {
 
-     white-space: nowrap;
-     overflow: auto;
-     transition: all 0.3s ease;
-     display: flex;
+    white-space: nowrap;
+    overflow: auto;
+    transition: all 0.3s ease;
+    display: flex;
 
-     button {  display: block; vertical-align: top;}
+    button {
+        display: block;
+        vertical-align: top;
+    }
 
     &.blue {
-         background:  $blue;
+        background: $blue;
 
-         button.active {  background: $dblue;  }
+        button.active {
+            background: $dblue;
+        }
     }
+}
+
+
+
+.rating {
+
+
+     span {
+
+          color: #B0B8BC;
+     }
+
+     b { color: #333; }
+ 
+
+.rate {
+
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+
+
+    &-box {
+
+         &_header {
+            font-family: 'ProximaBold';
+            font-size: 18px;
+line-height: 22px; 
+         }
+    }
+
+
+    &-active-layer {
+        position: absolute; 
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 10;
+       display: block;
+
+ span {
+             background-color:  $blue;
+             display: table-cell;
+         }
+    }
+
+
+    &-hidden-layer {
+
+         span {
+             background-color: #B0B8BC;
+         }
+    }
+
+   
+ 
+    span {
+
+        mask: url(../images/svg/icon-star-active.svg) 0 0 no-repeat;
+        width: 15px;
+        height: 15px;
+        background-size: 100%;
+        display: inline-block;
+    }
+
+   
+}
+
 }

@@ -1566,26 +1566,42 @@ $blue: #007CC3;
         }
     }
 
-    .hc {
+  
 
+  .hc {
 
-        padding: 25px 0 10px 24px;
-        min-width: 370px;
+    &-submenu {
 
-        &_close {
-            display: none;
+         &_toggle { display: none; }
+    }
+ 
+
+    li {
+
+        &.parent {
+        a:after {
+               content: '';
+    width: 10px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 5px;
+    background: url(../images/svg/icon-arrow-right.svg) 50% 50% no-repeat;
+            }
+
         }
 
-        &-submenu {
-
-            left: 100%;
-            top: -15px;
-            width: 300px;
-            box-shadow: 0 0 32px rgba(211, 214, 215, .05), 0 0 64px rgba(211, 214, 215, .05), 0 0 4px rgba(211, 214, 215, .2), 0 16px 16px rgba(211, 214, 215, .2), 2px 2px 4px rgba(211, 214, 215, .2);
-        }
+         a {
+            position: relative;
+         }
     }
 
-    .j-dropdown:hover {
+
+  }
+
+    .j-dropdown-hover:hover {
 
         .dropdown-box {
             display: block;
@@ -1774,6 +1790,18 @@ $blue: #007CC3;
             position: relative;
         }
 
+        &-date {
+
+             padding-right: 15px;
+             border-right: 1px solid #dbe1e4;
+             margin-right: 15px;
+
+        }
+
+        &-info {
+            display: flex;
+        }
+
     }
 
     .fb {
@@ -1808,7 +1836,7 @@ $blue: #007CC3;
         &-box.interest {
             width: 450px;
             flex-shrink: 0;
-            padding: 90px 0px 65px 55px;
+            padding: 90px 15px 65px 55px;
 
             &:before {
                 content: '';
@@ -1817,7 +1845,7 @@ $blue: #007CC3;
         }
 
         &-box.tickets {
-            padding: 90px 30px 60px 0;
+            padding: 90px 30px 60px 15px;
         }
     }
 
