@@ -239,13 +239,13 @@ body {
 
 .location {
 
-     padding-left: 25px;
-     position: relative;
-     line-height: 16px;
-     font-size: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 16px;
+    font-size: 15px;
 
 
-     &:before {
+    &:before {
         content: '';
         position: absolute;
         left: 0;
@@ -254,18 +254,18 @@ body {
         height: 16px;
         background: url(../images/svg/icon-marker.svg) 50% 50% no-repeat;
 
-     }
+    }
 }
 
 
 .work {
 
-     padding-left: 25px;
-     position: relative;
-     line-height: 16px;
-       font-size: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 16px;
+    font-size: 15px;
 
-     &:before {
+    &:before {
         content: '';
         position: absolute;
         left: 0;
@@ -274,7 +274,7 @@ body {
         height: 16px;
         background: url(../images/svg/icon-clock.svg) 50% 50% no-repeat;
 
-     }
+    }
 }
 
 
@@ -488,14 +488,14 @@ body {
         &>li>ul>li>ul {
             left: 100%;
             width: 100%;
-             padding-left: 10px;
-           
+            padding-left: 10px;
+
         }
 
         &>li>ul>li>ul>li>ul {
             left: 100%;
             width: 100%;
-             padding-left: 10px;
+            padding-left: 10px;
 
         }
 
@@ -1883,13 +1883,42 @@ body {
         margin-bottom: 35px;
         border-top: 1px solid #DBE1E4;
         border-bottom: 1px solid #DBE1E4;
+
+        display: none;
+    }
+
+
+    &-tabs {
+
+        .tab {
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        &_title {
+            font-family: 'ProximaBold';
+            padding: 0 15px;
+            margin-bottom: 30px;
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
     &-slider {
 
+        padding-bottom: 35px;
+
         .swiper-wrapper {
             margin-bottom: 1px;
 
+        }
+    }
+
+    &-tabs {
+
+
+        .tab {
+            display: block;
         }
     }
 
@@ -2797,8 +2826,157 @@ body {
             margin-top: 25px;
         }
     }
+
+
+    &-btn {
+
+        padding: 0 15px;
+
+
+        .btn {
+
+            width: 100%;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            border: 1px solid #DBE1E4;
+
+            &:hover {
+                background: #dbe1e4;
+            }
+
+        }
+    }
 }
 
+
+
+.change {
+
+
+    &-item_title {
+                    position: relative;
+                    
+                    min-height: 32px;
+                    margin-bottom: 5px;
+                    display: flex;
+                    align-items: center;
+    }
+
+    .title {
+        font-family: 'ProximaBold';
+                    font-size: 18px;
+                    line-height: 21px;
+    }
+
+    &-box {
+
+        &-left {
+            position: relative;
+            padding: 50px 15px;
+            z-index: 1;
+
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                display: block;
+                left: 0;
+                top: 0;
+                position: absolute;
+                z-index: -1;
+                background: #F2F5F6;
+            }
+
+
+            .items {
+
+                counter-reset: list 0;
+            }
+
+
+            .item {
+                padding-left: 32px;
+                margin-left: 16px;
+                position: relative;
+
+               
+
+
+                &:not(:last-child) {
+                    padding-bottom: 25px;
+                    border-left: 1px dashed rgba(0, 124, 195, 0.4);
+                }
+
+
+                &:before {
+                    counter-increment: list;
+                    content: counter(list);
+                    width: 32px;
+                    height: 32px;
+                    left: -16px;
+                    top: 0;
+                    position: absolute;
+                    display: block;
+                    text-align: center;
+                    line-height: 32px;
+                    background: #F2F5F6;
+                    border: 1px solid $blue;
+                    color: $blue;
+                }
+
+
+            }
+        }
+
+        &-right {
+            position: relative;
+            padding: 50px 15px;
+            z-index: 1;
+
+
+            .data {
+
+                position: relative;
+                  padding-bottom: 12px;
+                  border-bottom: 1px solid #dbe1e4;
+                  margin-bottom: 25px;
+
+
+                &-header {
+
+                     .title {
+                        margin-bottom: 20px;
+                     }
+
+                     .help {
+                          margin-bottom: 20px;
+
+                          a {
+                            color: $blue;
+                            font-family: 'ProximaSemi';
+                          }
+
+                          i {
+                            vertical-align: middle;
+                          }
+
+                          span {
+                            letter-spacing: 0.08em;
+text-transform: uppercase;
+vertical-align: middle;
+                          }
+
+
+
+                     }
+                }
+
+            }
+        }
+    }
+}
 
 
 

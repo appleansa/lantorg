@@ -1145,6 +1145,25 @@ input[type="submit"] {
     }
 }
 
+.icon-headphones {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $blue;
+        mask: url(../images/svg/icon-headphones.svg) 50% 50% no-repeat;
+    }
+}
+
 
 .icon-arrow-topr {
     display: inline-block;
@@ -1232,6 +1251,30 @@ input[type="submit"] {
         }
     }
 
+
+    &-info {
+
+        position: relative;
+        padding: 15px 0 15px 36px;
+        font-size: 14px;
+line-height: 140%; 
+border-top: 1px solid #dbe1e4;
+
+
+color: #616161;
+
+        &:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            background: url(../images/svg/icon-alert.svg) 0 0 no-repeat;
+        }
+    }
+
     &-field {
         display: block;
         margin-bottom: 15px;
@@ -1248,10 +1291,10 @@ input[type="submit"] {
             background: #fff;
             font-size: 15px;
             text-indent: 12px;
+            transition: all 0.3s ease;
 
             &:focus {
                 border: 1px solid #a9a9a9;
-
             }
         }
 
@@ -1268,6 +1311,11 @@ input[type="submit"] {
             min-width: 100%;
             min-height: 100%;
             box-sizing: border-box;
+            transition: all 0.3s ease;
+
+             &:focus {
+                border: 1px solid #a9a9a9;
+            }
         }
 
         &.tp-white {

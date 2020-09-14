@@ -123,6 +123,11 @@
                      .removeClass("active")
                      .eq($(this).index())
                      .addClass("active");
+                    
+
+
+
+
              });
 
 
@@ -397,30 +402,30 @@
 
 
 
-             $('body').on('click', '.j-dropdown-open', function(e) {
-                 e.preventDefault();
+             // $('body').on('click', '.j-dropdown-open', function(e) {
+             //     e.preventDefault();
 
-                 $(this).toggleClass('active');
+             //     $(this).toggleClass('active');
 
-                 var popup = $(this).data('toggle');
-                 if (!$(popup).hasClass('active')) {
-                     $('.j-dropdown').removeClass('active');
-                     $('[data-id="' + popup + '"]').addClass('active');
-                 } else {
-                     $('[data-id="' + popup + '"]').removeClass('active');
-                 }
-             });
+             //     var popup = $(this).data('toggle');
+             //     if (!$(popup).hasClass('active')) {
+             //         $('.j-dropdown').removeClass('active');
+             //         $('[data-id="' + popup + '"]').addClass('active');
+             //     } else {
+             //         $('[data-id="' + popup + '"]').removeClass('active');
+             //     }
+             // });
 
-             $(document).mouseup(function(e) {
-                 var popup = $('.j-dropdown');
+             // $(document).mouseup(function(e) {
+             //     var popup = $('.j-dropdown');
 
-                 if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-                     popup.removeClass('active');
-                     popup.children().removeClass('active');
+             //     if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+             //         popup.removeClass('active');
+             //         popup.children().removeClass('active');
 
 
-                 }
-             });
+             //     }
+             // });
 
 
 
@@ -439,17 +444,23 @@
 
              function initStuffSwiper() {
                  var screenWidth = $(window).innerWidth();
-                 var sld = document.querySelector('.j-stuff-slider');
+                 var sld = document.querySelectorAll('.j-stuff-slider');
 
                  if (screenWidth < 992 && myStuffSwiper == undefined) {
 
-                     myStuffSwiper = new Swiper(sld, {
+                  document.querySelectorAll('.j-stuff-slider').forEach(n => {
+                     myStuffSwiper = new Swiper(n, {
                          loop: true,
                          centeredSlides: true,
                          slidesPerView: 'auto',
                          spaceBetween: 0,
                          adaptiveHeight: true,
+                         pagination: {
+                            el: n.querySelector('.swiper-pagination'),
+                            clickable: true,
+                         }
                      });
+                 });
                  } else if (screenWidth > 991 && myStuffSwiper != undefined) {
 
                      myStuffSwiper.destroy(true, true);
@@ -461,6 +472,8 @@
 
              //Swiper plugin initialization
              initStuffSwiper();
+
+
              var myUsSwiper = new Swiper('.j-us-slider', {
                  loop: true,
                  speed: 1000,
@@ -477,44 +490,7 @@
                      prevEl: '#j-us-prev',
                  },
              });
-
-
-             //   var myTeamSwiper = undefined;
-
-             // function initTeamSwiper() {
-             //     var screenWidth = $(window).innerWidth();
-             //     var slider = document.querySelector('.j-team-slider');
-
-             //     if (screenWidth < 992 && myTeamSwiper == undefined) {
-
-             //         myTeamSwiper = new Swiper(slider, {
-             //             loop: true, 
-             //             spaceBetween: 0,
-             //             slidesPerView: 1,
-             //             adaptiveHeight: true,
-             //             pagination: {
-             //                el: '.team-pagination',
-             //                clickable: true,
-             //             },
-
-             //              breakpoints: {
-             //         400: {
-             //             slidesPerView: 2, 
-             //         }
-             //     },
-             //         });
-             //     } else if (screenWidth > 991 && myTeamSwiper != undefined) {
-
-             //         myTeamSwiper.destroy(true, true);
-             //         myTeamSwiper = undefined;
-             //         $('.j-team-slider .swiper-wrapper').removeAttribute('style');
-             //        $('.j-team-slider .swiper-slide').removeAttribute('style');
-             //     }
-             // }
-
-             //Swiper plugin initialization
-             //   initStuffSwiper();
-             //   initTeamSwiper();
+ 
              usbtnssize();
 
 
@@ -630,28 +606,27 @@
 
 
 
-                     $('.return-slider').each(function() {
-                         var myReturnSwiper = new Swiper('.return-slider', {
+                      document.querySelectorAll('.j-return-slider').forEach(n => {
+                         var myReturnSwiper = new Swiper( n, {
                              loop: true,
                              mode: 'horizontal',
                              slidesPerView: 2,
                              spaceBetween: 0,
-
                              pagination: {
-                                 el: '.return-navi .swiper-progressbar',
+                                 el: n.querySelector('.swiper-progressbar'),
                                  type: 'progressbar',
                              },
                              navigation: {
-                                 nextEl: '.return-navi .swiper-btn-next',
-                                 prevEl: '.return-navi .swiper-btn-prev',
+                                 nextEl: n.querySelector('.swiper-btn-next'),
+                                 prevEl: n.querySelector('.swiper-btn-prev'),
                                  loop: true,
                              },
 
                              on: {
                                  init: function() {
 
-                                     var totalslide = $('.return-slider .swiper-slide:not(.swiper-slide-duplicate)').length;
-                                     $(".return-navi .swiper-total-slides").html('0' + totalslide);
+                                     var totalslides = n.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
+                                     $(".return-navi .swiper-total-slides").html('0' + totalslides);
 
                                  },
                              },

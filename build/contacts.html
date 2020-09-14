@@ -761,8 +761,6 @@
             <div class="j-tabs-container">
                 <div class="stuff-controls">
                     <div class="container-mfw">
-                        
-                   
                     <div class="stuff-mobile-scroll mt-scroll">
                         <button class="j-mt-btn stuff-toggle_btn active" data-target="vipslider">
                             <span>Менеджеры VIP-клиентов</span>
@@ -771,16 +769,19 @@
                             <span>Менеджеры розничных и мелкооптовых клиентов</span>
                         </button>
                         <button class="j-mt-btn stuff-toggle_btn" data-target="askslider">
-                            <span>другие вопросы</span>
+                            <span>Другие вопросы</span>
                         </button>
                         <button class="j-mt-btn stuff-toggle_btn" data-target="headslider">
-                            <span>руководство</span>
+                            <span>Руководство</span>
                         </button>
                     </div>
                      </div>
                 </div>
-                <div class="j-tabs tabs-container container-mfw">
+                <div class="j-tabs stuff-tabs tabs-container container-mfw">
                     <div class="tab active">
+                         <div class="stuff-tabs_title">
+                              Менеджеры VIP-клиентов 
+                         </div>
                         <div class=" j-stuff-slider stuff-slider swiper-container">
                             <div class="swiper-wrapper ">
                                 <div class="swiper-pagination"></div>
@@ -989,12 +990,15 @@
                                 </div>
 
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                     <div class="tab">
+                         <div class="stuff-tabs_title">
+                             Менеджеры розничных и мелкооптовых клиентов
+                         </div>
                         <div class="j-stuff-slider stuff-slider swiper-container">
-                            <div class="swiper-wrapper ">
-                                <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper "> 
                                 <div class="stuff-item swiper-slide">
                                     <div class="stuff-item_img"><img src="./images/stuff/lobuzov.png" alt=""></div>
                                     <div class="stuff-item_name">Максим Лабузов</div>
@@ -1044,11 +1048,17 @@
                                         </li>
                                     </ul>
                                 </div>
+
+                                 
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
 
                     <div class="tab">
+                          <div class="stuff-tabs_title">
+                             Другие вопросы
+                         </div>
                         <div class="j-stuff-slider stuff-slider swiper-container">
                             <div class="swiper-wrapper ">
                                 <div class="swiper-pagination"></div>
@@ -1089,6 +1099,56 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                      <div class="tab">
+                          <div class="stuff-tabs_title">
+                             Руководство
+                         </div>
+                        <div class="j-stuff-slider stuff-slider swiper-container">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-pagination"></div>
+                                <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/kluchko.png" alt=""></div>
+                                    <div class="stuff-item_name">Андрей Ключко</div>
+                                    <div class="stuff-item_seat">Коммерческий директор</div>
+                                    <ul class="stuff-item_contacts">
+                                        
+                                       
+                                        <li>
+                                            <a href="mailto:noz@lantorg.com">
+                                                <i class="icon-mail2 va-middle"></i>
+                                                <span>noz@lantorg.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                  <div class="stuff-item swiper-slide">
+                                    <div class="stuff-item_img"><img src="./images/stuff/starik.png" alt=""></div>
+                                    <div class="stuff-item_name">Александр Старик</div>
+                                    <div class="stuff-item_seat">Руководитель группы отдела продаж</div>
+                                    <ul class="stuff-item_contacts">
+                                        
+                                       
+                                        <li>
+                                            <a href="">
+                                                <i class="icon-skype va-middle"></i>
+                                                <span>live:31316_2</span>
+                                            </a>
+                                        </li> <li>
+                                            <a href="mailto:31316@lantorg.com">
+                                                <i class="icon-mail2 va-middle"></i>
+                                                <span>31316@lantorg.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -1293,7 +1353,7 @@
                 </div>
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Запросить</button>
+                <button class="modal__btn btn btn-blue fw">Запросить</button>
             </footer>
            </form>
         </div>
@@ -1324,7 +1384,7 @@
                 </div>
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Подписаться</button>
+                <button class="modal__btn btn btn-blue fw">Подписаться</button>
             </footer>
         </div>
     </div>
@@ -1357,7 +1417,7 @@
                 </div>
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Отправить</button>
+                <button class="modal__btn btn btn-blue fw">Отправить</button>
             </footer>
         </div>
     </div>
@@ -1391,7 +1451,7 @@
                 </div>
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Отправить</button>
+                <button class="modal__btn btn btn-blue fw">Отправить</button>
             </footer>
         </div>
     </div>
@@ -1433,7 +1493,7 @@
 
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Отправить</button>
+                <button class="modal__btn btn btn-blue fw">Отправить</button>
             </footer>
         </div>
     </div>
@@ -1471,7 +1531,7 @@
 
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Войти</button>
+                <button class="modal__btn btn btn-blue fw">Войти</button>
             </footer>
         </div>
     </div>
@@ -1504,7 +1564,7 @@
 
             </main>
             <footer class="modal__footer">
-                <button class="modal__btn btn btn-blue">Войти</button>
+                <button class="modal__btn btn btn-blue fw">Войти</button>
             </footer>
         </div>
     </div>
@@ -1567,7 +1627,7 @@
             <main class="modal__content content">
                  
                  <p><strong>Если вы едете на метро: </strong></p>
-                 <ul>
+                 <ul class="list">
 <li>со стороны центра - станция метро "Завод им. Малышева", выход на эскалатор со стороны головы поезда.</li>
 <li>со стороны ХТЗ - станция метро "Завод им. Малышева", выход на эскалатор со стороны хвоста поезда.</li>
 </ul>

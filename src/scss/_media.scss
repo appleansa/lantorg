@@ -837,6 +837,99 @@ $blue: #007CC3;
         }
     }
 
+
+    .return {
+
+        &-controlls {
+
+             .btn {
+                height: 120px;
+                line-height: 120px;
+
+                &.active {
+                    background: #0f8fd8;
+                }
+             }
+        }
+
+        &-btn {
+            padding: 0;
+
+            .btn {
+                height: 100px;
+                line-height: 100px;
+            }
+        }
+
+         &-slider {
+
+            margin: 0;
+            border-left: #dbe1e4 solid 1px;
+            border-right: #dbe1e4 solid 1px;
+
+
+            .pp-slide {
+            // width: calc(100% / 5); 
+             flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+               .pp-item {
+                transition: all 0.3s ease;
+                width: 100%;
+
+                 &_title {
+                        font-size: 16px;
+    line-height: 20px;
+                 }
+
+                  &_inner {
+                     transition: all 0.3s ease;
+                  }
+
+                  &_descr {
+                     visibility: hidden;
+                  }
+               }
+
+               .pp-icon {
+                margin-bottom: 30px;
+               }
+              
+
+              &:hover {
+
+                 .pp-item {
+                    width: 200%;
+                    z-index: 10;
+                    background: #F2F5F6;
+
+                      .pp-icon {
+                margin-bottom: 20px;
+               }
+
+                     &_inner {
+                        padding-top: 0;
+                     }
+
+                      &_descr {
+                     visibility: visible;
+                  }
+                 }
+              }
+
+
+              &:hover:last-child {
+                 .pp-item {
+                    left: -100%;
+                 }
+              }
+          
+         }
+    }
+
+}
+
     .reviews {
 
         background: none;
@@ -1763,6 +1856,11 @@ $blue: #007CC3;
         &-controls {
 
             overflow-x: hidden;
+            display: block;
+        }
+
+  &-item {
+            width: 25%;
         }
 
         &-mobile-scroll {
@@ -1771,6 +1869,17 @@ $blue: #007CC3;
             position: relative;
             overflow: hidden;
             display: flex;
+        }
+
+        &-tabs {
+
+            padding: 0 15px;
+            
+            &_title {
+                display: none;
+            }
+
+            .tab { display: none; }
         }
 
         &-toggle_btn {
@@ -2195,13 +2304,7 @@ $blue: #007CC3;
         }
     }
 
-    .stuff {
-
-        &-item {
-            width: 20%;
-        }
-    }
-
+ 
 
     .mfb {
 
@@ -2349,8 +2452,14 @@ $blue: #007CC3;
             display: block;
             margin-bottom: 0;
         }
+    }
 
 
+    .stuff {
+
+          &-item {
+            width: 20%;
+        }
     }
 
 
