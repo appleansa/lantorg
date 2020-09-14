@@ -1243,16 +1243,22 @@ $blue: #007CC3;
         &-dropdown {
 
             padding: 15px 10px;
+            min-width: 320px;
 
             li {
                 display: block;
-                line-height: 40px;
-                padding: 0 12px;
+                
+                padding: 16px 12px;
 
                 &:last-child {
                     border-top: 1px solid #DBE1E4;
                     padding-top: 15px;
+                    margin-top: 15px;
                     line-height: 1;
+                }
+
+                &:nth-child(1), &:nth-child(2) {
+                        border-bottom: 1px solid #DBE1E4;
                 }
             }
 
@@ -1282,13 +1288,13 @@ $blue: #007CC3;
         }
     }
 
-.top-navi {
-    top: 160px;
+    .top-navi {
+        top: 160px;
 
-    &.fixedTop {
-        top: 82px;
+        &.fixedTop {
+            top: 82px;
+        }
     }
-}
 
     .header {
         display: block;
@@ -1353,7 +1359,9 @@ $blue: #007CC3;
 
             .header-navi,
             .header-phones {
-                position: static;
+                position: relative;
+                left: 0;
+                top: 0;
                 margin-right: 15px;
             }
 
@@ -1566,45 +1574,49 @@ $blue: #007CC3;
         }
     }
 
-  
 
-  .hc {
 
-    &-submenu {
+    .hc {
 
-         &_toggle { display: none; }
-    }
- 
+        &-submenu {
 
-    li {
-
-        &.parent {
-        a:after {
-               content: '';
-    width: 10px;
-    height: 12px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -5px;
-    right: 5px;
-    background: url(../images/svg/icon-arrow-right.svg) 50% 50% no-repeat;
+            &_toggle {
+                display: none;
             }
-
         }
 
-         a {
-            position: relative;
-         }
+
+        li {
+
+            &.parent {
+                a:after {
+                    content: '';
+                    width: 10px;
+                    height: 12px;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -5px;
+                    right: 5px;
+                    background: url(../images/svg/icon-arrow-right.svg) 50% 50% no-repeat;
+                }
+
+            }
+
+            a {
+                position: relative;
+            }
+        }
+
+
     }
 
 
-  }
 
     .j-dropdown-hover:hover {
 
         .dropdown-box {
-            display: block;
+             display: block;
         }
 
     }
@@ -1792,9 +1804,9 @@ $blue: #007CC3;
 
         &-date {
 
-             padding-right: 15px;
-             border-right: 1px solid #dbe1e4;
-             margin-right: 15px;
+            padding-right: 15px;
+            border-right: 1px solid #dbe1e4;
+            margin-right: 15px;
 
         }
 
@@ -2046,6 +2058,7 @@ $blue: #007CC3;
         &-pre {
             width: 40%;
             flex-shrink: 0;
+            padding-bottom: 120px;
 
             &:before {
 
@@ -2122,8 +2135,8 @@ $blue: #007CC3;
                 font-size: 36px;
                 line-height: 44px;
                 color: #fff;
-                z-index: 1; 
-                display: flex; 
+                z-index: 1;
+                display: flex;
                 align-items: center;
                 margin-bottom: 0;
 
@@ -2154,10 +2167,8 @@ $blue: #007CC3;
             bottom: 0;
             width: 10%;
 
-            .swiper-btn-next:before, .swiper-btn-prev:before {
-
-
-            }
+            .swiper-btn-next:before,
+            .swiper-btn-prev:before {}
 
             .us-btn {
                 height: 50%;
@@ -2167,17 +2178,17 @@ $blue: #007CC3;
                 margin: 0;
                 display: block;
 
-                  &:before {
-                     border-color: #616161;
-                  }
+                &:before {
+                    border-color: #616161;
+                }
 
-                  &:hover {
+                &:hover {
                     background: #d8e6ea;
-                  }
+                }
 
-                  &:hover:before {
-                     border-color: #333;
-                  }
+                &:hover:before {
+                    border-color: #333;
+                }
 
 
             }
@@ -2192,21 +2203,21 @@ $blue: #007CC3;
     }
 
 
-.mfb {
+    .mfb {
 
-   
 
-      &-item {
 
-          
+        &-item {
 
-          &:not(:last-child) {
-            border: none; 
-              border-right: 1px solid rgba(253,253,253,.15);
-          }
 
-      }
-}
+
+            &:not(:last-child) {
+                border: none;
+                border-right: 1px solid rgba(253, 253, 253, .15);
+            }
+
+        }
+    }
 
 }
 

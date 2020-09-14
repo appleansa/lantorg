@@ -463,6 +463,7 @@
              initStuffSwiper();
              var myUsSwiper = new Swiper('.j-us-slider', {
                  loop: true,
+                 speed: 1000,
                  slidesPerView: 1,
                  spaceBetween: 0,
                  updateOnWindowResize: true,

@@ -165,7 +165,6 @@ body {
     &-navi {
         position: relative;
 
-
         &_btn {
             width: 48px;
             height: 48px;
@@ -231,12 +230,51 @@ body {
 
 
     &-catalog_box {
-
         width: 100%;
     }
 
 
 
+}
+
+.location {
+
+     padding-left: 25px;
+     position: relative;
+     line-height: 16px;
+     font-size: 15px;
+
+
+     &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background: url(../images/svg/icon-marker.svg) 50% 50% no-repeat;
+
+     }
+}
+
+
+.work {
+
+     padding-left: 25px;
+     position: relative;
+     line-height: 16px;
+       font-size: 15px;
+
+     &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background: url(../images/svg/icon-clock.svg) 50% 50% no-repeat;
+
+     }
 }
 
 
@@ -444,17 +482,20 @@ body {
 
         &>li>ul {
             left: 25%;
+            padding-left: 10px;
         }
 
         &>li>ul>li>ul {
             left: 100%;
             width: 100%;
+             padding-left: 10px;
            
         }
 
         &>li>ul>li>ul>li>ul {
             left: 100%;
             width: 100%;
+             padding-left: 10px;
 
         }
 
@@ -510,6 +551,9 @@ body {
 }
 
 .mm-toggle {
+
+
+    height: 100%;
 
 
     &_inner {
