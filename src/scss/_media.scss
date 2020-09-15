@@ -840,6 +840,33 @@ $blue: #007CC3;
 
     .return {
 
+              
+              padding-top: 60px;
+
+
+        &.desktop-blue {
+            padding-top: 50px;
+            position: relative;
+
+
+            &:before {
+                content: '';
+                width: 1000%;
+                height:calc( 100% - 100px);
+                top: 0;
+                right: 0;
+                background: $blue;
+                z-index: -1;
+                position: absolute;
+                display: block;
+            }
+
+             .section-header {
+                color: #fff;
+
+             }
+        }
+
         &-controlls {
 
              .btn {
@@ -2321,6 +2348,102 @@ $blue: #007CC3;
 
         }
     }
+
+
+
+.change {
+
+     margin-bottom: 100px;
+
+     &-box {
+
+          display: flex;
+          position: relative;
+
+           &:before {
+                content: '';
+                width: 1000%;
+                height: 100%;
+                display: block;
+                right: 200px;
+                top: 0;
+                position: absolute;
+                z-index: -1;
+                background: #F2F5F6;
+            }
+
+        &-left {
+             padding-right: 10%;
+             width: 55%;
+             flex-shrink: 0;
+        }
+
+          &-right {
+             padding: 0;
+              transform: translateY(50px);
+             border: 1px solid #dbe1e4;
+             background: #fff;
+
+             .data {
+                padding: 30px 25px;  
+
+                &-header {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                
+                .checkbox {
+                    margin-right: 20px;
+                }
+
+                &:not(:last-child) {
+                     margin-bottom: 0;
+                }
+
+                &.flex {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    .form-field {
+                        margin-bottom: 0px;
+                    }
+
+                }
+             }
+          }
+     }
+}
+
+
+.garant {
+
+    padding-top: 60px;
+
+     &-box {
+
+           padding: 0; 
+           display: flex;
+           justify-content: space-between;
+
+           &_content {
+               padding: 40px 40px;
+
+
+           }
+
+           .btn {
+               display: flex;
+               height: auto;
+               align-items: center;
+               justify-content: center;
+               width: 33%;
+           }
+     }
+}
+
+
 
 }
 

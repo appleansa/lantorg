@@ -6,15 +6,15 @@
     <div class="page page-partners">
         @@include('components/_header.html')
         <!-- WRITE CODE HERE -->
-        <section class="partners section">
+        <section class="partners">
             <div class="partners-navi top-navi j-top-navi">
                 <div class="container-mfw">
                     <div class="partners-navi_scroll">
                         <div class="mt-scroll">
-                            <button href="#aboutus" class="j-scrollto">Условия возврата / обмена товава</button>
-                            <button href="#dealers" class="j-scrollto">Заявка на возврат</button>
-                            <button href="#integrate" class="j-scrollto">Условия гарантийного обслуживания</button>
-                            <button href="#telecom" class="j-scrollto">Заявка на ремонт</button>
+                            <button href="#uslovia1" class="j-scrollto">Условия возврата / обмена товава</button>
+                            <button href="#remont1" class="j-scrollto">Заявка на возврат</button>
+                            <button href="#uslovia2" class="j-scrollto">Условия гарантийного обслуживания</button>
+                            <button href="#remont2" class="j-scrollto">Заявка на ремонт</button>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,8 @@
                 </div>
             </div>
         </section>
-        <section class="return section">
+        <section id="uslovia1" class="return section">
+
             <div class="container">
                 <div class="section-header">
                     <div class="h2">Возврат / обмен неиспользованного товара</div>
@@ -205,7 +206,7 @@
                 </div>
             </div>
         </section>
-        <section class="change section">
+        <section id="remont1" class="change section">
             <div class="container-mfw">
                 <div class="change-box">
                     <div class="change-box-left">
@@ -272,20 +273,237 @@
                                      После получения заявки сервисный менеджер перезвонит вам в течение 1 рабочего дня для уточнения деталей. не отправляйте нам устройство без дополнительного согласования, это задержит обработку заявки или может стать причиной ваших дополнительных расходов
                                  </div>
                             </div>
-                              <div class="form-field checkbox">
-                                     <input type="checkbox" id="ch-data">
+                              <div class="data flex">
+                                  <div class="form-field checkbox">
+                                     <input type="checkbox" id="ch-data" checked="checked">
                                      <label for="ch-data">Я согласен на обработку персональных данных </label>
                                  </div>
 
                                  <div class="form-field">
                                      <button class="btn btn-blue fw">Отправить</button>
                                  </div>
+                              </div>
                         </form>
                     </div>
                 </div>
             </div>
-    </div>
+   
     </section>
+
+
+ <section id="uslovia2" class="section garant">
+    <div class="container">
+        <div class="section-header">
+            <div class="h2">Гарантийное обслуживание</div>
+        </div>
+    </div>
+      <div class="container-mfw">
+           <div class="garant-box">
+                <div class="garant-box_content content">
+                    <div class="garant-box_title">Товар приобретен для личного использования</div>
+                    <p>Гарантийное обслуживание осуществляется в соответствии с ЗУ 
+                        <a href="#">“О защите прав потребителей”</a></p>
+                </div>
+                <a href="#" class="btn btn-blue">
+                    Подробные условия
+                </a>
+           </div>
+      </div>
+ </section>
+
+  <section id="remont2" class="return section desktop-blue">
+            <div class="container">
+                <div class="section-header">
+                    <div class="h2">Товар приобретен для бизнеса</div>
+                </div>
+            </div>
+            <div class="container-mfw">
+                <div class="j-tabs-container">
+                    <div class="j-tabs tabs-container container-mfw">
+                        <div class="tab active">
+                            <div class="return-slider j-return-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                     
+                                    <div class="pp-slide swiper-slide">
+                                        <div class="pp-item">
+                                            <span class="pp-item_counter">02</span>
+                                            <div class="pp-item_inner">
+                                                <div class="pp-icon has-icon icon-shipping"></div>
+                                                <div class="pp-item_title">Товар под заказ не возвращается</div>
+                                                <div class="pp-item_descr">
+                                                    Если вы заказали нам уникальную модель, то ее возврат возможен только при согласии производителя / поставщика и возмещении расходов по доставке товара к нам.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp-slide swiper-slide">
+                                        <div class="pp-item">
+                                            <span class="pp-item_counter">03</span>
+                                            <div class="pp-item_inner">
+                                                <div class="pp-icon has-icon icon-calendar"></div>
+                                                <div class="pp-item_title">Не использовался</div>
+                                                <div class="pp-item_descr">
+                                                    Товар не имеет признаков использования
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp-slide swiper-slide">
+                                        <div class="pp-item">
+                                            <span class="pp-item_counter">04</span>
+                                            <div class="pp-item_inner">
+                                                <div class="pp-icon has-icon icon-safe"></div>
+                                                <div class="pp-item_title">Сохранен товарный вид</div>
+                                                <div class="pp-item_descr">
+                                                    Товар возвращается полностью в том виде, в котором был отправлен получателю
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp-slide swiper-slide">
+                                        <div class="pp-item">
+                                            <span class="pp-item_counter">05</span>
+                                            <div class="pp-item_inner">
+                                                <div class="pp-icon has-icon icon-vision"></div>
+                                                <div class="pp-item_title">Полная комплектация</div>
+                                                <div class="pp-item_descr">
+                                                    Товар возвращается полностью в том виде, в котором был отправлен получателю
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-navi-compact swiper-mobile-blue hide-on-desktop">
+                                    <div class="return-navi swiper-navi">
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-navi-custom">
+                                            <span class="swiper-active-slides swiper-slides-count">01</span>
+                                            <div class="swiper-progressbar"></div>
+                                            <span class="swiper-total-slides swiper-slides-count"></span>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-buttons">
+                                            <div class="swiper-btn-prev swiper-white-btn"></div>
+                                            <div class="swiper-btn-next swiper-white-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="return-btn">
+                    <a href="#" class="btn btn-gray">
+                       <span class="hide-on-desktop">
+                           Подробные условия гарантийного ремонта
+                       </span>
+
+                        <span class="show-on-desktop">Подробные условия гарантийного ремонта товара купленного для бизнеса</span>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+           <section class="change section">
+            <div class="container-mfw">
+                <div class="change-box">
+                    <div class="change-box-left">
+                        <div class="section-header">
+                            <div class="h2">Как отправить товар на ремонт?</div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <div class="change-item_title">
+                                    <div class="title">Убедитесь, что проблема не в настройках или прошивке</div>
+                                </div>
+                                <div class="item_content content">
+                                    <p>Во избежание потерь времени, оплаты за доствку и диагностику, убедитесь что проблема с работой устройства не связано с его неправильной настройкой, подключением неправильной настройкой других устройств в сетевом окружении, можно получить консультацию нашего технического специалиста.</p>
+
+                                    <div class="form-info">
+                                        Внимание! Если по результатам диагностики отправленного к нам на ремонт устройства было выявлено, что оно исправно, берется плата за диагностику в размере 200 грн.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="change-item_title">
+                                    <div class="title">Убедитесь, что устройство купленно именно у нас</div>
+                                </div>
+                                <div class="item_content content">
+                                    <p>Пожалуйста убедитесь, что у вас есть гарантийный талон, выданный при покупке, и документ, подтверждающий оплату товара. Серийный номер, указанный в гарантийном талоне и серийный номер устройства, которое вы возвращаете должны совпадать.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="change-item_title">
+                                    <div class="title">Заполните заявку на ремонт</div>
+                                </div>
+                                <div class="item_content content"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="change-box-right">
+                        <form action="#">
+                            <div class="data">
+                                <div class="data-header">
+                                    <div class="title">Личные данные</div>
+                                    <div class="help">
+                                        <a href="#" class="flex ai-center"><i class="icon-headphones"></i> <span>Помощь в заполнении формы</span></a>
+                                    </div>
+                                </div>
+                                <div class="data-form-row">
+                                    <div class="form-field">
+                                        <input class="text-input" type="text" placeholder="Номер телефона">
+                                    </div>
+                                    <div class="form-field">
+                                        <input class="text-input" type="text" placeholder="Email">
+                                    </div>
+                                    <div class="form-field">
+                                        <input class="text-input" type="text" placeholder="ФИО, название компании">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data">
+                                <div class="data-header">
+                                    <div class="title">Данные о товаре</div>
+                                </div>
+                                <div class="data-form-row">
+                                    <div class="form-field">
+                                        <input class="text-input" type="text" placeholder="Номер телефона">
+                                    </div>
+                                    <div class="form-field">
+                                        <input class="text-input" type="text" placeholder="Email">
+                                    </div>
+                                    <div class="form-field">
+                                        <input class="text-input" type="text" placeholder="ФИО, название компании">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data">
+                                <div class="form-info">
+                                     После получения заявки сервисный менеджер перезвонит вам в течение 1 рабочего дня для уточнения деталей. не отправляйте нам устройство без дополнительного согласования, это задержит обработку заявки или может стать причиной ваших дополнительных расходов
+                                 </div>
+                            </div>
+                              <div class="data flex">
+                                  <div class="form-field checkbox">
+                                     <input type="checkbox" id="ch-data" checked="checked">
+                                     <label for="ch-data">Я согласен на обработку персональных данных </label>
+                                 </div>
+
+                                 <div class="form-field">
+                                     <button class="btn btn-blue fw">Отправить</button>
+                                 </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+   
+    </section>
+
+
+
     @@include('components/_newsletter.html')
     <!-- STOP WRITE CODE -->
     @@include('components/_footer.html')

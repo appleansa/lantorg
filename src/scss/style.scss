@@ -2803,19 +2803,14 @@ body {
                 background: url(../images/soc_inst.jpg) 50% 50% no-repeat;
                 background-size: 100%;
             }
-
-
-
-
         }
-
-
     }
-
 }
-
+ 
 
 .return {
+
+    padding-top: 50px;
 
 
     &-slider {
@@ -2871,23 +2866,17 @@ body {
 
     &-box {
 
+        
+
         &-left {
             position: relative;
             padding: 50px 15px;
             z-index: 1;
+             background: #F2F5F6;
+             height: 100%;
 
 
-            &:before {
-                content: '';
-                width: 100%;
-                height: 100%;
-                display: block;
-                left: 0;
-                top: 0;
-                position: absolute;
-                z-index: -1;
-                background: #F2F5F6;
-            }
+           
 
 
             .items {
@@ -2939,9 +2928,12 @@ body {
             .data {
 
                 position: relative;
-                  padding-bottom: 12px;
-                  border-bottom: 1px solid #dbe1e4;
-                  margin-bottom: 25px;
+                 
+                  &:not(:last-child) {
+                    margin-bottom: 25px;
+                    border-bottom: 1px solid #dbe1e4;
+                     padding-bottom: 12px;
+                  }
 
 
                 &-header {
@@ -2956,6 +2948,8 @@ body {
                           a {
                             color: $blue;
                             font-family: 'ProximaSemi';
+                            font-size: 12px;
+                            line-height: 21px;
                           }
 
                           i {
@@ -2978,6 +2972,24 @@ vertical-align: middle;
     }
 }
 
+
+
+.garant {
+
+    &-box {
+
+         padding: 50px 15px;
+         background: #F2F5F7;
+
+          &_title {
+               font-family: 'ProximaSemi';
+              font-size: 18px;
+              line-height: 22px;
+              color: #333;
+              margin-bottom: 10px;
+          }
+    }
+}
 
 
 

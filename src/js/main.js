@@ -31,12 +31,19 @@
 
              var $page = $('html, body');
 
-             $('.j-scrollto').click(function() {
+             $('.j-scrollto').click(function(e) {
+                e.preventDefault();
+
+                var hdrHeight = $('.header').height();
+                var tnaviHeight = $('.top-navi').height();
+
+                var target = $(this).attr('href');
+
 
                  var scrollTo = $(this).position().left;
                  $(this).parent().scrollLeft(scrollTo);
 
-                 console.log(scrollTo);
+                 console.log(target, hdrHeight, tnaviHeight );
 
 
                  $('.j-scrollto').removeClass('active');
@@ -44,7 +51,7 @@
 
 
                  $page.animate({
-                     scrollTop: $($.attr(this, 'href')).offset().top - 60
+                     scrollTop: $(target).offset().top - hdrHeight - tnaviHeight
                  }, 1000);
                  return false;
              });
@@ -610,7 +617,7 @@
                          var myReturnSwiper = new Swiper( n, {
                              loop: true,
                              mode: 'horizontal',
-                             slidesPerView: 2,
+                             slidesPerView: 1,
                              spaceBetween: 0,
                              pagination: {
                                  el: n.querySelector('.swiper-progressbar'),
