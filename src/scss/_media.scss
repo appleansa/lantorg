@@ -26,6 +26,9 @@ $blue: #007CC3;
 @media screen and (min-width: 768px) {
 
 
+
+
+
     .branch {
 
         &-grid {
@@ -173,6 +176,26 @@ $blue: #007CC3;
                     height: calc(100% - 30px);
                 }
 
+            }
+        }
+    }
+
+
+    .rating {
+
+
+        .rater {
+
+            &-status {
+
+                   margin-right: 20px;
+            }
+        }
+
+        .rate {
+            &-box {
+                display: flex;
+    align-items: baseline;
             }
         }
     }
@@ -1950,6 +1973,10 @@ $blue: #007CC3;
             display: flex;
         }
 
+        &-nav {
+            width: 50%;
+        }
+
     }
 
     .fb {
@@ -2563,19 +2590,7 @@ $blue: #007CC3;
         }
     }
 
-    .article {
-
-        &-share {
-
-
-            position: absolute;
-            top: 0;
-            left: 105%;
-            bottom: 0;
-            display: block;
-            margin-bottom: 0;
-        }
-    }
+ 
 
 
     .stuff {
@@ -2611,7 +2626,29 @@ $blue: #007CC3;
 }
 
 
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 1600px) {
+
+    .container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+    }
+
+    .ms {
+        margin-left: calc((100% - 1300px)/ 2);
+    }
+
+    .kb {
+        position: relative;
+        margin-left: calc((100% - 1300px) / 2);
+    }
+
+}
+
+
+@media screen and (min-width: 1601px) {
 
     .container {
         max-width: 1500px;

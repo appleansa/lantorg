@@ -2022,8 +2022,8 @@ body {
     }
 
     &-inner {
-        width: 100%;
-        max-width: 780px;
+        width: 100%; 
+        max-width: 800px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -2991,6 +2991,19 @@ vertical-align: middle;
     }
 }
 
+
+.rate {
+
+     &-box {
+          &_header {
+              font-family: 'ProximaSemi';
+              font-size: 21px;
+              line-height: 26px;
+              margin-right: 20px;
+              margin-bottom: 25px;
+          }
+     }
+}
 
 
 //-----------------------------------------------------------------------------------------------------------
