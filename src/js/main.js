@@ -2,6 +2,7 @@
              const $menu = $('.j-mm-navi');
              const $isnavi = $('body');
              const $mnavitoggle = $('.j-mobile-toggle');
+            
 
              $(document).mouseup(e => {
                  if (!$menu.is(e.target) // if the target of the click isn't the container...
@@ -99,6 +100,36 @@
              }
 
 
+         const $mdropdown = $('.mobile-dropdown');
+         const mtoggle = $('.j-mm-togle');
+
+             $(document).mouseup(e => {
+                 if (!$mdropdown.is(e.target) // if the target of the click isn't the container...
+                     &&
+                     $mdropdown.has(e.target).length === 0 // ... nor a descendant of the container
+                     &&
+                      mtoggle.has(e.target).length === 0)
+
+                 {
+                     $mdropdown.removeClass('active'); 
+                 }
+             });
+
+
+         $('.j-mm-togle').click(function(e) {
+            e.preventDefault();
+              var mdropdown = $(this).data('toggle');
+                // $('.mobile-dropdown').removeClass('active');
+                  $('[data-modal-id="'+mdropdown+'"]').toggleClass('active');
+         });
+
+
+         $('.j-mm-close').click(function() {
+              $('.mobile-dropdown').removeClass('active');
+         });
+
+
+
              $(document).on("click", ".accordion .accordion_tab", function() {
 
                  if ($(this).parent().hasClass("active")) {
@@ -112,6 +143,12 @@
                      $(".accordion .accordion_content").slideUp(300);
                      $(this).next().animate({ height: 'show' }, 300);
                  }
+             });
+
+               $(document).on("click", ".accordion_single .accordion_tab", function() {
+
+                     $(this).parent().toggleClass("active");
+                     //$(this).next().toggle(300);
              });
 
 
@@ -395,6 +432,26 @@
 
              });
 
+        
+             
+              document.querySelectorAll('.j-pc-branch').forEach(n => {
+             var catalogBranchSwiper = new Swiper( n, {
+                 loop: true,
+                 slidesPerView: 'auto',
+                 spaceBetween: 0,
+                 updateOnWindowResize: true,
+                 pagination: {
+                     el: '.pc-branch-pagination',
+                     clickable: true,
+                 }, 
+                  navigation: {
+                     nextEl: '.j-pc-branch-navi .swiper-btn-next',
+                     prevEl: '.j-pc-branch-navi .swiper-btn-prev',
+                     loop: true,
+                 },
+             });
+ 
+});
 
 
              // micromodal init function
@@ -505,11 +562,7 @@
              $(window).resize(function() {
 
                  appendNavi();
-                 usbtnssize()
-
-                 //  initPremsSwiper();
-                 //  initStuffSwiper(); 
-                 //  initTeamSwiper();
+                 usbtnssize() 
              });
 
 
@@ -647,6 +700,67 @@
 
                  // kickstart
                  breakpointChecker();
+
+
+
+
+function responseMenu(){
+    $('ul.dropdown-menu li.item').appendTo('ul.menu');
+    var items = $('ul.menu li.item');
+    var max_width = $('ul.menu').outerWidth() - $('ul.menu li.dd_menu').outerWidth();
+    var width = 0;
+    var hide_from = 0;
+    var maxitems = items.length;
+
+
+
+
+    var ww = $(window).width();
+
+    items.css({'width':'auto'});
+
+    items.each(function(index){
+        if (width + $(this).outerWidth() >= max_width)
+        {
+            return false;
+        }
+        else
+        {
+            hide_from = index;
+            width += $(this).outerWidth();
+        }
+    });
+
+
+    if (hide_from <= items.length - 1 ) {
+        items.eq(hide_from).nextAll('li.item').appendTo('ul.dropdown-menu');
+     //   items.css({'width':(max_width / (hide_from + 1)) + 'px'});
+        $('ul.menu li.dd_menu').show();
+    }
+
+ 
+
+    else {
+        $('ul.menu li.dd_menu').hide();
+    }
+}
+
+$(document).ready(function () {
+    $('.j-sorter').on('click', '.dropdown-toggle', function () {
+        $('.dropdown-menu').toggle();
+    });
+
+
+
+    $(window).on('resize', function(){
+       
+       setTimeout(function() {   
+    //    responseMenu(); 
+    }, 500);
+
+    }).trigger('resize');
+
+});
 
 
 
