@@ -265,6 +265,23 @@ $blue: #007CC3;
                 line-height: 44px;
                 margin-bottom: 45px;
             }
+
+            &_btns {
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: flex-end;
+                 flex-shrink: 0;
+
+                 .btn:last-child {
+                     margin-left: 15px;
+                 }
+            }
+
+             &.has-btns {
+
+                 display: flex;
+                 justify-content: space-between;
+             }
         }
     }
 
@@ -2704,6 +2721,15 @@ $blue: #007CC3;
              width: 100%;
              margin: 10px 25px;
 
+
+              ul.menu {
+                     
+                     background: transparent;
+                     box-shadow: none;
+                     width: auto;
+                li { display: inline-block; width: auto; }
+            }
+
         }
 
         &-sorter {
@@ -2742,6 +2768,8 @@ $blue: #007CC3;
       padding: 0;
       text-align: right;
 }
+
+
 
 
 }
