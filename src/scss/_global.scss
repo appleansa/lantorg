@@ -2281,5 +2281,9 @@ background: 0 0;
 
 .mobile-dropdown {
 
-     z-index: 110;
+     z-index: 100;
+
+     &.active {
+          z-index: 110;
+     }
 }

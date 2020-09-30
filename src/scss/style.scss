@@ -3165,6 +3165,13 @@ body {
 }
 
 
+
+.has-banner {
+     width: 100%;
+     margin-bottom: 0;
+     margin-top: -1px;
+}
+
 .bnr {
 
     padding: 30px 0;
@@ -3279,6 +3286,7 @@ body {
 
     &_top {
         margin-bottom: 25px;
+        margin-left: 120px;
 
         .cat {
             color: #858E93;
@@ -3294,6 +3302,13 @@ body {
             display: block;
 
         }
+
+          .descr {
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #858E93;
+                        margin-top: 8px;
+                    }
     }
 
     &_bottom {
@@ -3467,7 +3482,7 @@ body {
         }
     }
 }
-
+ 
 
 .pc-catalog {
    overflow: hidden;

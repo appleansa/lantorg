@@ -168,10 +168,6 @@
                      .eq($(this).index())
                      .addClass("active");
                     
-
-
-
-
              });
 
              appendNavi();
@@ -432,26 +428,43 @@
 
              });
 
-        
+         var pcElem = 0;
              
-              document.querySelectorAll('.j-pc-branch').forEach(n => {
+              document.querySelectorAll('.j-pc-branch').forEach( n => {
+
              var catalogBranchSwiper = new Swiper( n, {
                  loop: true,
                  slidesPerView: 'auto',
                  spaceBetween: 0,
                  updateOnWindowResize: true,
                  pagination: {
-                     el: '.pc-branch-pagination',
+                     el: '.j-pc-branch-pagination-'+pcElem,
                      clickable: true,
                  }, 
                   navigation: {
-                     nextEl: '.j-pc-branch-navi .swiper-btn-next',
-                     prevEl: '.j-pc-branch-navi .swiper-btn-prev',
-                     loop: true,
+                     nextEl: '.j-pc-branch-navi-'+pcElem+' .swiper-btn-next',
+                     prevEl: '.j-pc-branch-navi-'+pcElem+' .swiper-btn-prev',
+                  
                  },
              });
+
+               pcElem++;
  
 });
+
+
+
+
+ // console.log(elem);
+
+
+ // for ( var i = 1; i <= elems.length; i++ ) {
+
+ //   elems.eq(i).css({'order': i});
+
+ // }
+
+
 
 
              // micromodal init function
@@ -748,7 +761,29 @@ function responseMenu(){
 $(document).ready(function () {
     $('.j-sorter').on('click', '.dropdown-toggle', function () {
         $('.dropdown-menu').toggle();
+
+       
     });
+
+
+
+//  set banner order for catalog page
+ function setBannerOrder() {
+
+     var ww = $(window).outerWidth();
+     var elem = $('.pc-catalog-content .has-banner');
+     var elems = $('.pc-products .pc-item');
+   
+    if ( ww >= 991 && ww <= 1299  ) {
+        elems.eq(2).after(elem);
+    }
+     else  {
+        elems.eq(3).after(elem);
+     }
+ }
+
+
+setBannerOrder(); 
 
 
 
@@ -758,10 +793,16 @@ $(document).ready(function () {
     //    responseMenu(); 
     }, 500);
 
+         setBannerOrder();
+
     }).trigger('resize');
+
+
+  
 
 });
 
-
-
              })(); /* IIFE end */
+
+
+
