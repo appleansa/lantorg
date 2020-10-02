@@ -1088,14 +1088,22 @@ body {
 }
 
 
-.reviews {
+.reviews, .cati {
     padding: 50px 0;
     background: #EDF2F5;
 
 
     &-info {
 
+        h3 {
+            font-family: 'ProximaSemi';
+            font-size: 26px;
+line-height: 32px;
+margin-bottom: 20px;
+        }
+
         p {
+            font-family: 'ProximaRegular';
             font-size: 16px;
             line-height: 160%;
             color: #616161;
@@ -1106,6 +1114,11 @@ body {
             }
         }
     }
+
+
+    &-image { 
+
+     display: none; }
 }
 
 
@@ -2010,10 +2023,15 @@ body {
 .article {
 
 
+    .share-box {
+        position: relative;
+    }
+
+
     &-bg {
         display: block;
         width: 100%;
-        height: 400px;
+        height: 350px;
         background-size: cover;
         margin-bottom: 40px;
     }
@@ -2031,10 +2049,21 @@ body {
         max-width: 800px;
         margin: 0 auto;
         padding: 0 15px;
+
+        .breadcrumbs.light {
+
+            background: transparent;
+
+             li {
+                border: 1px solid #dbe1e4;
+             }
+        }
     }
 
     &-info {
         margin-bottom: 25px;
+        display: flex;
+    justify-content: space-between;
     }
 
     &-date {
@@ -3032,6 +3061,8 @@ body {
 
         li {
 
+
+
             a,
             span {
                 background: #fff;
@@ -3237,6 +3268,18 @@ body {
     flex-wrap: wrap;
 }
 
+
+.pc-catalog-content {
+
+     &.tale {
+
+
+          .pc-product_top {
+                    margin-left: 120px;
+          }
+     }
+}
+
 .pc-product {
 
     display: block;
@@ -3286,7 +3329,7 @@ body {
 
     &_top {
         margin-bottom: 25px;
-        margin-left: 120px;
+   
 
         .cat {
             color: #858E93;
@@ -3656,6 +3699,37 @@ body {
     }
 
 }
+
+
+.preinfo {
+
+     &-box {
+         display: block;
+          .info { margin: 25px 0 40px;
+                
+
+
+           }
+
+           .counter {
+            color: $blue;
+            font-size: 12px;
+            font-family: 'ProximaSemi';
+            margin-bottom: 20px;
+           }
+
+           h3 {
+            font-size: 26px;
+            margin-bottom: 24px;
+            color: #333;
+           }
+
+           p {
+            color: #616161;
+           }
+     }
+}
+
 
 
 .pagination {

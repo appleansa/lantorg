@@ -1035,11 +1035,14 @@ $blue: #007CC3;
             width: 100%;
             top: 0;
             bottom: 0;
-
             background: #EDF2F5;
             position: absolute;
             z-index: -1;
             right: 50%;
+        }
+
+        &-image {
+            display: block;
         }
 
         &-video {
@@ -1113,10 +1116,100 @@ $blue: #007CC3;
             .swiper-white-btn {
                 background: transparent;
             }
+        }
+    }
 
-            // .swiper-btn-next {
-            //     margin-left: 180px;
-            // }
+
+    .cati {
+
+         background: none;
+        position: relative;
+        padding: 0;
+        margin-top: 90px;
+
+        
+         &-container {
+
+            position: relative;
+
+              &:before {
+            content: '';
+            width:  calc(100% - 300px);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background: #EDF2F5;
+            position: absolute;
+            z-index: -1;
+          
+        }
+         }
+
+        &-image {
+            display: block;
+           padding: 80px 0;
+        }
+
+        &-slider-container {
+            padding-bottom: 0;
+            position: relative;
+            margin-right: 5%;
+
+             
+        }
+
+        &-slider {
+            padding-top: 0;
+        }
+
+        &-slide {
+            display: flex;
+            padding-bottom: 0;
+        }
+
+        &-info {
+            width: 75%;
+            padding: 0 70px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+          
+        }
+
+
+        .swiper-navi-compact {
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            background: #007cc3;
+            padding: 15px 10px;
+        }
+
+        &-navi {
+
+            .swiper-slides-count {
+                color: #fff;
+            }
+
+            .swiper-white-btn:hover {
+                background: rgba(242, 245, 247, 0.1);
+            }
+
+            .swiper-pagination-progressbar {
+
+                background: rgba(255, 255, 255, 0.16);
+
+                .swiper-pagination-progressbar-fill {
+                    background: #ffffff;
+                }
+            }
+
+            .swiper-white-btn {
+                background: transparent;
+            }
         }
     }
 
@@ -2712,6 +2805,14 @@ $blue: #007CC3;
             margin-left: 0;
         }
 
+        &.tale {
+
+             .pc-product_top  {
+
+            margin-left: 0;
+        }
+        }
+
 
         &.list {
 
@@ -2894,6 +2995,40 @@ $blue: #007CC3;
     }
 
 
+.preinfo {
+
+     &-box {
+
+          display: flex;
+
+          &.inverse {
+              .info {
+                order: 1;
+                margin: 0;
+                padding-left: 0;
+              }
+              .image { order: 2; }
+          }
+
+
+           .image, .info { width: 50%;  }
+
+
+           .info {
+            padding: 50px 50px 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+           }
+
+           .info-btn {
+            width: 50%;
+           }
+     }
+}    
+
+
 
 
 }
@@ -2910,14 +3045,14 @@ $blue: #007CC3;
 
 
     .fb {
-        padding: 130px 0;
+        padding: 80px 0;
 
         &-header {
             margin: 0 50px 50px;
         }
 
         &-box {
-            margin: 0 50px 50px;
+            margin: 0 50px;
         }
     }
 
@@ -2939,6 +3074,19 @@ $blue: #007CC3;
         &-items {
             width: 60%;
             margin: 0
+        }
+    }
+
+
+    .article {
+
+        &-bg {
+            heigth: 300px;
+        }
+
+        &-info-left {
+             display: flex;
+    align-items: center;
         }
     }
 
@@ -3000,13 +3148,10 @@ $blue: #007CC3;
         margin-left: calc((100% - 1160px) / 2);
     }
 
-    // .ms {
-    //     margin-left: calc((100% - 1160px)/ 2);
-    // }
+  
 
     .kb {
         position: relative;
-        // margin-left: calc((100% - 1160px) / 2);
 
         &-box {
             padding: 0;
@@ -3037,6 +3182,22 @@ $blue: #007CC3;
             width: 20%;
         }
     }
+
+
+
+    .preinfo {
+
+     &-box { 
+
+          .info {
+
+             h3 {
+                 font-size: 36px;
+             }
+          }
+
+      }
+ }
 
 
 

@@ -378,7 +378,7 @@
                  $(".nm-navi .swiper-active-slides").html('0' + activeslide);
              });
 
-             // end reviews slider
+             // endnm slider
 
 
              var myKnowlegeSwiper = new Swiper('.knowlege-slider', {
@@ -412,7 +412,7 @@
                  $(".knowlege-navi .swiper-active-slides").html('0' + activeslide);
              });
 
-             // end reviews slider
+             // end knowlege slider
 
 
              var myPartnersSwiper = new Swiper('.partners-container', {

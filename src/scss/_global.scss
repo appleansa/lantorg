@@ -148,7 +148,7 @@ p {
 
 
 
-.reviews {
+.reviews, .cati {
 
     .swiper-slide:not(.swiper-slide-active) {
         opacity: 0 !important;
@@ -448,6 +448,9 @@ input[type="submit"] {
         border: 1px solid $blue;
         color: $blue;
     }
+
+
+    &.btn-lg { height: 120px; line-height: 120px;   }
 
     &.fw {
         width: 100%;
@@ -1729,7 +1732,7 @@ input[type="checkbox"]:checked+label::after {
         position: absolute;
         left: 0;
         top: 100%;
-        min-width: 215px;
+        min-width: 220px;
         display: none;
         z-index: 10;
         background: #FFFFFF;
@@ -1847,9 +1850,6 @@ input[type="checkbox"]:checked+label::after {
 
     }
 
-
-
-
     a {
         color: $blue;
         text-decoration: underline;
@@ -1860,7 +1860,6 @@ input[type="checkbox"]:checked+label::after {
     }
 
     blockquote {
-
         font-size: 16px;
         line-height: 160%;
         position: relative;
@@ -1878,7 +1877,7 @@ input[type="checkbox"]:checked+label::after {
         }
     }
 
-    ul.list {
+    ul {  // .list
 
         margin-bottom: 30px;
 
@@ -1909,7 +1908,7 @@ input[type="checkbox"]:checked+label::after {
         }
     }
 
-    ol.list {
+    ol { // .list
         counter-reset: list 0;
         margin-bottom: 30px;
 
@@ -1945,10 +1944,7 @@ input[type="checkbox"]:checked+label::after {
 
         }
 
-
-
     }
-
 
     .video {
         margin-bottom: 40px;
@@ -1985,11 +1981,9 @@ input[type="checkbox"]:checked+label::after {
     }
 
     img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 40px;
+        display: inline-block;
+    max-width: 100%;
+    height: auto;
     }
 
 
