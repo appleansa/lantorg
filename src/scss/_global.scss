@@ -558,6 +558,17 @@ input[type="submit"] {
         mask: url(../images/svg/icon-list.svg) 50% 50% no-repeat;
     }
 
+  &.icon-list-2:before {
+        background: url(../images/svg/icon-list2.svg) 50% 50% no-repeat;
+    }
+      &.icon-list-3:before {
+       background: url(../images/svg/icon-list-3.svg) 50% 50% no-repeat;
+    }
+
+       &.icon-tech:before {
+       background: url(../images/svg/icon-tech.svg) 50% 50% no-repeat;
+    }
+
     &.icon-comunicate:before {
         mask: url(../images/svg/icon-comunicate.svg) 50% 50% no-repeat;
     }
@@ -599,8 +610,36 @@ input[type="submit"] {
         mask: url(../images/svg/icon-server.svg) 50% 50% no-repeat;
     }
 
-    &.icon-tech:before {
-        mask: url(../images/svg/icon-tech.svg) 50% 50% no-repeat;
+      &.icon-not-return:before {
+       background: url(../images/svg/icon-not-return.svg) 50% 50% no-repeat;
+    }
+
+      &.icon-box-safe:before {
+        background: url(../images/svg/icon-box-safe.svg) 50% 50% no-repeat;
+    }
+
+      &.icon-complect:before {
+        background: url(../images/svg/icon-complect.svg) 50% 50% no-repeat;
+    }
+
+      &.icon-not-used:before {
+       background: url(../images/svg/icon-not-used.svg) 50% 50% no-repeat;
+    }
+
+        &.icon-box2:before {
+       background: url(../images/svg/icon-box2.svg) 50% 50% no-repeat;
+    }
+
+          &.icon-garantii:before {
+       background: url(../images/svg/icon-garantii.svg) 50% 50% no-repeat;
+    }
+
+            &.icon-garantii-2:before {
+       background: url(../images/svg/icon-garantii-2.svg) 50% 50% no-repeat;
+    }
+
+              &.icon-return:before {
+       background: url(../images/svg/icon-return.svg) 50% 50% no-repeat;
     }
 }
 
