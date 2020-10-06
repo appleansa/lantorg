@@ -166,9 +166,20 @@ $blue: #007CC3;
                     margin-left: -1px;
                     margin-right: 1px;
                     margin-top: -1px;
-
                     width: 255px;
                     flex-shrink: 0;
+
+                     a {
+
+                        width: 50%;
+
+                         svg {
+
+                             path {
+                                 fill: gray;
+                             }
+                         }
+                     }
                 }
 
                 &:not(.soc-icons) {
@@ -1701,11 +1712,6 @@ $blue: #007CC3;
         }
 
 
-
-
-
-
-
         .lang {
             position: absolute;
             top: -42px;
@@ -2049,6 +2055,7 @@ $blue: #007CC3;
 
         &-item {
             width: 25%;
+            margin-bottom: -1px;
         }
 
         &-mobile-scroll {
@@ -2087,11 +2094,10 @@ $blue: #007CC3;
 
         &-slider {
 
-            .swiper-wrapper {
-
-                flex-wrap: wrap;
-
-            }
+            display: flex;
+            flex-wrap: wrap;
+         
+          
         }
     }
 
