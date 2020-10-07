@@ -1180,15 +1180,18 @@ margin-bottom: 20px;
         padding: 0 15px;
         margin: -150px 0 0;
     }
+
+    &-slider2 {
+
+          padding: 0 15px;
+    }
 }
 
 
 .pp {
 
     &-slider {
-
         padding-bottom: 35px;
-
     }
 
     &-background {
@@ -1204,12 +1207,14 @@ margin-bottom: 20px;
 
     &-slide {
         display: block;
+        height: auto;
+        position: relative;
     }
 
 
     &-icon {
         margin-bottom: 40px;
-    }
+    } 
 
     &-item {
         background: #fff;
@@ -1217,6 +1222,7 @@ margin-bottom: 20px;
         outline: #dbe1e4 solid 1px;
         position: relative;
         min-height: 220px;
+        overflow: hidden;
 
         &_counter {
             font-size: 12px;

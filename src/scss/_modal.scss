@@ -192,6 +192,11 @@
         font-size: 12px;
         line-height: 15px;
         color: #333;
+
+         a {
+             color: $blue;
+             text-decoration: underline;
+         }
     }
 
     &__link {

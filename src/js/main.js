@@ -586,8 +586,7 @@
                  dots: true,
                  variableWidth: true,
                  arrows: false,
-                 mobileFirst: true,
-             //   appendDots: '.stuff-pagination',
+                 mobileFirst: true, 
                  responsive: [{
                          breakpoint: 992,
                          settings: 'unslick'
@@ -612,7 +611,38 @@
                  ]
              };
 
-             $('.j-stuff-slider').slick(settings);
+  const ppsettings = {
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+                 // infinite: true,
+                 dots: true, 
+                 arrows: false,
+                 mobileFirst: true, 
+                 responsive: [{
+                         breakpoint: 992,
+                         settings: 'unslick'
+                     },
+                     {
+                         breakpoint: 600,
+                         settings: {
+                          
+                             slidesToShow: 2,
+                             slidesToScroll: 2
+                         }
+                     },
+                     {
+                         breakpoint: 400,
+                         settings: {
+                            
+                             slidesToShow: 1,
+                             slidesToScroll: 1
+                         }
+                     }
+
+                 ]
+             };
+
+                $('.j-stuff-slider').slick(settings);
 
              const sl = $('.j-stuff-slider');
 
@@ -621,8 +651,22 @@
                  if ($(window).width() < 992 && !sl.hasClass('slick-initialized')) {
                      $('.j-stuff-slider').slick(settings);
                  }
+
+                 if ($(window).width() < 992 && !ppsl.hasClass('slick-initialized')) {
+                     $('.j-pp-slick').slick(ppsettings);
+                 }
+
+
              });
 
+             $('.j-pp-slick').slick(ppsettings);
+
+             const ppsl = $('.j-pp-slick');
+
+             // $(window).on('resize', function() {
+
+                 
+             // });
 
 
 

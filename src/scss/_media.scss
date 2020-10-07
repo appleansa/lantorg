@@ -797,13 +797,13 @@ $blue: #007CC3;
                 z-index: 10;
             }
 
-            .swiper-wrapper {
+          
 
                 .pp-slide:first-child {
 
                     margin-left: 50%;
                 }
-            }
+           
         }
 
         &.right-margin {
@@ -825,11 +825,11 @@ $blue: #007CC3;
                 }
             }
 
-            .swiper-wrapper {
+            
                 .pp-slide:nth-child(2) {
                     margin-right: 50%;
                 }
-            }
+         
         }
 
         &-btns {
@@ -864,6 +864,23 @@ $blue: #007CC3;
                 width: calc(100% / 4);
             }
         }
+
+          &-slider2 {
+            margin: 0 0 -25%;
+            padding: 0;
+
+            &.no-margin {
+                margin: 0;
+            }
+
+            .swiper-wrapper {
+                flex-wrap: wrap;
+            }
+
+            .pp-slide {
+                width: calc(100% / 4);
+            }
+        }
     }
 
 
@@ -874,9 +891,7 @@ $blue: #007CC3;
             margin-top: 0;
 
             &.no-image {
-
                 background: #F2F5F7;
-
                 img {
                     opacity: 0;
                 }
@@ -886,6 +901,8 @@ $blue: #007CC3;
         &-slider {
             padding-bottom: 1px;
             outline: #dbe1e4 solid 1px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         &-slide {
@@ -901,6 +918,10 @@ $blue: #007CC3;
             }
         }
 
+        &-icon {
+             transition: all 0.3s ease;
+        }
+
         &-item {
 
             position: absolute;
@@ -911,6 +932,19 @@ $blue: #007CC3;
 
             &_inner {
                 padding-top: 20%;
+                transition: all 0.3s ease;
+            }
+
+            &.on-hover-descr {
+
+                  .pp-item_descr { opacity: 0; transition: all 0.3s ease; }
+             
+              &:hover {
+                    .pp-icon { margin-bottom: 20px; }
+                    .pp-item_inner { padding-top: 0; }
+                    .pp-item_descr { opacity: 1; }
+              }
+
             }
         }
     }
@@ -3126,7 +3160,8 @@ $blue: #007CC3;
 
         &-header {
             font-size: 42px;
-        }
+            line-height: 46px;
+        } 
 
         &.left-margin {
 
