@@ -759,14 +759,29 @@ $blue: #007CC3;
         }
     }
 
+
+    .pp-background {
+
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    height: calc(100% + 150px);
+    overflow: hidden;
+
+    }
+
+
+.mgb-150 {
+    margin-bottom: 150px;
+}
+
     .pinfo {
         position: relative;
 
-        &.p-integrate,
-        &.p-telecom,
+        
         &.p-corp {
             overflow: hidden;
-            margin-top: -25%;
+            
         }
 
         &.p-corp {
@@ -889,6 +904,7 @@ $blue: #007CC3;
         &-background {
 
             margin-top: 0;
+            z-index: -1;
 
             &.no-image {
                 background: #F2F5F7;
@@ -900,7 +916,7 @@ $blue: #007CC3;
 
         &-slider {
             padding-bottom: 1px;
-            outline: #dbe1e4 solid 1px;
+         //   outline: #dbe1e4 solid 1px;
             display: flex;
             flex-wrap: wrap;
         }

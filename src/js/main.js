@@ -625,7 +625,7 @@
                      {
                          breakpoint: 600,
                          settings: {
-                          
+                             centerPadding: '15px',
                              slidesToShow: 2,
                              slidesToScroll: 2
                          }
