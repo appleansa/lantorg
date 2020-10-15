@@ -551,7 +551,7 @@ input[type="submit"] {
         mask: url(../images/svg/icon-calc.svg) 50% 50% no-repeat;
     }
 
-    &.icon-list:before {
+    &.icon-style-list:before {
         mask: url(../images/svg/icon-list.svg) 50% 50% no-repeat;
     }
 
@@ -646,9 +646,24 @@ input[type="submit"] {
                  &.icon-oficial:before {
        background: url(../images/svg/icon-oficial.svg) 50% 50% no-repeat;
     }
-}
- 
 
+                     &.icon-mail:before {
+       mask: url(../images/svg/icon-mail.svg) 50% 50% no-repeat;
+    }
+
+                     &.icon-person:before {
+       mask: url(../images/svg/icon-person.svg) 50% 50% no-repeat;
+    }
+
+                 &.icon-receive:before {
+       mask: url(../images/svg/icon-receive.svg) 50% 50% no-repeat;
+    }
+                     &.icon-handshake:before {
+       mask: url(../images/svg/icon-handshake.svg) 50% 50% no-repeat;
+    }
+}
+
+ 
 .pc-icon {
 
      position: absolute;
@@ -769,6 +784,7 @@ input[type="submit"] {
         background-color: $blue;
     }
 }
+ 
 
 
 .icons-gray-white {
@@ -2327,6 +2343,11 @@ background: 0 0;
 }
 
 
+.slick-slider {
+touch-action: auto;
+-ms-touch-action: auto;
+} 
+
  .slick-track {
 
       display: flex;
@@ -2366,9 +2387,9 @@ background: 0 0;
 
 
 
-form {
-    position: relative;
-}
+// form {
+//     position: relative;
+// }
 
 .modal-alert {
 

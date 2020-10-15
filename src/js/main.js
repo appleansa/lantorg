@@ -580,12 +580,15 @@
 
 
              const settings = {
-                 slidesToShow: 3,
+                 slidesToShow: 1,
                  slidesToScroll: 1,
                  infinite: true,
                  dots: true,
                  variableWidth: true,
-                 arrows: false,
+                 arrows: false, 
+                 speed: 200,
+                 pauseOnHover: false,
+                  touchThreshold: 5,
                  mobileFirst: true, 
                  responsive: [{
                          breakpoint: 992,
@@ -613,10 +616,12 @@
 
   const ppsettings = {
                  slidesToShow: 1,
-                 slidesToScroll: 1,
-                 // infinite: true,
+                 slidesToScroll: 1, 
                  dots: true, 
                  arrows: false,
+                 speed: 200,
+                  pauseOnHover: false,
+                 touchThreshold: 5,
                  mobileFirst: true, 
                  responsive: [{
                          breakpoint: 992,
@@ -642,14 +647,24 @@
                  ]
              };
 
-                $('.j-stuff-slider').slick(settings);
-
+               
              const sl = $('.j-stuff-slider');
+             const ppsl = $('.j-pp-slick');
+               
+               $('.j-stuff-slider').each(function(i) {
+                   $(this).slick(settings);
+             });
+
+                  $('.j-pp-slick').each(function(i) {
+                   $(this).slick(settings);
+             });
+
 
              $(window).on('resize', function() {
 
                  if ($(window).width() < 992 && !sl.hasClass('slick-initialized')) {
-                     $('.j-stuff-slider').slick(settings);
+                     
+                     sl.slick(settings);
                  }
 
                  if ($(window).width() < 992 && !ppsl.hasClass('slick-initialized')) {
@@ -659,21 +674,8 @@
 
              });
 
-             $('.j-pp-slick').slick(ppsettings);
-
-             const ppsl = $('.j-pp-slick');
-
-             // $(window).on('resize', function() {
-
-                 
-             // });
-
-
-
-
-
-
-
+           
+ 
 
              var myUsSwiper = new Swiper('.j-us-slider', {
                  loop: true,
