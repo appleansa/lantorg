@@ -64,6 +64,14 @@ input:focus {
 
 
 
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
 .hide-on-desktop {
     display: block;
 }
@@ -519,6 +527,63 @@ input[type="submit"] {
              i {
                  transform: translateX(3px);
              }
+         }
+    }
+
+
+    &-back {
+         
+         display: inline-block;
+         vertical-align: middle;
+         height: 32px;
+         width: 32px;
+         line-height: 32px;
+         border: 1px solid #dbe1e4;
+         position: relative;
+         color: #333;
+
+         &:hover {
+             background: $blue;
+             border-color: $blue;
+         }
+
+         &:hover:before {
+            border-color: #fff;
+         }
+
+         span {
+            margin-left: 48px;
+            font-family: 'ProximaSemi'; 
+            display: block;
+            width: 180px;
+
+         }
+
+         &:before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            display: block;
+            position: absolute;
+            border-left: 1px solid $blue;
+            border-bottom: 1px solid $blue;
+            transform: rotate(45deg) translate3d(16px,0,0);
+         }
+    }
+
+    &-remove {
+
+         width: 40px;
+         height: 40px;
+         background: transparent;
+
+         &:hover {
+
+             background: $blue;
+
+              i:before {
+                background-color: #fff;
+              }
          }
     }
 }
@@ -1455,6 +1520,24 @@ input[type="submit"] {
 }
 
 
+.icon-trash {
+
+     position: relative;
+     width: 20px;
+     height: 20px;
+     display: inline-block;
+
+     &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #616161;
+        mask: url(../images/svg/icon-trash.svg) 50% 50% no-repeat;
+     }
+}
+
+
 .form {
 
     &-flex {
@@ -1466,7 +1549,14 @@ input[type="submit"] {
     }
 
 
+  &-title {
 
+     font-size: 24px;
+     line-height: 29px;
+     color: #333;
+     font-family: 'ProximaSemi';
+     margin-bottom: 15px;
+  }
 
 
     &-info {
@@ -1497,6 +1587,11 @@ input[type="submit"] {
 
         &.mgb24 {
             margin-bottom: 24px;
+        }
+
+
+        &.last {
+            margin-bottom: 0;
         }
 
         &.price-label {
@@ -1585,6 +1680,75 @@ input[type="submit"] {
     }
 }
 
+
+.select {
+
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font-size: 15px;
+    font-family: 'ProximaRegular';
+    color: #858E93;
+    border:1px solid #dbe1e4;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+
+    .s-hidden {
+    visibility:hidden;
+    padding-right:10px;
+}
+ 
+.styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:white;
+    padding:0 10px; 
+        width: 100%;
+    overflow: hidden;
+}
+.styledSelect:after {
+    content:"";
+    width:0;
+    height:0;
+    border:4px solid transparent;
+    border-color: #333 transparent transparent transparent;
+    position:absolute;
+   top: 18px;
+    right: 15px;
+}
+.styledSelect:active, .styledSelect.active {
+    background-color:#eee;
+}
+.options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid #ccc;
+    background-color:white;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.options li {
+    padding:0 6px;
+    margin:0 0;
+    padding:0 10px;
+}
+.options li:hover {
+    background-color: $blue;
+    color:white;
+}
+}
 
 
 .checkbox {
@@ -1733,6 +1897,49 @@ input[type="checkbox"]:checked+label::after {
 
 
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity {
+    .quantity-arrow-minus,
+.quantity-arrow-plus {
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+  background: rgba(219, 225, 228, 0.4);
+  box-sizing: border-box;
+  outline: none;
+  height: 100%;
+
+  &:hover {
+    background: $blue;
+    color: #fff;
+  } 
+}
+.quantity-num {
+  font-size: 20px;
+  width: 50px; 
+  outline: none;
+  background: rgba(219, 225, 228, 1);
+  height: 100%;
+  border: none;
+   text-align: center;
+
+}
+
+
+}
+
+
 
 .inputfile {
 
@@ -2386,7 +2593,7 @@ touch-action: auto;
 }
 
 
-
+ 
 // form {
 //     position: relative;
 // }

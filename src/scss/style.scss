@@ -5,12 +5,12 @@
 @import 'modal';
 
 
- 
+
 $blue: #007CC3;
 
 $lblue: #0f8fd8;
 
-   
+
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    START CODE
@@ -24,6 +24,10 @@ $lblue: #0f8fd8;
 
 .cl-gray {
     color: #616161;
+}
+
+.cl-lgray {
+    color: #858E93;
 }
 
 
@@ -1934,9 +1938,9 @@ body {
 
     &-form {
 
-         form {
+        form {
             position: relative;
-         }
+        }
     }
 
 
@@ -3890,7 +3894,7 @@ body {
 
         padding-left: 40px;
         padding-bottom: 40px;
-        margin-left: 15px; 
+        margin-left: 15px;
         position: relative;
 
 
@@ -3927,25 +3931,179 @@ body {
 
         }
 
-           .pp-icon {
-               margin-bottom: 5px;
-           }
+        .pp-icon {
+            margin-bottom: 5px;
+        }
 
-           &_title {
+        &_title {
             font-family: 'ProximaSemi';
-             font-size: 18px;
-             line-height: 22px;
-             margin-bottom: 8px;
-           }
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 8px;
+        }
 
-           &_descr {
-             font-size: 15px;
-             line-height: 21px;
-             color: #616161;
-           }
+        &_descr {
+            font-size: 15px;
+            line-height: 21px;
+            color: #616161;
+        }
     }
 
 
+}
+
+
+.cart {
+
+    padding: 50px 0 0;
+
+
+    &-box {
+
+        &_top {
+
+        }
+
+        &_items {
+             margin-bottom: 15px;
+        }
+
+        &_bottom {
+
+             border-top: 1px solid #dbe1e4;
+             padding: 15px 15px 0;
+
+            
+        }
+
+        &_order {
+            padding: 25px 15px;
+
+        }
+
+        &_swap {
+
+             border-top: 1px solid #dbe1e4;
+             padding: 25px 25px 0px 90px;
+             position: relative;
+
+             &:before {
+                content: '';
+                width: 48px;
+                height: 48px;
+                display: block;
+                position: absolute;
+                left: 20px;
+                top: 25px;
+                background: url(../images/svg/icon-swap.svg) 0 0 no-repeat;
+             }
+
+             .title {
+                font-size: 16px;
+                line-height: 20px;
+                font-family: 'ProximaSemi';
+                margin-bottom: 8px;
+             }
+
+             .info {
+
+                font-size: 14px;
+                line-height: 19px;
+                    color: #616161;
+             }
+        }
+
+
+        &_total {
+             
+             text-align: right;
+            
+             
+            b {
+                font-size: 24px;
+            line-height: 30px;
+            }
+        }
+
+    }
+
+
+
+
+    &-box_item {
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #dbe1e4;
+
+          
+
+        .info {
+            width: 100%;
+            margin-right: 70px;
+            padding: 20px 0;
+        }
+
+        .pic {
+            width: 120px;
+            float: left;
+            padding-right: 15px;
+            position: relative;
+        }
+
+        .cat {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            color: #858E93;
+        }
+
+        .name {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 15px;
+            display: block;
+            font-family: 'ProximaSemi';
+        }
+
+        .remove { display: none; }
+
+
+        .options {
+
+            &_row {
+                padding: 5px 0;
+                overflow: hidden;
+                font-size: 12px;
+                
+
+                &-cell:first-child {
+                    float: left;
+                }
+
+                &-cell:last-child {
+                    float: right;
+                }
+
+
+                &:not(:last-child) {
+                    border-top: 1px solid rgba(236, 239, 241, 1);
+                }
+            }
+        }
+
+        .quantity {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+    }
 }
 
 
