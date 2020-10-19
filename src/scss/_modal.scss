@@ -61,6 +61,19 @@
 }
 
 
+.modal__row {
+
+     display: block;
+     padding: 15px 0 15px;
+
+     &.bordered {
+         border-top: 1px solid #dbe1e4;
+     }
+
+     &:first-child { border: none;  } 
+}
+
+
 
 .modal__header .modal__close:before {
     content: "\2715";
@@ -68,6 +81,10 @@
 
 .modal__content {
     margin-bottom: 25px;
+
+    &.no-margin {
+        margin-bottom: 0;
+    }
 }
 
 

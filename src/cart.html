@@ -7,16 +7,26 @@
         @@include('components/_header.html')
         <!-- WRITE CODE HERE -->
         <section class="cart section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="h2">В корзине 6 товаров</div>
-                </div>
-            </div>
+            
             <form action="#">
             <div class="container-mfw">
                 <div class="cart-box">
                     <div class="cart-box_items">
-                          <div class="cart-box_item">
+                        <div class="container">
+                <div class="section-header">
+                    <div class="h2 dib">В корзине 6 товаров</div>
+
+                    <div class="remove fl-right">
+                         <button class="btn-remove-cart show-on-desktop">
+                                         <i class="icon-trash dib va-middle"></i> 
+                                         <span class="dib va-middle">
+                                             Очистить корзину
+                                         </span>
+                         </button>
+                    </div>
+                </div>
+            </div> 
+                          <div class="cart-box_item first">
                             <div class="pic"><img src="./images/catalog/pc-branch-1.png" alt=""></div>
                             <div class="info">
                                   <div class="info_cell"><span class="cat">Коммутатор</span>

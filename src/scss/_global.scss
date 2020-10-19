@@ -405,6 +405,7 @@ input[type="submit"] {
     display: inline-block;
     width: auto;
     height: 40px;
+    text-align: center;
     line-height: 40px;
     padding: 0 40px;
     letter-spacing: 0.08em;
@@ -586,6 +587,12 @@ input[type="submit"] {
               }
          }
     }
+
+    &-remove-cart {
+         background: transparent;
+          height: 48px;
+
+    }
 }
 
 
@@ -594,6 +601,7 @@ input[type="submit"] {
     width: 64px;
     height: 64px;
     position: relative;
+
 
     &:before {
         content: '';
@@ -726,6 +734,37 @@ input[type="submit"] {
                      &.icon-handshake:before {
        mask: url(../images/svg/icon-handshake.svg) 50% 50% no-repeat;
     }
+
+                      &.icon-safety:before {
+       mask: url(../images/svg/icon-safety.svg) 50% 50% no-repeat;
+       mask-size: 100%;
+    }
+
+                 &.icon-payment:before {
+       mask: url(../images/svg/icon-payment.svg) 50% 50% no-repeat;
+       mask-size: 100%;
+    }
+
+                   &.icon-shipping3:before {
+       mask: url(../images/svg/icon-shipping3.svg) 0 0 no-repeat;
+   
+    }
+
+                   &.icon-courier:before {
+       mask: url(../images/svg/icon-courier.svg) 0 0 no-repeat;
+      
+    }
+
+                   &.icon-pickup:before {
+       mask: url(../images/svg/icon-pickup.svg) 0 0 no-repeat;
+       
+    }
+
+                       &.icon-ukraine:before {
+       mask: url(../images/svg/icon-ukraine.svg) 0 0 no-repeat;
+   
+    }
+  
 }
 
  
@@ -1910,6 +1949,33 @@ input[type="number"] {
 }
 
 .quantity {
+
+ 
+
+ &.quantity-horizontal {  display: flex;   }
+
+
+ &.light {
+
+ .quantity-arrow-minus,
+.quantity-arrow-plus {
+
+      background: #fff;
+      border: 1px solid #dbe1e4;
+}
+
+.quantity-num { 
+
+background: #fff; 
+
+border: 1px solid #dbe1e4;
+margin: 0 -1px;
+
+ }
+
+ }
+
+
     .quantity-arrow-minus,
 .quantity-arrow-plus {
   cursor: pointer;
@@ -2643,4 +2709,62 @@ touch-action: auto;
             
          }
      } 
+}
+
+div#selectBox {
+    width: 250px;
+    position: relative;
+    height: 50px;
+    border-radius: 3px;
+    border: solid 1px lightgrey;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+}
+div#selectBox p.valueTag {
+    padding: 15px;
+    cursor: pointer;
+    transition: .2s;
+    height: 40px;
+}
+
+div#selectBox > img.arrow {
+    position: absolute;
+    right: 0;
+    width: 50px;
+
+    padding: 15px;
+}
+
+ 
+
+ul#selectMenuBox {
+ background: #fff;
+ transition: .3s;
+ width: 100%;
+ height: 200px;
+ overflow-y: auto;
+ overflow-x: hidden !important;
+ position: absolute;
+ margin-top: 00px;
+ display: block;
+
+}
+ul#selectMenuBox > li {
+    display: block;
+    padding: 10px;
+    border-radius: 00px;
+    cursor: pointer;
+}
+ul#selectMenuBox > li.option {
+    color: gray;
+    padding: 10px;
+
+}
+ul#selectMenuBox > li.option:hover {
+    color: #333;
+    background: #e1e1e1;
+    transition: .2s;
 }

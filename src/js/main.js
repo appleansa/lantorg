@@ -940,7 +940,6 @@ $('.quantity').each(function( ) {
 
 // Iterate over each select element
 $('select').each(function () {
-
     // Cache the number of options
     var $this = $(this),
         numberOfOptions = $(this).children('option').length;
@@ -1002,3 +1001,67 @@ $('select').each(function () {
     });
 
 });
+
+$('.j-product-gal').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    speed: 300,
+    asNavFor: '.j-product-thumbs',
+    pauseOnHover: false,
+    mobileFirst: true,
+  responsive: [{
+                         breakpoint: 992,
+                         settings: {
+                             dots: false,
+                             fade: true
+                         }
+                          
+                     },
+                     {
+                         breakpoint: 400,
+                         settings: {
+                            
+                             slidesToShow: 1,
+                             slidesToScroll: 1
+                         }
+                     }
+                 ]
+
+});
+
+$('.j-product-thumbs').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor: '.j-product-gal',
+})
+
+
+
+ var lngth = $('.tblFeatures tr').length;
+ 
+
+ console.log(lngth);
+
+ $('.tblFeatures tr').slice(5).addClass('hidden');
+
+ $('.j-toggle-features').on('click', function(e) {
+     e.preventDefault();
+
+     if (!$(this).hasClass('active')) {
+         $('.tblFeatures tr').removeClass('hidden');
+         $(this).addClass('active').text('Скрыть');
+
+     } else {
+         $('.tblFeatures tr').slice(5).addClass('hidden');
+         $(this).removeClass('active').text('Показать еще');
+     }
+
+
+
+
+ });
