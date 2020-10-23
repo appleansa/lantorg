@@ -167,7 +167,13 @@
              $(document).on("click", ".accordion_single .accordion_tab", function() {
 
                  $(this).parent().toggleClass("active");
-                 //$(this).next().toggle(300);
+             });
+
+             $('.accordion_single').each(function() {
+                var elem = $(this).find('input[type=checkbox]');
+                   if ( elem.prop('checked')) {
+                        $(this).addClass('active');
+                    }
              });
 
 
@@ -1041,23 +1047,24 @@ $('.j-product-thumbs').slick({
 })
 
 
+$('.j-slick').slick();
 
- var lngth = $('.tblFeatures tr').length;
  
 
- console.log(lngth);
 
- $('.tblFeatures tr').slice(5).addClass('hidden');
+ 
+
+ $('.j-features tr').slice(5).addClass('hidden');
 
  $('.j-toggle-features').on('click', function(e) {
      e.preventDefault();
 
      if (!$(this).hasClass('active')) {
-         $('.tblFeatures tr').removeClass('hidden');
+         $('.j-features tr').removeClass('hidden');
          $(this).addClass('active').text('Скрыть');
 
      } else {
-         $('.tblFeatures tr').slice(5).addClass('hidden');
+         $('.j-features tr').slice(5).addClass('hidden');
          $(this).removeClass('active').text('Показать еще');
      }
 

@@ -2948,6 +2948,11 @@ $blue: #007CC3;
                     order: 1;
                     width: 172px;
                     flex-shrink: 0;
+                    text-align: center;
+
+                    a { display: inline-block; }
+
+                    img { max-height: 100px; width: auto; max-width: 100%; }
                 }
 
                 .pc-product_top {
@@ -3560,8 +3565,13 @@ $blue: #007CC3;
                  border-right: 1px solid #dbe1e4;
             }
 
+            &:first-child {
+                 padding-left: 0;
+            }
+
             &:last-child {
                  border-right: none;
+                 padding-right: 0;
             }          
 
          }
