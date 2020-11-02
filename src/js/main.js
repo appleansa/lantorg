@@ -167,6 +167,9 @@
              $(document).on("click", ".accordion_single .accordion_tab", function() {
 
                  $(this).parent().toggleClass("active");
+                     
+                     $('.j-slick').slick("reinit");
+
              });
 
              $('.accordion_single').each(function() {
@@ -480,6 +483,30 @@
 
              });
 
+             
+                
+
+               var jtabsElem = 0; 
+               document.querySelectorAll('.j-tabs-slider').forEach(n => {
+
+                 var tabsSwiper = new Swiper(n, {
+                   //  loop: true,
+                     slidesPerView: 'auto',
+                     spaceBetween: 0,
+                     observer: true,
+                     observeParents: true,
+                     updateOnWindowResize: true,
+                     navigation: {
+    nextEl: n.querySelector('.swiper-button-next'),
+    prevEl: n.querySelector('.swiper-button-prev'),
+  },
+                    
+                 });
+
+                  jtabsElem++;
+
+             });
+
 
              // micromodal init function
              MicroModal.init();
@@ -606,50 +633,52 @@
                  ]
              };
 
-  const ppsettings = {
-                 slidesToShow: 1,
-                 slidesToScroll: 1, 
-                 dots: true, 
-                 arrows: false,
-                 speed: 200,
-                  pauseOnHover: false,
-                 touchThreshold: 5,
-                 mobileFirst: true, 
-                 responsive: [{
-                         breakpoint: 992,
-                         settings: 'unslick'
-                     },
-                     {
-                         breakpoint: 600,
-                         settings: {
-                             centerPadding: '15px',
-                             slidesToShow: 2,
-                             slidesToScroll: 2
-                         }
-                     },
-                     {
-                         breakpoint: 400,
-                         settings: {
+  // const ppsettings = {
+  //                slidesToShow: 1,
+  //                slidesToScroll: 1, 
+  //                dots: true, 
+  //                arrows: false,
+  //                speed: 200,
+  //              //  loop: false,
+  //                 pauseOnHover: false,
+  //             //   touchThreshold: 5,
+  //             variableWidth: true,
+  //                mobileFirst: true, 
+  //                responsive: [{
+  //                        breakpoint: 992,
+  //                        settings: 'unslick'
+  //                    },
+  //                    {
+  //                        breakpoint: 600,
+  //                        settings: {
+  //                            centerPadding: '15px',
+  //                            slidesToShow: 2,
+  //                            slidesToScroll: 2
+  //                        }
+  //                    },
+  //                    {
+  //                        breakpoint: 400,
+  //                        settings: {
                             
-                             slidesToShow: 1,
-                             slidesToScroll: 1
-                         }
-                     }
+  //                            slidesToShow: 1,
+  //                            slidesToScroll: 1
+  //                        }
+  //                    }
 
-                 ]
-             };
+  //                ]
+  //            };
 
                
-             const sl = $('.j-stuff-slider');
-             const ppsl = $('.j-pp-slick');
+            const sl = $('.j-stuff-slider');
+             // const ppsl = $('.j-pp-slick');
                
                $('.j-stuff-slider').each(function(i) {
                    $(this).slick(settings);
              });
 
-                  $('.j-pp-slick').each(function(i) {
-                   $(this).slick(settings);
-             });
+             //      $('.j-pp-slick').each(function(i) {
+             //       $(this).slick(settings);
+             // });
 
 
              $(window).on('resize', function() {
@@ -659,9 +688,9 @@
                      sl.slick(settings);
                  }
 
-                 if ($(window).width() < 992 && !ppsl.hasClass('slick-initialized')) {
-                     $('.j-pp-slick').slick(ppsettings);
-                 }
+                 // if ($(window).width() < 992 && !ppsl.hasClass('slick-initialized')) {
+                 //     $('.j-pp-slick').slick(ppsettings);
+                 // }
 
 
              });
@@ -717,19 +746,19 @@
                  let mySwiper;
                  let myPremsSwiper;
                  let myReturnSwiper;
-                 let myStuffSwiper;
+              //   let myStuffSwiper;
 
                  const breakpointChecker = function() {
 
                      // if larger viewport and multi-row layout needed
-                     if (breakpoint.matches === true) {
+                    if ( breakpoint.matches === true ) {
 
                          if ($('.j-team-slider').length) {
                              if (mySwiper !== undefined) mySwiper.destroy(true, true);
                          }
                          // clean up old instances and inline styles when available
                          if ($('.j-pp-slider').length) {
-                             if (myPremsSwiper !== undefined) myPremsSwiper.detachEvents();
+                             if (myPremsSwiper !== undefined) myPremsSwiper.destroy(true, true);
                              myPremsSwiper = undefined;
                          }
 
@@ -738,21 +767,26 @@
                              if (myReturnSwiper !== undefined) myReturnSwiper.destroy(true, true);
                          }
 
+                         //  if ($('.j-stuff-slider').length) {
 
-                         return;
+                         //     if (myStuffSwiper !== undefined) myStuffSwiper.destroy(true, true);
+                         // }
+
+
+                          return;
 
                          // or/and do nothing
                          // else if a small viewport and single column layout needed
                      } else if (breakpoint.matches === false) {
                          // fire small viewport version of swiper
-                         enableSwiper();
-                         enablePremsSwiper();
-                         enableReturnSwiper();
-                         //  enableStuffSwiper();
+                           enableSwiper();
+                          enablePremsSwiper();
+                           enableReturnSwiper();
+                      //   enableStuffSwiper();
 
                      }
 
-                 }
+                 };
 
 
 
@@ -770,10 +804,10 @@
                          },
 
                      });
-                 }
+                 };
 
 
-                 var enablePremsSwiper = function() {
+                 const enablePremsSwiper = function() {
                      document.querySelectorAll('.j-pp-slider').forEach(n => {
                          myPremsSwiper = new Swiper(n, {
                              loop: true,
@@ -793,7 +827,7 @@
                              },
                          });
                      });
-                 }
+                 };
 
 
                  const enableReturnSwiper = function() {
@@ -829,7 +863,29 @@
                          });
 
                      });
-                 }
+                 };
+
+                 //  const enableStuffSwiper = function() {
+                 //     document.querySelectorAll('.j-stuff-slider').forEach(n => {
+                 //         var myStuffSwiper = new Swiper(n, {
+                 //             loop: true,
+                 //             mode: 'horizontal',
+                 //             slidesPerView: 1,
+                 //             spaceBetween: 0,
+                 //             pagination: {
+                 //                 el: n.querySelector('.swiper-progressbar'),
+                 //                 type: 'progressbar',
+                 //             }, 
+                 //             navigation: {
+                 //                 nextEl: n.querySelector('.swiper-btn-next'),
+                 //                 prevEl: n.querySelector('.swiper-btn-prev'),
+                 //                 loop: true,
+                 //             },
+
+                           
+                 //         });
+                 //     });
+                 // };
 
                  // keep an eye on viewport size changes
                  breakpoint.addListener(breakpointChecker);
@@ -837,7 +893,7 @@
                  // kickstart
                  breakpointChecker();
 
-
+                 })(); /* IIFE end */ 
 
 
                  function responseMenu() {
@@ -912,7 +968,7 @@
                      }).trigger('resize');
                  });
 
-             })(); /* IIFE end */
+          
 
 
 
@@ -1049,10 +1105,7 @@ $('.j-product-thumbs').slick({
 
 $('.j-slick').slick();
 
- 
 
-
- 
 
  $('.j-features tr').slice(5).addClass('hidden');
 

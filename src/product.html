@@ -89,25 +89,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-price clear">
-                        <div class="product-price_item oldprice">
-                            <span>Розничная цена</span>
-                            <span><b>4 780 </b> грн. <i class="usd">104$</i> </span>
+                    <form action="#">
+                        <div class="product-price clear">
+                            <div class="product-price_item oldprice">
+                                <span>Розничная цена</span>
+                                <span><b>4 780 </b> грн. <i class="usd">104$</i> </span>
+                            </div>
+                            <div class="product-price_item newprice">
+                                <span>Оптовая цена</span>
+                                <span><b>3 180 </b> грн. <i class="usd">80$</i> </span>
+                            </div>
                         </div>
-                        <div class="product-price_item newprice">
-                            <span>Оптовая цена</span>
-                            <span><b>3 180 </b> грн. <i class="usd">80$</i> </span>
+                        <div class="product-controls">
+                            <div class="quantity quantity-horizontal light">
+                                <button class="quantity-arrow-minus"> - </button>
+                                <input class="quantity-num" type="number" value="1" />
+                                <button class="quantity-arrow-plus"> + </button>
+                            </div>
+                            <button class="btn btn-blue">Купить</button>
+                            <button data-micromodal-trigger="modal-oneclick" class="btn btn-blue-border">купить в один клик</button>
                         </div>
-                    </div>
-                    <div class="product-controls">
-                        <div class="quantity quantity-horizontal light">
-                            <button class="quantity-arrow-minus"> - </button>
-                            <input class="quantity-num" type="number" value="1" />
-                            <button class="quantity-arrow-plus"> + </button>
-                        </div>
-                        <a href="#" class="btn btn-blue">Купить</a>
-                        <a href="#" class="btn btn-blue-border">купить в один клик</a>
-                    </div>
+                    </form>
                     <div class="product-features j-features">
                         <table class="tblFeatures">
                             <tbody>
@@ -154,7 +156,7 @@
                             </tbody>
                         </table>
                         <div class="product-features_more">
-                            <a href="#" class="j-toggle-features">Показать еще</a>
+                            <a href="#" class="j-toggle-features btn-showmore">Показать еще</a>
                         </div>
                     </div>
                     <div class="product-links">
@@ -182,114 +184,428 @@
         </section>
         <section class="product-content section">
             <div class="container-mfw">
-                <div class="product-caontent-tabs mobile-accordion-tabs">
-                    <div class="mobile-accordion active accordion styled">
-                        <div class="accordion_tab styled-square">
-                            <span><i></i>Все о товаре</span>
-                        </div>
-                        <div class="accordion_content" style="display: block;">
-                            <div class="content">
-                                <p>Коммутатор Cisco SB Catalyst 2960-Plus 24TC-L (WS-C2960+24TC-L) является новой линейкой коммутаторов с фиксированной конфигурацией и портами Fast Ethernet и Gigabit Ethernet, имеющие расширенные LAN сервисы для предприятий начального уровня и сетей удаленного офиса.</p>
-                                <ul>
-                                    <li>Количество портов Gigabit Ethernet 100BaseFX</li>
-                                    <li>Пропускная способность, Гбит/с</li>
-                                    <li>Уровень шума</li>
-                                    <li>Количество портов Gigabit Ethernet 100BaseFX</li>
-                                </ul>
-                                <p><strong>Рабочие характеристики</strong></p>
-                                <p>Сетевое управление, оптимизация пропускной способности используя QoS, пошаговый Rate Limiting, ACL и multicast services. Сетевая безопасность с использованием широкого диапазона методов идентификации, технологий кодирования данных, и сетевое управление по пользователю, порту и MAC адресу. При использовании ПО Cisco Network Assistant упрощается конфигурация, обновление ПО и поиск неисправности. </p>
+                <div class="product-content-box">
+                    <div class="product-content-tabs mobile-accordion-tabs">
+                        <div class="mobile-accordion active accordion styled">
+                            <div class="accordion_tab styled-square">
+                                <span><i></i>Все о товаре</span>
+                            </div>
+                            <div class="accordion_content" style="display: block;">
+                                <div class="content">
+                                    <p>Коммутатор Cisco SB Catalyst 2960-Plus 24TC-L (WS-C2960+24TC-L) является новой линейкой коммутаторов с фиксированной конфигурацией и портами Fast Ethernet и Gigabit Ethernet, имеющие расширенные LAN сервисы для предприятий начального уровня и сетей удаленного офиса.</p>
+                                    <ul>
+                                        <li>Количество портов Gigabit Ethernet 100BaseFX</li>
+                                        <li>Пропускная способность, Гбит/с</li>
+                                        <li>Уровень шума</li>
+                                        <li>Количество портов Gigabit Ethernet 100BaseFX</li>
+                                    </ul>
+                                    <p><strong>Рабочие характеристики</strong></p>
+                                    <p>Сетевое управление, оптимизация пропускной способности используя QoS, пошаговый Rate Limiting, ACL и multicast services. Сетевая безопасность с использованием широкого диапазона методов идентификации, технологий кодирования данных, и сетевое управление по пользователю, порту и MAC адресу. При использовании ПО Cisco Network Assistant упрощается конфигурация, обновление ПО и поиск неисправности. </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mobile-accordion accordion styled">
-                        <div class="accordion_tab styled-square ">
-                            <span><i></i>Характеристики</span>
-                        </div>
-                        <div class="accordion_content">
-                            <div class="content">
-                                <table class="tblFeatures">
-                                    <tbody>
-                                        <tr>
-                                            <td class="propTD">Питание</td>
-                                            <td class="valTD">Вход AC100-240V 50 / 60HZ, выход DC13.5V / 4.8A</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="propTD">Размеры (ШxВxГ)</td>
-                                            <td class="valTD">135 x 198 x 122 мм (сварочник) 270 x 237 x 293 мм (бокс)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="propTD">Рабочая влажность</td>
-                                            <td class="valTD">0% ~ 95% , без конденсата</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="propTD">Рабочая температура</td>
-                                            <td class="valTD">от - 15℃ до +50℃</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="propTD">Дополнительная информация</td>
-                                            <td class="valTD">Сварка - 8 сек, термоусадка - 18 сек, дисплей 5.1" цветной TFT, ночное освещение, уникальный бокс с инструментами и табуретом в комплекте, зарядка телефона, противоугонная блокировка, дистанционное управление</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="propTD">Рабочая температура</td>
-                                            <td class="valTD">от - 15℃ до +50℃</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="mobile-accordion accordion styled">
+                            <div class="accordion_tab styled-square ">
+                                <span><i></i>Характеристики</span>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="content">
+                                    <table class="tblFeatures">
+                                        <tbody>
+                                            <tr>
+                                                <td class="propTD">Питание</td>
+                                                <td class="valTD">Вход AC100-240V 50 / 60HZ, выход DC13.5V / 4.8A</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="propTD">Размеры (ШxВxГ)</td>
+                                                <td class="valTD">135 x 198 x 122 мм (сварочник) 270 x 237 x 293 мм (бокс)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="propTD">Рабочая влажность</td>
+                                                <td class="valTD">0% ~ 95% , без конденсата</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="propTD">Рабочая температура</td>
+                                                <td class="valTD">от - 15℃ до +50℃</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="propTD">Дополнительная информация</td>
+                                                <td class="valTD">Сварка - 8 сек, термоусадка - 18 сек, дисплей 5.1" цветной TFT, ночное освещение, уникальный бокс с инструментами и табуретом в комплекте, зарядка телефона, противоугонная блокировка, дистанционное управление</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="propTD">Рабочая температура</td>
+                                                <td class="valTD">от - 15℃ до +50℃</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mobile-accordion accordion styled">
-                        <div class="accordion_tab styled-square">
-                            <span><i></i>Файлы</span>
-                        </div>
-                        <div class="accordion_content">
-                            <div class="content">
-                                <ol class="file">
-                                    <li>
-                                        <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации</b> <i class="icon-download"></i></a></li>
-                                    <li>
-                                        <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации</b> <i class="icon-download"></i></a></li>
-                                    <li>
-                                        <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации для Signal Fire AI-7C сварочный аппарат для оптоволокна</b> <i class="icon-download"></i></a></li>
-                                    <li>
-                                        <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации</b> <i class="icon-download"></i></a></li>
-                                </ol>
+                        <div class="mobile-accordion accordion styled">
+                            <div class="accordion_tab styled-square">
+                                <span><i></i>Файлы</span>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="content">
+                                    <ol class="file">
+                                        <li>
+                                            <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации</b> <i class="icon-download"></i></a></li>
+                                        <li>
+                                            <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации</b> <i class="icon-download"></i></a></li>
+                                        <li>
+                                            <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации для Signal Fire AI-7C сварочный аппарат для оптоволокна</b> <i class="icon-download"></i></a></li>
+                                        <li>
+                                            <a class="pdf" title="AI-7C splicer.pdf" target="_blank" href="../files/attachs/AI-7C splicer.pdf"><b>Инструкция по эксплуатации</b> <i class="icon-download"></i></a></li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mobile-accordion accordion styled">
-                        <div class="accordion_tab styled-square">
-                            <span><i></i>Статьи</span>
-                        </div>
-                        <div class="accordion_content">
-                            <div class="content">
-                                <div class="j-slick" data-slick='{"slidesToShow": 1, "variableWidth": true, "slidesToScroll": 1}'>
-                                    <div class="articles-slide">
-                                        <a class="img" href="#">
-                                            <img src="./images/news-1.jpg" alt="">
-                                        </a>
-                                        <a class="title" href="#">
-                                            <b>Как подключить роутер самому?</b>
-                                        </a>
-                                        <span class="date">23.01.2020</span>
+                        <div class="mobile-accordion accordion styled">
+                            <div class="accordion_tab styled-square">
+                                <span><i></i>Статьи</span>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="content">
+                                    <div class="j-tabs-slider swiper-container product-articles-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="articles-slide swiper-slide">
+                                                <a class="img" href="#">
+                                                    <img src="./images/news-1.jpg" alt="">
+                                                </a>
+                                                <a class="title" href="#">
+                                                    <b>Как подключить роутер самому?</b>
+                                                </a>
+                                                <span class="date">23.01.2020</span>
+                                            </div>
+                                            <div class="articles-slide swiper-slide">
+                                                <a class="img" href="#">
+                                                    <img src="./images/news-1.jpg" alt="">
+                                                </a>
+                                                <a class="title" href="#">
+                                                    <b>Как подключить роутер самому?</b>
+                                                </a>
+                                                <span class="date">23.01.2020</span>
+                                            </div>
+                                            <div class="articles-slide swiper-slide">
+                                                <a class="img" href="#">
+                                                    <img src="./images/news-1.jpg" alt="">
+                                                </a>
+                                                <a class="title" href="#">
+                                                    <b>Как подключить роутер самому?</b>
+                                                </a>
+                                                <span class="date">23.01.2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-btn"></div>
+                                        <div class="swiper-button-next swiper-btn"></div>
                                     </div>
-                                    <div class="articles-slide">
-                                        <a class="img" href="#">
-                                            <img src="./images/news-1.jpg" alt="">
-                                        </a>
-                                       <a class="title" href="#">
-                                            <b>Как подключить роутер самому?</b>
-                                        </a>
-                                        <span class="date">23.01.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-accordion accordion styled">
+                            <div class="accordion_tab styled-square">
+                                <span><i></i>Видео</span>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="content">
+                                    <div class="j-tabs-slider product-video-slider swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="product-slide-video swiper-slide">
+                                                <video id="player0" class="js-player" playsinline="" controls="controls" data-poster="./images/poster.jpg">
+                                                    <source src="video/powerplate-video.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="product-slide-video swiper-slide">
+                                                <video id="player1" class="js-player" playsinline="" controls="controls" data-poster="./images/poster.jpg">
+                                                    <source src="video/powerplate-video.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="product-slide-video swiper-slide">
+                                                <video id="player2" class="js-player" playsinline="" controls="controls" data-poster="./images/poster.jpg">
+                                                    <source src="video/powerplate-video.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-btn"></div>
+                                        <div class="swiper-button-next swiper-btn"></div>
                                     </div>
-                                    <div class="articles-slide">
-                                        <a class="img" href="#">
-                                            <img src="./images/news-1.jpg" alt="">
-                                        </a>
-                                         <a class="title" href="#">
-                                            <b>Как подключить роутер самому?</b>
-                                        </a>
-                                        <span class="date">23.01.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-accordion accordion styled">
+                            <div class="accordion_tab styled-square">
+                                <span><i></i>Отзывы</span>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="tickets-rating">
+                                    <div class="rating small">
+                                        <div class="rate dib va-middle">
+                                            <!-- это можно удалить и поставить тот рейтинг что уже есть -->
+                                            <div class="rate-active-layer" style="width: 70%;">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="rate-hidden-layer">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div> <span class="dib va-middle"><b>4.2</b> (32 оценки)</span>
+                                    </div>
+                                </div>
+                                <!-- .end rating -->
+                                <div class="tickets">
+                                    <ul class="tickets-list">
+                                        <li class="ticket-container">
+                                            <div class="ticket">
+                                                <div class="ticket-info">
+                                                    <div class="ticket-info_ava">
+                                                        <img src="./images/stuff/kozachek.png" alt="">
+                                                    </div>
+                                                    <div class="ticket-info_row">
+                                                        <b class="author">Иван Иванов</b>
+                                                        <span class="date">21 октября, 2019</span>
+                                                    </div>
+                                                    <div class="ticket-info_row">
+                                                        <div class="rating small">
+                                                            <div class="rate dib va-middle">
+                                                                <!-- это можно удалить и поставить тот рейтинг что уже есть -->
+                                                                <div class="rate-active-layer" style="width: 100%;">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="rate-hidden-layer">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-body">
+                                                    <div class="ticket-body_header">Преимущества</div>
+                                                    <div class="ticket-body_content">Недорогой, надежный, удобный, качественный, красивый</div>
+                                                    <div class="ticket-body_header">Недостатки</div>
+                                                    <div class="ticket-body_content">Нет, все супер</div>
+                                                    <div class="ticket-body_header">Комментарий</div>
+                                                    <div class="ticket-body_content">
+                                                        Таким образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает.
+                                                    </div>
+                                                    <div class="ticket-body_header">Фото</div>
+                                                    <div class="ticket-body_content">
+                                                        <div class="ticket-gallery">
+                                                            <div class="img" data-micromodal-trigger="pic1">
+                                                                <img src="./images/ticket1.png" alt="">
+                                                            </div>
+                                                            <div class="modal micromodal-slide" id="pic1" aria-hidden="true">
+                                                                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                                                    <div class="modal__photo" role="dialog" aria-modal="true" aria-labelledby="modal-price-title"> <img src="./images/ticket1.png" alt=""></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="img" data-micromodal-trigger="pic2">
+                                                                <img src="./images/ticket2.png" alt="">
+                                                            </div>
+                                                            <div class="modal micromodal-slide" id="pic2" aria-hidden="true">
+                                                                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                                                    <div class="modal__photo" role="dialog" aria-modal="true" aria-labelledby="modal-price-title">
+                                                                        <img src="./images/ticket1.png" alt=""></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ticket-container">
+                                            <div class="ticket">
+                                                <div class="ticket-info">
+                                                    <div class="ticket-info_ava">
+                                                        <img src="./images/stuff/kozachek.png" alt="">
+                                                    </div>
+                                                    <div class="ticket-info_row">
+                                                        <b class="author">Иван Иванов</b>
+                                                        <span class="date">21 октября, 2020</span>
+                                                    </div>
+                                                    <div class="ticket-info_row">
+                                                        <div class="rating small">
+                                                            <div class="rate dib va-middle">
+                                                                <!-- это можно удалить и поставить тот рейтинг что уже есть -->
+                                                                <div class="rate-active-layer" style="width: 100%;">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="rate-hidden-layer">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-body">
+                                                    <div class="ticket-body_header">Преимущества</div>
+                                                    <div class="ticket-body_content">Недорогой, надежный, удобный, качественный, красивый</div>
+                                                    <div class="ticket-body_header">Недостатки</div>
+                                                    <div class="ticket-body_content">Нет, все супер</div>
+                                                    <div class="ticket-body_header">Комментарий</div>
+                                                    <div class="ticket-body_content">
+                                                        Таким образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает.
+                                                    </div>
+                                                    <div class="ticket-body_header">Фото</div>
+                                                    <div class="ticket-body_content">
+                                                        <div class="ticket-gallery">
+                                                            <div class="img" data-micromodal-trigger="pic3">
+                                                                <img src="./images/ticket1.png" alt="">
+                                                            </div>
+                                                            <div class="modal micromodal-slide" id="pic3" aria-hidden="true">
+                                                                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                                                    <div class="modal__photo" role="dialog" aria-modal="true" aria-labelledby="modal-price-title"> <img src="./images/ticket1.png" alt=""></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="img" data-micromodal-trigger="pic4">
+                                                                <img src="./images/ticket2.png" alt="">
+                                                            </div>
+                                                            <div class="modal micromodal-slide" id="pic4" aria-hidden="true">
+                                                                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                                                    <div class="modal__photo" role="dialog" aria-modal="true" aria-labelledby="modal-price-title">
+                                                                        <img src="./images/ticket1.png" alt=""></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="show-more">
+                                         <a href="#" class="j-show-more btn-showmore">Показать еще (24)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .end mobile tabs -->
+                    <div class="product-sticky">
+                        <div class="j-tabs-container product-form">
+                            <div class="product-tabs-controls">
+                                <!-- <div class="container-mfw">
+                                <div class="stuff-mobile-scroll mt-scroll"> -->
+                                <button class="j-mt-btn product-tabs-btn btn active">
+                                    <span>Оставить отзыв</span>
+                                </button>
+                                <button class="j-mt-btn product-tabs-btn btn">
+                                    <span>задать вопрос</span>
+                                </button>
+                                <!--  </div> 
+                            </div>-->
+                            </div>
+                            <div class="j-tabs product-tabs tabs-container">
+                                <div class="tab active">
+                                    <div class="tab-inner">
+                                        <div class="product-tickets-form">
+                                            <header class="modal__header show-on-desktop">
+                                                <h2 class="modal__title">
+                                                    Ваш отзыв
+                                                </h2>
+                                            </header>
+                                            <main class="modal__content">
+                                                <div class="form-field">
+                                                    <span class="cl-gray small-text">Общая оценка</span>
+                                                    <div class="rating big">
+                                                        <div class="rate dib va-middle">
+                                                            <!-- это можно удалить и поставить тот рейтинг что уже есть -->
+                                                            <div class="rate-active-layer" style="width: 80%;">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="rate-hidden-layer">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </div>
+                                                        </div> <span class="dib va-middle rate-label">Хорошо</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-field">
+                                                    <textarea class="text-area" name="tarea" id="tarea" cols="30" rows="4" placeholder="Преимущества"></textarea>
+                                                </div>
+                                                <div class="form-field">
+                                                    <textarea class="text-area" name="tarea" id="tarea" cols="30" rows="4" placeholder="Недостатки"></textarea>
+                                                </div>
+                                                <div class="form-field">
+                                                    <textarea class="text-area" name="tarea" id="tarea" cols="30" rows="4" placeholder="Комментарий"></textarea>
+                                                </div>
+                                                <div class="form-field">
+                                                    <div class="inputfile">
+                                                        <input type="file" name="file-r[]" id="file-r" class="inputfile-field" data-multiple-caption="{count} files selected" multiple="">
+                                                        <label for="file-r">
+                                                            <i class="icon-camera va-middle"></i>
+                                                            <div><span>Нажмите сюда для загрузки фотографий</span></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </main>
+                                            <footer class="modal__footer d-ta-right">
+                                                <button class="modal__btn btn btn-blue fw">Отправить</button>
+                                            </footer>
+                                            <div class="modal-alert success">
+                                                <span>Заявка отправлена</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="tab-inner">
+                                        <div class="product-tickets-form">
+                                            <header class="modal__header show-on-desktop">
+                                                <h2 class="modal__title">
+                                                    Задать вопрос
+                                                </h2>
+                                            </header>
+                                            <main class="modal__content">
+                                                <div class="form-field">
+                                                    <input type="text" class="text-input" placeholder="Имя">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="text-input" placeholder="Номер телефона">
+                                                </div>
+                                                <div class="form-field">
+                                                    <input type="text" class="text-input" placeholder="Email">
+                                                </div>
+                                                <div class="form-field">
+                                                    <textarea class="text-area" name="tarea" id="tarea" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+                                                </div>
+                                            </main>
+                                            <footer class="modal__footer d-ta-right">
+                                                <button class="modal__btn btn btn-blue fw">Отправить</button>
+                                            </footer>
+                                            <div class="modal-alert success">
+                                                <span>Заявка отправлена</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -303,6 +619,29 @@
         <!-- STOP WRITE CODE -->
         @@include('components/_footer.html')
         @@include('components/_modals.html')
+        <!--.end modal login form -->
+        <div class="modal modal-thin micromodal-slide" id="modal-oneclick" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true">
+                    <header class="modal__header has-under">
+                        <h2 class="modal__title">
+                            Купить в один клик
+                        </h2>
+                        <div class="modal__under">Мы перезвоним вам в течение 5 минут</div>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                        <div class="modal__field form-field">
+                            <input class="text-input" type="text" placeholder="Номер телефона">
+                        </div>
+                    </main>
+                    <footer class="modal__footer">
+                        <button class="modal__btn btn btn-blue fw">Отправить</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!--.end modal login form -->
     </div>
     @@include('components/_scripts.html')
 </body>

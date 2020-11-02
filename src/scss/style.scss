@@ -3,7 +3,7 @@
 @import 'fonts';
 @import 'global';
 @import 'modal';
-
+ 
 
 
 $blue: #007CC3;
@@ -1009,6 +1009,8 @@ body {
             line-height: 21px;
             margin-bottom: 15px;
         }
+
+        &_descr { display: block;}
     }
 }
 
@@ -1966,6 +1968,11 @@ body {
         .tab {
             display: block;
             margin-bottom: 50px;
+
+            &-inner {
+
+                 margin: 0 25px 25px;
+            }
         }
 
         &_title {
@@ -2078,7 +2085,7 @@ body {
 
      &-slide { width: 300px; margin-right: 15px; margin-bottom: 15px;
 
-       .img { margin-bottom: 15px; }
+       .img { margin-bottom: 15px; display: block; }
 
         .title {
              color: #333;
@@ -2407,6 +2414,10 @@ body {
         }
     }
 
+    &-rating {
+         margin-bottom: 30px;
+    }
+
     .ticket {
 
         margin-bottom: 32px;
@@ -2425,6 +2436,14 @@ body {
         }
 
 
+        &-container {
+
+             border-bottom: 1px solid #dbe1e4;
+             margin-bottom: 30px;
+
+        }
+
+
         &-info {
 
             overflow: hidden;
@@ -2433,8 +2452,8 @@ body {
 
             &_ava {
                 float: left;
-                width: 36px;
-                height: 36px;
+                width: 42px; 
+                height: 42px;
                 overflow: hidden;
                 border-radius: 50%;
 
@@ -2445,7 +2464,8 @@ body {
             }
 
             &_date {
-                margin-left: 48px;
+                margin-top: 5px; 
+                margin-left: 55px;
                 font-size: 12px;
                 line-height: 15px;
                 color: #858E93;
@@ -2453,11 +2473,35 @@ body {
 
             &_author {
                 font-family: 'ProximaBold';
-                margin-left: 48px;
+                margin-left: 55px;
                 font-size: 18px;
                 line-height: 22px;
                 color: #333;
             }
+
+            .author { font-size: 18px;
+                margin-right: 12px;
+                line-height: 22px;
+                color: #333;}
+
+                .date {
+                    color: #858E93;
+                    font-size: 12px;
+                    margin-right: 12px;
+                }
+
+            &_row {
+
+                 margin-left: 55px;
+                 margin-bottom: 5px;
+            }
+        } 
+
+        &-gallery {
+           
+           display: flex;
+
+             .img { max-width: 150px; margin: 0 15px 15px 0;  }
         }
 
         &-body {
@@ -2469,6 +2513,18 @@ body {
             a {
                 color: $blue;
             }
+
+
+            &_header { font-size: 13px; 
+                line-height: 15px;
+                font-family: 'ProximaBold';
+                color: #333333;
+                margin-bottom: 4px;
+             }
+
+             &_content {
+                margin-bottom: 15px;
+             }
         }
 
 
@@ -2509,6 +2565,15 @@ body {
             }
         }
     }
+
+
+.show-more { margin-bottom: 25px; 
+
+ 
+ a {  }
+
+ }
+
 }
 
 .phelp {
@@ -4302,6 +4367,12 @@ body {
         }
     }
 
+    &-form {
+         
+         border: 1px solid #dbe1e4;
+         border-width: 0 1px 1px;
+    }
+
     &-galery {
 
         margin-bottom: 25px;
@@ -4441,20 +4512,92 @@ body {
 
       margin-bottom: 20px;
 
-     &_more {
-
-        a {
-            font-size: 15px;
-            color: $blue;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+   
   }
 
+  &-slide-video {
+
+      width: 100%; 
+
+  }
+
+    &-articles-slider, &-video-slider { 
+
+ 
+        margin-bottom: 25px;
+ 
+
+           .swiper-button-disabled { display: none; opacity: 0;}
+
+       .swiper-btn { display: block; background: #fff; height: 100%; top: 0;
+       margin-top: 0; 
+       width: 40px;
+       display: flex;
+   border: 1px solid #DBE1E4;
+   text-align: center;
+      
+      &:after {
+          font-size: 15px;
+          color: #DBE1E4;
+
+      }
+      &:hover {
+        background: $blue;
+        border-color: $blue;
+      }
+      &:hover:after {
+         color: #fff;
+      }
+
 }
+
+
+       .swiper-button-prev { left: 0;}
+       .swiper-button-next { right: 0;}
+
+  }
+
+  &-articles-slider {
+
+     .swiper-btn { height: 200px;}
+  }
+
+
+  &-tabs {
+
+       .tab {
+        padding: 20px 15px;
+       }
+
+
+       &-controls {
+
+         padding: 40px 15px 0;
+         display: flex; 
+         margin: 0 -1px;
+       }
+
+       &-btn { 
+          background: #fff;
+          border: 1px solid #dbe1e4;
+          width: 100%;  
+          padding: 0;
+
+
+          &.active {
+
+             background: $blue;
+             border-color: $blue;
+             color: #fff;
+          }
+         
+
+        }
+  }
+
+
+}
+
 
  
 

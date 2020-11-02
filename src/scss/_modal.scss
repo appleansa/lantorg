@@ -39,6 +39,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &.has-under {
+
+         display: block;
+
+          .modal__title {
+             margin-bottom: 5px;
+          }
+    }
+}
+
+
+.modal__under {
+
+     color: #858E93;
+     font-size: 15px;
+     line-height: 21px;
+     margin-bottom: 20px;
 }
 
 .modal__title {
