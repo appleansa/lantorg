@@ -3633,6 +3633,8 @@ $blue: #007CC3;
 
             width: calc(100% - 400px);
             order: 2;
+            
+
 
 
 
@@ -3674,6 +3676,9 @@ $blue: #007CC3;
             font-weight: bold;
             margin-bottom: 15px;
         }
+
+
+        .accordion_content { display: block !important;}
 
 
     }
