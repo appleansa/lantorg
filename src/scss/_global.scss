@@ -38,7 +38,7 @@ h6 {
 
 a {
     text-decoration: none;
-    color: #007CC3;
+    
 }
 
 button:focus,
@@ -1072,8 +1072,8 @@ input[type="submit"] {
 
 .icon-viber {
     position: relative;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
 
     &:before {
@@ -1107,8 +1107,8 @@ input[type="submit"] {
 
 .icon-skype {
     position: relative;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
 
     &:before {
@@ -1313,6 +1313,18 @@ input[type="submit"] {
     }
 }
 
+.icon-phone2 {
+
+     @extend .icon-phone;
+
+
+     &:before {
+   mask: url(../images/svg/icon-phone2.svg) 50% 50% no-repeat;
+        background-color: $blue;
+
+     }
+}
+
 .icon-user {
     position: relative;
     width: 20px;
@@ -1356,11 +1368,18 @@ input[type="submit"] {
 .shopping-cart {
 
     position: relative;
+    padding: 0 5px;
+
+    &_inner {
+
+         position: relative;
+         display: inline-block;
+    }
 
     &-counter {
         position: absolute;
         top: 10px;
-        left: 25px;
+        left: 12px;
         z-index: 2;
         height: 17px;
         width: 17px;
@@ -1468,6 +1487,25 @@ input[type="submit"] {
         top: 0;
         mask: url(../images/svg/icon-search.svg) 50% 50% no-repeat;
         background-color: #687075;
+    }
+}
+
+.icon-mobile-catalog {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        mask: url(../images/svg/icon-mb-catalog.svg) 50% 50% no-repeat;
+        background-color: #fff;
     }
 }
 
