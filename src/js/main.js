@@ -1108,6 +1108,61 @@ $('select').each(function () {
 
 });
 
+
+// dropdown style
+
+ function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                 this.icon = this.dd.children('i');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        return false;
+                    });
+
+                    obj.opts.on('click',function(){
+                        var opt = $(this);
+                        var icon2 = opt.find('i').attr('class');
+                        obj.val = opt.text();
+                        obj.index = opt.index();
+                        obj.placeholder.text(obj.val);
+                        obj.icon.addClass(icon2); 
+                    });
+                },
+                getValue : function() {
+                    return this.val;
+                },
+                getIndex : function() {
+                    return this.index;
+                }
+            }
+ 
+
+ $('.j-dropdown-list').each(function() {
+ 
+            
+
+                var dd = new DropDown(  $(this) );
+
+                $(document).click(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-3').removeClass('active');
+                });
+ });
+
+
+       
+
+
 $('.j-product-gal').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -1164,8 +1219,4 @@ $('.j-slick').slick();
          $('.j-features tr').slice(5).addClass('hidden');
          $(this).removeClass('active').text('Показать еще');
      }
-
-
-
-
  });

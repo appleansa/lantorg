@@ -131,14 +131,39 @@
                             <div class="cart-title">
                                 <h3>Способ оплаты</h3>
                             </div>
-                            <div class="form-field">
-                                <select name="select" id="shipping">
-                                    <option value="Выберите способ доставки">Выберите способ доставки</option>
-                                    <option value="0">"Новая почта"</option>
-                                    <option value="1">Самовывоз (бесплатно)</option>
-                                    <option value="2">Ваш вариант доставки (оговаривается отдельно)</option>
-                                </select>
-                            </div>
+                               <div class="form-field">
+                                    <div id="dd1" class="j-dropdown-list wrapper-dropdown-3" tabindex="1">
+                                        <i></i>
+                                        <span>Способы оплаты</span>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <input type="radio" name="payment_method_id" value="1" id="payment_method_1" checked="checked">
+                                                <label for="payment_method_1">
+                                                    <i class="icon icon-pcard"></i>
+                                                    <span>Оплата с банковской карты</span></label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="payment_method_id" value="1" id="payment_method_10" checked="checked">
+                                                <label for="payment_method_10">
+                                                    <i class="icon icon-pdelivery"></i>
+                                                    <span>Наложенный платёж
+                                                        <small>(Предоплата за доставку - 150 грн)</small></span></label>
+                                            </li>
+                                            <li> <input type="radio" name="payment_method_id" value="1" id="payment_method_15" checked="checked">
+                                                <label for="payment_method_15">
+                                                    <i class="icon icon-pbank"></i>
+                                                    <span>Оплата по счету</span></label></li>
+                                            <li> <input type="radio" name="payment_method_id" value="1" id="payment_method_16" checked="checked">
+                                                <label for="payment_method_16">
+                                                    <i class="icon icon-pbank-list"></i>
+                                                    <span>Безналичная оплата с НДС</span></label></li>
+                                            <li> <input type="radio" name="payment_method_id" value="1" id="payment_method_11" checked="checked">
+                                                <label for="payment_method_11">
+                                                    <i class="icon icon-pbank-nds"></i>
+                                                    <span>Ваш вариант оплаты (оговаривается)</span></label></li>
+                                        </ul>
+                                    </div>
+                                </div>
                           
 
                             <div class="row">

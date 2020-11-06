@@ -2445,10 +2445,10 @@ body {
 
     &-bg-title {
 
-         display: flex;
-         height: 100%;
-         align-items: center;
-         justify-content: center;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -2496,8 +2496,7 @@ body {
 
         h1 {
             font-size: 26px;
-    line-height: 28px;
-         
+            line-height: 28px;
         }
     }
 
@@ -3649,7 +3648,7 @@ body {
         margin: 1px 0;
 
         &:hover {
-             border: 1px solid $blue; 
+            border: 1px solid $blue;
         }
 
         &_img {

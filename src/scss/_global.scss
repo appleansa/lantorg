@@ -2,7 +2,7 @@ $blue: #007CC3;
 $lblue: #0f8fd8;
 $dblue: #03659D;
 
-$orange: #FF8D3B; 
+$orange: #FF8D3B;
 
 html {
     box-sizing: border-box;
@@ -38,7 +38,7 @@ h6 {
 
 a {
     text-decoration: none;
-    
+
 }
 
 button:focus,
@@ -528,11 +528,13 @@ input[type="submit"] {
 
 
     &-showmore {
-            font-size: 15px;
-            color: $blue;
+        font-size: 15px;
+        color: $blue;
 
-         &:hover { text-decoration: underline; }
-     }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
 
     &-gray {
@@ -914,6 +916,8 @@ input[type="submit"] {
 
 
 
+
+
 .social {
 
     a {
@@ -978,6 +982,53 @@ input[type="submit"] {
         display: block;
         position: absolute;
     }
+
+
+    &-pcard {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            background: url(../images/svg/icon-pcard.svg) 50% 50% no-repeat;
+        }
+    }
+
+    &-pdelivery {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            background: url(../images/svg/icon-pdelivery.svg) 50% 50% no-repeat;
+        }
+    }
+
+    &-pbank {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            background: url(../images/svg/icon-pbank.svg) 50% 50% no-repeat;
+        }
+    }
+
+    &-pbank-list {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            background: url(../images/svg/icon-pbank-list.svg) 50% 50% no-repeat;
+        }
+    }
+
+    &-pbank-nds {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            background: url(../images/svg/icon-pbank-nds.svg) 50% 50% no-repeat;
+        }
+    }
+
 }
 
 .icons-gray-blue {
@@ -1315,14 +1366,14 @@ input[type="submit"] {
 
 .icon-phone2 {
 
-     @extend .icon-phone;
+    @extend .icon-phone;
 
 
-     &:before {
-   mask: url(../images/svg/icon-phone2.svg) 50% 50% no-repeat;
+    &:before {
+        mask: url(../images/svg/icon-phone2.svg) 50% 50% no-repeat;
         background-color: $blue;
 
-     }
+    }
 }
 
 .icon-user {
@@ -1372,8 +1423,8 @@ input[type="submit"] {
 
     &_inner {
 
-         position: relative;
-         display: inline-block;
+        position: relative;
+        display: inline-block;
     }
 
     &-counter {
@@ -1828,9 +1879,9 @@ input[type="submit"] {
                 color: #616161;
             }
         }
- 
 
-        
+
+
 
         .text-input {
             height: 40px;
@@ -1899,7 +1950,11 @@ input[type="submit"] {
     }
 }
 
-.small-text { font-size: 12px;margin-bottom: 10px; display: block; }
+.small-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}
 
 
 .select {
@@ -2461,15 +2516,18 @@ input[type="number"] {
 
                     &:hover {
 
-                       b { color: $blue;  }
+                        b {
+                            color: $blue;
+                        }
                     }
                 }
 
                 b {
                     color: #333;
-                    
+
                 }
-                 i {
+
+                i {
                     position: absolute;
                     right: 0;
                     top: -2px;
@@ -2755,12 +2813,12 @@ input[type="number"] {
                 background-color: #B0B8BC;
             }
         }
-        
+
         &-label {
 
-             background: #F2F5F7;
-border-radius: 4px;
-padding: 10px;
+            background: #F2F5F7;
+            border-radius: 4px;
+            padding: 10px;
         }
 
 
@@ -3004,4 +3062,106 @@ ul#selectMenuBox>li.option:hover {
     color: #333;
     background: #e1e1e1;
     transition: .2s;
+}
+
+
+.wrapper-dropdown-3 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    font-family: ProximaRegular;
+    color: #858e93;
+    border: 1px solid #dbe1e4;
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 10px;
+
+}
+
+.wrapper-dropdown-3 > i[class*=icon] { flex-shrink: 0; width: 40px; margin-right: 20px;  }
+
+.wrapper-dropdown-3:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-color: #333 transparent transparent;
+    position: absolute;
+    top: 23px;
+    right: 15px;
+}
+
+.wrapper-dropdown-3>span {
+    line-height: 38px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+}
+
+
+.wrapper-dropdown-3 .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper-dropdown-3 input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+
+
+.wrapper-dropdown-3 .dropdown li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    line-height: 1;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.wrapper-dropdown-3 .dropdown li label span {
+    padding-left: 20px;
+}
+
+.wrapper-dropdown-3 .dropdown li label small {
+    font-size: 12px;
+    color: #858E93;
+    display: block;
+    line-height: 15px;
+}
+
+.wrapper-dropdown-3 .dropdown li label i {
+    width: 40px;
+    flex-shrink: 0;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-3 .dropdown li:hover label {
+    background-color: #f2f5f7;
+    cursor: pointer;
+    
+}
+
+/* Active state */
+
+.wrapper-dropdown-3.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
 }
