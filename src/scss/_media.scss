@@ -2171,6 +2171,15 @@ $blue: #007CC3;
             position: relative;
         }
 
+         &-title {
+
+        h1 {
+            font-size: 44px;
+    line-height: 46px;
+         
+        }
+    }
+
         &-date {
 
             padding-right: 15px;
@@ -2539,6 +2548,7 @@ $blue: #007CC3;
             top: 0;
             bottom: 0;
             width: 10%;
+              display: block;
 
             .swiper-btn-next:before,
             .swiper-btn-prev:before {}
@@ -3725,7 +3735,7 @@ $blue: #007CC3;
     .article {
 
         &-bg {
-            heigth: 300px;
+            height: 300px;
         }
 
         &-info-left {
