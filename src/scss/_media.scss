@@ -977,6 +977,7 @@ $blue: #007CC3;
         }
 
         &-icon {
+            margin-bottom: 15%;
             transition: all 0.3s ease;
         }
 
@@ -989,11 +990,25 @@ $blue: #007CC3;
             top: 0;
             bottom: 0;
             right: 0;
+            min-height: auto;
 
             &_inner {
-                padding-top: 20%;
+                padding-top: 15%;
+                 
+                height: 100%;
                 transition: all 0.3s ease;
+                display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
             }
+
+
+            &_title { font-size: 16px; line-height: 20px; height: 60px;
+             
+             overflow: hidden;
+
+             }
 
             &.on-hover-descr {
 
@@ -1091,6 +1106,8 @@ $blue: #007CC3;
                     &_title {
                         font-size: 16px;
                         line-height: 20px;
+                        height: 60px;
+                        overflow: hidden;
                     }
 
                     &_inner {
@@ -2783,6 +2800,9 @@ $blue: #007CC3;
 
             .btn-buy {
                 opacity: 1;
+
+    right: -25px;
+    bottom: -15px;
             }
         }
 
@@ -2839,10 +2859,12 @@ $blue: #007CC3;
 
                 .oldprice {
                     order: 1;
+                    white-space: nowrap;
                 }
 
                 .newprice {
                     order: 2;
+                    white-space: nowrap;
                 }
             }
 
@@ -2947,7 +2969,9 @@ $blue: #007CC3;
                     order: 1;
                     width: 172px;
                     flex-shrink: 0;
-                    text-align: center;
+                    display: flex;
+    align-items: center;
+    justify-content: center;
 
                     a {
                         display: inline-block;
@@ -3079,7 +3103,7 @@ $blue: #007CC3;
                 border-top: 1px solid #dbe1e4;
 
 
-                .label {}
+             
 
                 ul.menu {
 
@@ -3120,6 +3144,12 @@ $blue: #007CC3;
             }
         }
 
+
+        &-sortby {
+
+             margin-right: 100px;
+        }
+
     }
 
 
@@ -3127,6 +3157,10 @@ $blue: #007CC3;
 
         padding: 0;
         text-align: right;
+
+
+
+        &-countmode {  float: left; line-height: 47px;  }
     }
 
 
@@ -3394,7 +3428,7 @@ $blue: #007CC3;
                 .options {
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     align-items: center;
 
                     &_row {
@@ -3742,6 +3776,18 @@ $blue: #007CC3;
             display: flex;
             align-items: center;
         }
+    } 
+
+
+    .partners {
+
+         &-info {
+
+             .title {
+                font-size: 56px;
+    line-height: 60px;
+             }
+         }
     }
 
 
@@ -3810,6 +3856,11 @@ $blue: #007CC3;
 
         &-box {
             padding: 0;
+
+            &_inner { 
+
+               b {  font-size: 24px; margin-bottom: 10px;  } 
+               }
         }
     }
 
@@ -3828,6 +3879,10 @@ $blue: #007CC3;
         }
     }
 
+
+   .pagination {
+      margin-left: 325px;
+   }
 
 
 
@@ -3911,6 +3966,15 @@ $blue: #007CC3;
         }
     }
 
+    .pp {
+
+        &-item_title {
+    font-size: 18px;
+    line-height: 20px;
+ }
+
+}
+
 
 }
 
@@ -3930,9 +3994,9 @@ $blue: #007CC3;
 
 
 
-    .pp-item_inner {
-        padding-top: 40%;
-    }
+    // .pp-item_inner {
+    //     padding-top: 40%;
+    // }
 
 
     .pc-catalog-content {
@@ -3995,5 +4059,34 @@ $blue: #007CC3;
             }
         }
     }
+
+
+
+    .kb {
+        position: relative;
+
+        &-box {
+            padding: 0;
+            width: 340px;
+
+            &_inner { 
+
+               b {  font-size: 28px; margin-bottom: 15px;  } 
+               }
+
+               span {
+
+                 font-size: 16px;
+                 line-height: 19px;
+               }
+        }
+    }
+
+.knowlege-slider {
+    width: calc(120% - 340px);
+    margin-left: 340px;
+    padding-top: 0;
+}
+
 
 }

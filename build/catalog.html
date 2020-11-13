@@ -1142,10 +1142,9 @@
             <div class="container clear">
                 <div class="section-header has-btns">
                     <div class="h2 dib">Пассивное оптоволоконное оборудование </div>
-
                     <div class="section-header_btns align-right show-on-desktop">
-                        <a href="#" class="btn btn-blue">запросить прайс</a>
-                        <a href="#" class="btn btn-blue-border">помощь в выборе</a>
+                        <a href="#" class="btn btn-blue" data-micromodal-trigger="modal-contact">запросить прайс</a>
+                        <a href="#" class="btn btn-blue-border" data-micromodal-trigger="modal-ask">помощь в выборе</a>
                     </div>
                 </div>
             </div>
@@ -1292,20 +1291,18 @@
                     <div class="pc-catalog-control">
                         <div class="pc-catalog-sorter j-sorter">
                             <span class="label">сортировка</span>
-
-                              <div class="pc-catalog-sortby dib va-middle">
-                                  <a href="#" class="btn btn-blue-border hide-on-desktop j-mm-togle" data-toggle="sortmenu">
-                                <span>По возростанию цены</span>
-                                <i class="icon icon-arrows va-middle"></i>
-                            </a>
-                            <ul class="menu mobile-dropdown" data-modal-id="sortmenu">
-                                <li class="item"><a href="#"><span>По названию</span></a></li>
-                                <li class="item"><a href="#"><span>По возростанию цены</span></a></li>
-                                <li class="item"><a href="#"><span>По убыванию цены</span></a></li>
-                                <li class="item active"><a href="#"><span>По новизне</span></a></li>
-                            </ul>
-                              </div>
-
+                            <div class="pc-catalog-sortby dib va-middle">
+                                <a href="#" class="btn btn-blue-border hide-on-desktop j-mm-togle" data-toggle="sortmenu">
+                                    <span>По возростанию цены</span>
+                                    <i class="icon icon-arrows va-middle"></i>
+                                </a>
+                                <ul class="menu mobile-dropdown" data-modal-id="sortmenu">
+                                    <li class="item"><a href="#"><span>По названию</span></a></li>
+                                    <li class="item"><a href="#"><span>По возростанию цены</span></a></li>
+                                    <li class="item"><a href="#"><span>По убыванию цены</span></a></li>
+                                    <li class="item active"><a href="#"><span>По новизне</span></a></li>
+                                </ul>
+                            </div>
                             <a href="#" class="btn btn-blue hide-on-desktop j-mm-togle" data-toggle="mobile-filter">
                                 <i class="icon icon-toggle-filter va-middle"></i> <span>ФИЛЬТРЫ</span>
                             </a>
@@ -1320,20 +1317,20 @@
                         </div>
                     </div>
                     <div class="pc-products">
-                         <div class="has-banner">
-                             <a href="#" class="bnr-box cl-white">
-                            <div class="info">
-                                <h3>Коммутаторы Cisco</h3>
-                                <ul>
-                                    <li>Эксклюзивные цены и условия</li>
-                                    <li>2409 товаров</li>
-                                </ul>
-                            </div>
-                            <div class="img">
-                                <img src="./images/cisco-big.png" alt="">
-                            </div>
-                            <div class="ms-slide_circle"></div>
-                        </a>
+                        <div class="has-banner">
+                            <a href="#" class="bnr-box cl-white">
+                                <div class="info">
+                                    <h3>Коммутаторы Cisco</h3>
+                                    <ul>
+                                        <li>Эксклюзивные цены и условия</li>
+                                        <li>2409 товаров</li>
+                                    </ul>
+                                </div>
+                                <div class="img">
+                                    <img src="./images/cisco-big.png" alt="">
+                                </div>
+                                <div class="ms-slide_circle"></div>
+                            </a>
                         </div>
                         <div class="pc-product-slide pc-item">
                             <div class="pc-product">
@@ -1555,6 +1552,16 @@
                     </div>
                 </div>
                 <div class="pagination">
+                    <div class="pagination-countmode" id="choose_count">
+                        <script src="/design/optimize_lang/js/actions2.js"></script>
+                        <span>Товаров на странице:</span>  <span class="pagination-countmode__items">
+                             <a href="javascript:void(0)" onclick="setCountMode(20)">20</a>
+                        <a href="javascript:void(0)" class="selected" onclick="setCountMode(40)">40</a>
+                        <a href="javascript:void(0)" onclick="setCountMode(60)">60</a>
+                        <a href="javascript:void(0)" onclick="setCountMode(999)">Все</a>
+                        </span>
+                    </div>
+
                     <ul class="pagination-list">
                         <li class="page-prev"><a href="#"></a></li>
                         <li class="selected"><a href="#">1</a></li>

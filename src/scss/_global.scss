@@ -1884,11 +1884,13 @@ input[type="submit"] {
 
 
         .text-input {
+            font-family: 'ProximaRegular';
             height: 40px;
             width: 100%;
             line-height: 42px;
             border: 1px solid #DBE1E4;
             background: #fff;
+            color: #333;
             font-size: 15px;
             text-indent: 12px;
             transition: all 0.3s ease;
@@ -1901,6 +1903,7 @@ input[type="submit"] {
         .text-area {
             font-family: 'ProximaRegular';
             border: 1px solid #DBE1E4;
+            color: #333;
             font-size: 15px;
             outline: none;
             padding: 12px;
@@ -2054,6 +2057,10 @@ input[type="submit"] {
 
             padding: 9px 12px;
             background: #F2F5F7;
+        }
+
+        input[type="checkbox"]+label:hover {
+             background: #d8e4ec;
         }
 
 
@@ -3072,7 +3079,7 @@ ul#selectMenuBox>li.option:hover {
     position: relative;
     font-size: 15px;
     font-family: ProximaRegular;
-    color: #858e93;
+    color: #333;
     border: 1px solid #dbe1e4;
     width: 100%;
     height: 50px;
