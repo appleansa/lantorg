@@ -3401,6 +3401,7 @@ $blue: #007CC3;
 
                         width: 40px;
                         height: 40px;
+                        line-height: 40px;
                     }
                 }
 
@@ -3518,8 +3519,10 @@ $blue: #007CC3;
                 margin: 0 15px;
 
                 img {
-                    width: 100%;
-                    height: auto;
+                    max-height: 110px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
                     display: block;
                 }
             }

@@ -494,9 +494,9 @@ input[type="submit"] {
     font-family: 'ProximaSemi';
     display: inline-block;
     width: auto;
-    height: 40px;
+    height: 48px;
     text-align: center;
-    line-height: 40px;
+    line-height: 48px;
     padding: 0 40px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -2244,6 +2244,10 @@ input[type="number"] {
         box-sizing: border-box;
         outline: none;
         height: 100%;
+        line-height: 48px;
+    text-align: center;
+    padding: 0;
+
 
         &:hover {
             background: $blue;
