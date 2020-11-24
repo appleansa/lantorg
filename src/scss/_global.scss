@@ -495,6 +495,7 @@ input[type="submit"] {
     text-transform: uppercase;
     font-size: 12px;
     transition: all 0.3s ease;
+    cursor: pointer;
 
     &-blue {
         background: $blue;
@@ -2422,22 +2423,59 @@ input[type="number"] {
     }
 
 
+ h1 {
+
+        font-size: 40px;
+       line-height: 140%;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+
     h2 {
 
         font-size: 32px;
-        line-height: 40px;
+       line-height: 140%;
+        margin-top: 16px;
         margin-bottom: 24px;
         text-transform: uppercase;
         color: #333;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 28px;
+        line-height: 140%;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+      h4 {
+        font-size: 24px;
+        line-height: 140%;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+      h5 {
+        font-size: 20px;
         line-height: 140%;
         margin-bottom: 24px;
         text-transform: uppercase;
         color: #333;
+    }
 
+     h6 {
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        color: #333;
     }
 
     a {
@@ -2606,6 +2644,7 @@ input[type="number"] {
         display: inline-block;
         max-width: 100%;
         height: auto;
+
     }
 
 

@@ -7,6 +7,12 @@ $blue: #007CC3;
         margin-bottom: 0;
         margin-right: 15px;
     }
+
+      .branch-item_title {
+
+         font-size: 16px;
+         line-height: 20px;
+    }
 }
 
 
@@ -24,6 +30,12 @@ $blue: #007CC3;
                 vertical-align: top;
             }
         }
+    }
+
+    .branch-item_title {
+
+         font-size: 18px;
+         line-height: 21px;
     }
 
 
@@ -1739,6 +1751,11 @@ $blue: #007CC3;
                 margin-right: 15px;
             }
 
+
+            .header-phones {
+                 padding-right: 0px;
+            }
+
             .header-navi_toggle {
                 display: block;
             }
@@ -1754,10 +1771,8 @@ $blue: #007CC3;
             padding-top: 25px;
             border-top: 1px solid #DBE1E4;
             margin-top: -1px;
-
-
         }
-
+  
 
         &_logo {
             margin-right: 40px;
@@ -1768,6 +1783,8 @@ $blue: #007CC3;
             position: absolute;
             top: -32px;
             right: 105px;
+            padding-right: 20px;
+
 
             .hp-item {
                 position: relative;
@@ -1953,6 +1970,9 @@ $blue: #007CC3;
                 display: none;
             }
         }
+
+
+
 
 
         li {
@@ -3496,7 +3516,7 @@ $blue: #007CC3;
              width: 100%;
 
 
-             a {
+             a, span {
                 display: block;
                 text-align: center;
                 padding: 15px 0;
@@ -3506,6 +3526,7 @@ $blue: #007CC3;
                 text-transform: uppercase;
                 font-family: 'ProximaSemi';
                 position: relative;
+                cursor: pointer;
 
                 border-bottom: 1px solid #DBE1E4;
 

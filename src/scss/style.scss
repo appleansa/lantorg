@@ -5,7 +5,7 @@
 @import 'dlmenu';
 @import 'modal';
 
-
+ 
 
 $blue: #007CC3;
 
@@ -546,6 +546,14 @@ body {
         display: block;
         position: relative;
 
+         &_icon {
+                display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 15px;
+        }
+
         li:hover>ul {
             visibility: visible;
         }
@@ -607,7 +615,8 @@ body {
         align-items: center;
 
         a {
-            display: block;
+            display: flex;
+            align-items: center;
             width: 100%;
             padding: 16px 24px;
             margin-left: -24px;
@@ -1064,14 +1073,30 @@ body {
         &_inner {
 
             display: block;
-            padding: 50px 0 30px;
+          //  padding: 50px 0 30px;
         }
 
         &_pic {
             position: relative;
             width: 100%;
-            padding-top: 56%;
+            padding-top: 60%;
             display: block;
+
+            &.image-center {
+
+                text-align: center;
+
+                 img {
+                     
+                      position: absolute;
+                      width: 40%;
+                      top: 3%;
+                      margin-left: -20%;
+
+                 }
+            }
+
+           
 
             &.cisco {
                 background: url(../images/im1.png) center center no-repeat;
@@ -1111,9 +1136,18 @@ body {
             line-height: 21px;
             margin-left: 25px;
             display: block;
+            position: absolute;
+    bottom: 20px;
 
             br {
                 display: none;
+            }
+
+            &.text-center {
+
+                 margin-left: 0;
+                 text-align: center;
+                 width: 100%;
             }
         }
     }
@@ -1436,15 +1470,15 @@ body {
 
         &-bottom {
 
-            b { 
+            b {
                 display: inline-block;
-            font-size: 16px;
-            margin-bottom: 5px;
-              }
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
 
-             p {
+            p {
                 font-size: 12px;
-             }
+            }
         }
 
 
@@ -1853,6 +1887,20 @@ body {
     &-bg {
 
         padding: 80px 0 40px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 124, 195, .5);
+        }
     }
 
     &-info {
@@ -2421,12 +2469,12 @@ body {
             position: relative;
 
             &:before {
-                 content: '';
-                 width: 100%;
-                 height: 100%;
-                 display: block;
-                 position: absolute;
-                 background: rgba(0, 124, 195, 0.5)
+                content: '';
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                background: rgba(0, 124, 195, 0.5)
             }
         }
 
@@ -2467,6 +2515,23 @@ body {
         width: 100%;
         height: 250px;
         margin-bottom: 40px;
+        position: relative;
+
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 124, 195, .5);
+        }
+
+
     }
 
     &-bg-title {
@@ -2514,7 +2579,7 @@ body {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin-bottom: 6px;
-        
+
     }
 
     &-title {
@@ -3688,24 +3753,24 @@ body {
         margin: 1px 0;
 
         &:hover {
-           outline: 1px solid #007cc3;
-    z-index: 1;
+            outline: 1px solid #007cc3;
+            z-index: 1;
         }
 
         &_img {
-                position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-            
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
             img {
 
-                 display: block;
-                 max-width: 170px;
-                 max-height: 170px;
-                 width: auto;
-                 height: auto;
+                display: block;
+                max-width: 170px;
+                max-height: 170px;
+                width: auto;
+                height: auto;
             }
 
         }
@@ -4186,7 +4251,7 @@ body {
             }
 
             a:hover {
-                 color: $blue; 
+                color: $blue;
             }
 
             a {
@@ -4267,7 +4332,7 @@ body {
 }
 
 
- 
+
 .pagination {
 
 
@@ -4275,22 +4340,23 @@ body {
     padding: 0 20px;
     text-align: center;
 
-     &-countmode {
+    &-countmode {
 
         margin-bottom: 40px;
 
-         a { color: $blue; 
-             
+        a {
+            color: $blue;
+
             margin: 0 5px;
 
-            &.selected { font-weight: bold;  }
+            &.selected {
+                font-weight: bold;
+            }
 
-               &:hover {
-                   
-               }
+            &:hover {}
 
-           }
-     }
+        }
+    }
 
 
 
@@ -4675,9 +4741,9 @@ body {
     padding: 50px 0;
 
 
- &-content-anchors  {
-    display: none;
- }
+    &-content-anchors {
+        display: none;
+    }
 
     &-top_info {
 
@@ -4736,7 +4802,7 @@ body {
             display: inline-block;
             vertical-align: top;
 
-             border-right: 1px solid #dbe1e4;
+            border-right: 1px solid #dbe1e4;
 
 
             &:first-child {
@@ -4780,17 +4846,17 @@ body {
         margin-bottom: 25px;
 
         &-slide {
-  
+
             display: flex !important;
             align-items: center;
             justify-content: center;
 
             img {
-                    display: block;
-    height: 100%;
-    width: 100%;
-    max-width: 600px;
-    max-height: 500px;
+                display: block;
+                height: 100%;
+                width: 100%;
+                max-width: 600px;
+                max-height: 500px;
             }
         }
     }
