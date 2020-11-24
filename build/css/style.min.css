@@ -8259,10 +8259,8 @@ body.is-mnavi .header-top-navi {
 
 .product-galery-slide img {
   display: block;
-  height: 100%;
+  height: auto;
   width: 100%;
-  max-width: 600px;
-  max-height: 500px;
 }
 
 .product-controls {
