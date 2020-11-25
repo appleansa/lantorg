@@ -5,7 +5,7 @@
 @import 'dlmenu';
 @import 'modal';
 
- 
+
 
 $blue: #007CC3;
 
@@ -546,12 +546,12 @@ body {
         display: block;
         position: relative;
 
-         &_icon {
-                display: block;
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    margin-right: 15px;
+        &_icon {
+            display: block;
+            width: 25px;
+            height: 25px;
+            flex-shrink: 0;
+            margin-right: 15px;
         }
 
         li:hover>ul {
@@ -1073,7 +1073,7 @@ body {
         &_inner {
 
             display: block;
-          //  padding: 50px 0 30px;
+            //  padding: 50px 0 30px;
         }
 
         &_pic {
@@ -1086,17 +1086,17 @@ body {
 
                 text-align: center;
 
-                 img {
-                     
-                      position: absolute;
-                      width: 40%;
-                      top: 3%;
-                      margin-left: -20%;
+                img {
 
-                 }
+                    position: absolute;
+                    width: 40%;
+                    top: 3%;
+                    margin-left: -20%;
+
+                }
             }
 
-           
+
 
             &.cisco {
                 background: url(../images/im1.png) center center no-repeat;
@@ -1137,7 +1137,7 @@ body {
             margin-left: 25px;
             display: block;
             position: absolute;
-    bottom: 20px;
+            bottom: 20px;
 
             br {
                 display: none;
@@ -1145,9 +1145,9 @@ body {
 
             &.text-center {
 
-                 margin-left: 0;
-                 text-align: center;
-                 width: 100%;
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
             }
         }
     }
@@ -2498,6 +2498,51 @@ body {
         }
 
     }
+
+
+    &-item {
+
+        display: block;
+        padding: 0 0 20px;
+        border-bottom: 1px solid #dbe1e4;
+
+        &_img {
+
+            img {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+
+            margin-bottom: 20px;
+        }
+
+        &_info {
+
+             .date {
+                font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+             }
+            .title {
+                font-size: 18px;
+                line-height: 21px;
+                display: block;
+
+                font-family: "ProximaSemi";
+                margin-bottom: 10px;
+            }
+
+            .info {
+
+                font-size: 15px;
+                line-height: 19px;
+
+            }
+        }
+    }
 }
 
 /// article 
@@ -3763,14 +3808,22 @@ body {
             align-items: center;
             justify-content: center;
             margin: 0 auto;
+            height: 130px;
 
             img {
-
                 display: block;
                 max-width: 170px;
-                max-height: 170px;
+                max-height: 120px;
                 width: auto;
                 height: auto;
+                filter: grayscale(100%);
+                transition: all 0.5s ease;
+            }
+
+            &:hover img {
+                 filter: grayscale(0%);
+                 transform: scale(1.1);
+
             }
 
         }
@@ -4855,7 +4908,7 @@ body {
                 display: block;
                 height: auto;
                 width: 100%;
-               
+
             }
         }
     }

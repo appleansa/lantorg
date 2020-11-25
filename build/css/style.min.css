@@ -3068,7 +3068,12 @@ ul#selectMenuBox > li.option:hover {
 }
 
 .dl-menuwrapper li a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 16px 0;
   font-size: 15px;
@@ -4592,8 +4597,8 @@ body.is-mnavi .header-top-navi {
 
 .hc-menu_icon {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 15px;
@@ -6270,6 +6275,43 @@ body.is-mnavi .header-top-navi {
   color: #858E93;
 }
 
+.articles-item {
+  display: block;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #dbe1e4;
+}
+
+.articles-item_img {
+  margin-bottom: 20px;
+}
+
+.articles-item_img img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.articles-item_info .date {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.articles-item_info .title {
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  font-family: "ProximaSemi";
+  margin-bottom: 10px;
+}
+
+.articles-item_info .info {
+  font-size: 15px;
+  line-height: 19px;
+}
+
 .article .share-box {
   position: relative;
 }
@@ -7338,14 +7380,28 @@ body.is-mnavi .header-top-navi {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  height: 130px;
 }
 
 .pc-branch-slide_img img {
   display: block;
   max-width: 170px;
-  max-height: 170px;
+  max-height: 120px;
   width: auto;
   height: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.pc-branch-slide_img:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .pc-branch-slide_link {
@@ -8521,6 +8577,29 @@ body.is-mnavi .header-top-navi {
     font-size: 18px;
     line-height: 21px;
   }
+  .articles-item {
+    border-left: 1px solid #dbe1e4;
+    border-right: 1px solid #dbe1e4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0;
+  }
+  .articles-item:first-child {
+    border-top: 1px solid #dbe1e4;
+  }
+  .articles-item_img {
+    border-right: 1px solid #dbe1e4;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .articles-item_info {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -8681,6 +8760,7 @@ body.is-mnavi .header-top-navi {
   }
   .section-header {
     margin-bottom: 30px;
+    min-height: 50px;
   }
   .section-header .h2 {
     font-size: 36px;

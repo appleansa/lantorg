@@ -40,6 +40,36 @@ $blue: #007CC3;
 
 
 
+.articles {
+
+     &-item {
+
+        border-left: 1px solid #dbe1e4;
+        border-right: 1px solid #dbe1e4;
+        display: flex;
+        padding-bottom: 0;
+
+
+        &:first-child {
+            border-top: 1px solid #dbe1e4;
+        }
+
+         &_img {
+            border-right: 1px solid #dbe1e4;
+              flex-shrink: 0;
+              width: 200px;
+              padding: 20px;
+              margin-bottom: 0;
+         }
+
+         &_info {
+            width: 100%;
+            padding: 20px;
+
+         }
+     }
+}
+
 
 
 }
@@ -294,6 +324,7 @@ $blue: #007CC3;
 
         &-header {
             margin-bottom: 30px;
+            min-height: 50px;
 
             .h2 {
                 font-size: 36px;
@@ -1970,9 +2001,6 @@ $blue: #007CC3;
                 display: none;
             }
         }
-
-
-
 
 
         li {
@@ -3857,6 +3885,8 @@ $blue: #007CC3;
             align-items: center;
         }
     } 
+
+   
 
 
     .partners {

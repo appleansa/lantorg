@@ -61,7 +61,8 @@
 .dl-subview { border-bottom: none !important; }
 
 .dl-menuwrapper li a {
-	display: block;
+	display: flex;
+	align-items: center;
     width: 100%;
     padding: 16px 0;
     font-size: 15px;
