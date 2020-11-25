@@ -3816,15 +3816,10 @@ body {
                 max-height: 120px;
                 width: auto;
                 height: auto;
-                filter: grayscale(100%);
-                transition: all 0.5s ease;
+              
             }
 
-            &:hover img {
-                 filter: grayscale(0%);
-                 transform: scale(1.1);
-
-            }
+         
 
         }
 

@@ -7389,19 +7389,6 @@ body.is-mnavi .header-top-navi {
   max-height: 120px;
   width: auto;
   height: auto;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.pc-branch-slide_img:hover img {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .pc-branch-slide_link {
