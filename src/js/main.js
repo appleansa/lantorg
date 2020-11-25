@@ -480,7 +480,7 @@
              document.querySelectorAll('.j-pc-branch').forEach(n => {
 
                  var catalogBranchSwiper = new Swiper(n, {
-                     loop: true,
+                     loop: false,
                      slidesPerView: 'auto',
                      spaceBetween: 0,
                      updateOnWindowResize: true,
