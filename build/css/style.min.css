@@ -5214,10 +5214,17 @@ body.is-mnavi .header-top-navi {
           flex-direction: column;
 }
 
+.numbers-item:hover .caption {
+  font-size: 36px;
+}
+
 .numbers-item .caption {
   font-size: 30px;
   line-height: 37px;
   font-family: "ProximaBold";
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .numbers-item .under {
@@ -9048,7 +9055,9 @@ body.is-mnavi .header-top-navi {
     overflow: visible;
   }
   .numbers-item {
-    width: 33.33331%;
+    width: calc(100% / 6);
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     border: 1px solid #dbe1e4;
     height: 180px;
     padding: 30px 25px;
@@ -9058,8 +9067,11 @@ body.is-mnavi .header-top-navi {
     margin-top: 179px;
   }
   .numbers-item .caption {
-    font-size: 52px;
+    font-size: 46px;
     line-height: 60px;
+  }
+  .numbers-item:hover .caption {
+    font-size: 52px;
   }
   .clients,
   .projects {
@@ -9384,6 +9396,7 @@ body.is-mnavi .header-top-navi {
     overflow: hidden;
   }
   .return-slider .pp-slide .pp-item_inner {
+    display: block;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -9653,7 +9666,7 @@ body.is-mnavi .header-top-navi {
     background-color: #fff;
   }
   .nc-item {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .nc-box {
     padding: 40px 48px;

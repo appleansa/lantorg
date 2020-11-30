@@ -1253,10 +1253,17 @@ body {
             flex-direction: column;
         }
 
+        &:hover {
+            .caption {
+                 font-size: 36px; 
+            }
+        }
+
         .caption {
             font-size: 30px;
             line-height: 37px;
             font-family: "ProximaBold";
+            transition: all 0.3s ease;
         }
 
         .under {

@@ -720,7 +720,8 @@ $blue: #007CC3;
         }
 
         &-item {
-            width: 33.33331%;
+            width: calc(100% / 6);
+            flex-shrink: 0;
             border: 1px solid #dbe1e4;
             height: 180px;
             padding: 30px 25px;
@@ -732,8 +733,14 @@ $blue: #007CC3;
             }
 
             .caption {
-                font-size: 52px;
+                font-size: 46px;
                 line-height: 60px;
+            }
+
+            &:hover {
+                .caption {
+                    font-size: 52px;
+                }
             }
 
         }
@@ -1154,6 +1161,7 @@ $blue: #007CC3;
                     }
 
                     &_inner {
+                        display: block;
                         transition: all 0.3s ease;
                     }
 
@@ -1509,7 +1517,7 @@ $blue: #007CC3;
         }
 
         &-item {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         &-box {
