@@ -759,6 +759,9 @@ $blue: #007CC3;
             left: 0;
             top: -90px;
             bottom: 90px;
+            display: flex;
+    flex-direction: column;
+    justify-content: space-between;
         }
 
         .swiper-navi-compact {

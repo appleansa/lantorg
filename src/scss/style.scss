@@ -8,7 +8,7 @@
 
 
 $blue: #007CC3;
-
+ 
 $lblue: #0f8fd8;
 
 
@@ -2493,6 +2493,7 @@ body {
             text-decoration: none;
             display: block;
 
+
             b {
                 margin-bottom: 0;
             }
@@ -2517,6 +2518,7 @@ body {
 
             img {
                 width: 100%;
+                max-width: 160px;
                 display: block;
                 height: auto;
             }
@@ -2540,6 +2542,14 @@ body {
 
                 font-family: "ProximaSemi";
                 margin-bottom: 10px;
+
+                &:hover a {
+                    color: $blue;
+                }
+
+                a {
+                     color: #333;
+                }
             }
 
             .info {
@@ -3782,12 +3792,15 @@ body {
     background: #F2F5F7;
     overflow: hidden;
 
-
     &-slider {
-
         padding-bottom: 35px;
-        padding-left: 1px;
-        border-top: 1px solid #dbe1e4;
+
+
+        .pc-product-slide:first-child {
+            border-left: 1px solid #dbe1e4;
+        }
+
+        .pc-product { border-top: 1px solid #dbe1e4;  }
     }
 
     .swiper-slide-active {
@@ -3798,15 +3811,23 @@ body {
     }
 
     &-slide {
-
+         box-sizing: border-box;
         background: #fff;
         width: 240px;
         height: auto;
         margin: 1px 0;
+        border-top: 1px solid #dbe1e4;
+            border-bottom: 1px solid #dbe1e4;
+            border-right: 1px solid #dbe1e4;
 
         &:hover {
-            outline: 1px solid #007cc3;
+            
+            
+            .pc-branch-slide_link {
+                outline: 1px solid #007cc3;
             z-index: 1;
+            }
+
         }
 
         &_img {
@@ -3826,17 +3847,21 @@ body {
               
             }
 
-         
-
         }
+
+           &:first-child {
+                   border-left: 1px solid #dbe1e4;
+            }
 
         &_link {
             display: block;
             padding: 15px 25px;
-            border-bottom: 1px solid #dbe1e4;
-            border-right: 1px solid #dbe1e4;
+            // border-top: 1px solid #dbe1e4;
+            // border-bottom: 1px solid #dbe1e4;
+            // border-right: 1px solid #dbe1e4;
             color: #333;
             height: 100%;
+
         }
 
         &_title {
