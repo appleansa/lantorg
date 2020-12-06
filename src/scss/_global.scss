@@ -216,12 +216,12 @@ p {
     &-white-btn {
         border: 1px solid #fff;
 
-        &:hover {
+        &:not(.swiper-button-disabled):hover {
 
             background: #fff;
         }
 
-        &:hover:before {
+        &:not(.swiper-button-disabled):hover:before {
             border-color: $blue;
         }
     }
@@ -345,11 +345,11 @@ p {
                 border: 0px;
                 background: #DBE1E4;
 
-                &:hover {
+                &:not(.swiper-button-disabled):hover {
                     background: $blue;
                 }
 
-                &:hover:before {
+                &:not(.swiper-button-disabled):hover:before {
                     border-color: #fff;
                 }
             }

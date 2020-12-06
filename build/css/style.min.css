@@ -286,11 +286,11 @@ p {
   border: 1px solid #fff;
 }
 
-.swiper-white-btn:hover {
+.swiper-white-btn:not(.swiper-button-disabled):hover {
   background: #fff;
 }
 
-.swiper-white-btn:hover:before {
+.swiper-white-btn:not(.swiper-button-disabled):hover:before {
   border-color: #007CC3;
 }
 
@@ -397,11 +397,11 @@ p {
   background: #DBE1E4;
 }
 
-.swiper-mobile-blue .swiper-white-btn:hover {
+.swiper-mobile-blue .swiper-white-btn:not(.swiper-button-disabled):hover {
   background: #007CC3;
 }
 
-.swiper-mobile-blue .swiper-white-btn:hover:before {
+.swiper-mobile-blue .swiper-white-btn:not(.swiper-button-disabled):hover:before {
   border-color: #fff;
 }
 
