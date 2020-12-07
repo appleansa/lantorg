@@ -3553,6 +3553,11 @@ $blue: #007CC3;
     background: #fff;
     z-index: 90;
 }
+
+
+&-content {
+    min-height: 700px;
+}
         
 
         &-content__anchor {
@@ -3574,11 +3579,13 @@ $blue: #007CC3;
 
                 border-bottom: 1px solid #DBE1E4;
 
-                &:hover {
+             }
+
+               a:hover {
                     color: $blue;
                 }
 
-                &.active {
+                a.active {
 
                      color: $blue;
 
@@ -3593,7 +3600,6 @@ $blue: #007CC3;
                         bottom: -1px;
                      }
                 }
-             }
         }
 
 

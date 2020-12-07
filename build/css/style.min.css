@@ -8309,10 +8309,8 @@ body.is-mnavi .header-top-navi {
 
 .product-galery-slide img {
   display: block;
+  width: 100%;
   height: auto;
-  max-height: 100%;
-  width: auto;
-  max-width: 100%;
 }
 
 .product-controls {
@@ -11210,6 +11208,9 @@ body.is-mnavi .header-top-navi {
     top: 82px;
     background: #fff;
     z-index: 90;
+  }
+  .product-content {
+    min-height: 700px;
   }
   .product-content__anchor {
     width: 100%;
