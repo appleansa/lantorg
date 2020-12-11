@@ -26,7 +26,8 @@
 		animationClasses : { classin : 'dl-animate-in-1', classout : 'dl-animate-out-1' },
 		// callback: click a link that has a sub menu
 		// el is the link element (li); name is the level name
-		onLevelClick : function( el, name ) { return false; },
+		onLevelClick : function( el, name ) { // return false; 
+		},
 		// callback: click a link that does not have a sub menu
 		// el is the link element (li); ev is the event obj
 		onLinkClick : function( el, ev ) { return false; },
@@ -76,7 +77,8 @@
 			this.open = false;
 			this.$trigger = this.$el.children( '.dl-trigger' );
 			this.$menu = this.$el.children( 'ul.dl-menu' );
-			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
+		//	this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
+			this.$menuitems = this.$menu.find( 'li:not(.dl-back) .dl-submenu-open' );
 			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">' + this.options.backLabel + '</a></li>' );
 			this.$back = this.$menu.find( 'li.dl-back' );
 
@@ -120,9 +122,9 @@
 
 			this.$menuitems.on( 'click.dlmenu', function( event ) {
 
-				event.stopPropagation();
+			 	// event.stopPropagation();
 
-				var $item = $(this),
+				var $item = $(this).parent(),
 					$submenu = $item.children( 'ul.dl-submenu' );
 
 				// Only go to the next menu level if one exists AND the link isn't the
@@ -153,6 +155,9 @@
 
 				}
 				else {
+
+
+
 					self.options.onLinkClick( $item, event );
 				}
 

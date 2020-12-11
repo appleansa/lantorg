@@ -3023,18 +3023,23 @@ ul#selectMenuBox > li.option:hover {
 }
 
 .dl-menuwrapper li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  padding: 16px 0;
+  width: auto;
+  margin: 15px 0;
+  padding: 0 0 0 40px;
   font-size: 15px;
   line-height: 140%;
   color: #333;
   position: relative;
+}
+
+.dl-menuwrapper li a i {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .no-touch .dl-menuwrapper li a:hover {
@@ -3048,13 +3053,13 @@ ul#selectMenuBox > li.option:hover {
   line-height: 26px;
 }
 
-.dl-menuwrapper li > a:not(:only-child):after {
+.dl-submenu-open {
   content: '';
-  width: 10px;
-  height: 12px;
+  width: 40px;
+  height: 40px;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 10px;
   margin-top: -5px;
   right: 5px;
   background: url(../images/svg/icon-arrow-right.svg) 50% 50% no-repeat;
@@ -11228,13 +11233,13 @@ body.is-mnavi .header-top-navi {
     cursor: pointer;
     border-bottom: 1px solid #DBE1E4;
   }
-  .product-content__anchor a:hover, .product-content__anchor span:hover {
+  .product-content__anchor a:hover {
     color: #007CC3;
   }
-  .product-content__anchor a.active, .product-content__anchor span.active {
+  .product-content__anchor a.active {
     color: #007CC3;
   }
-  .product-content__anchor a.active:after, .product-content__anchor span.active:after {
+  .product-content__anchor a.active:after {
     content: '';
     width: 100%;
     height: 1px;
