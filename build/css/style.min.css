@@ -3023,23 +3023,19 @@ ul#selectMenuBox > li.option:hover {
 }
 
 .dl-menuwrapper li a {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: auto;
-  margin: 15px 0;
-  padding: 0 0 0 40px;
+  width: calc(100% - 35px);
+  margin: 0px 25px 0px 0;
+  padding: 15px 0 15px 0px;
   font-size: 15px;
   line-height: 140%;
   color: #333;
   position: relative;
-}
-
-.dl-menuwrapper li a i {
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .no-touch .dl-menuwrapper li a:hover {
@@ -3061,7 +3057,7 @@ ul#selectMenuBox > li.option:hover {
   position: absolute;
   top: 10px;
   margin-top: -5px;
-  right: 5px;
+  right: 0px;
   background: url(../images/svg/icon-arrow-right.svg) 50% 50% no-repeat;
 }
 
