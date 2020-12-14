@@ -8139,6 +8139,7 @@ body.is-mnavi .header-top-navi {
   float: left;
   padding-right: 15px;
   position: relative;
+  text-align: center;
 }
 
 .cart-box_item .cat {
@@ -8157,8 +8158,7 @@ body.is-mnavi .header-top-navi {
 }
 
 .cart-box_item .name a {
-  color: #007CC3;
-  text-decoration: underline;
+  color: #333;
 }
 
 .cart-box_item .remove {

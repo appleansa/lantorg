@@ -4765,6 +4765,7 @@ body {
             float: left;
             padding-right: 15px;
             position: relative;
+            text-align: center;
         }
 
         .cat {
@@ -4782,8 +4783,7 @@ body {
             font-family: 'ProximaSemi';
 
             a {
-                color: $blue;
-                text-decoration: underline;
+                color: #333;
             }
         }
 
