@@ -7484,6 +7484,7 @@ body.is-mnavi .header-top-navi {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .pc-catalog-content.tale .pc-product_top {
