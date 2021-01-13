@@ -4386,16 +4386,17 @@ body.is-mnavi .header-top-navi {
 }
 
 .autocomplete-w1 {
-  width: 100%;
+  width: 100% !important;
   position: absolute;
   left: 0;
-  top: 48px;
+  top: 48px !important;
   background: #fff;
   border: 1px solid #DBE1E4;
   border-top: 0px;
   padding-left: 15px;
   height: 300px;
   overflow: auto;
+  margin: 0 !important;
 }
 
 .autocomplete-cat label {
