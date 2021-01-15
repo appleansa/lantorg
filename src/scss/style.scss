@@ -359,8 +359,7 @@ body {
 
 
 .autocomplete {
-    &-w1 {
-        width: 100% !important;
+     width: 100% !important;
         position: absolute;
         left: 0;
         top: 48px !important;
@@ -371,7 +370,7 @@ body {
         height: 300px;
         overflow: auto;
         margin: 0 !important;
-    }
+
 
     &-cat {
         label {
@@ -388,46 +387,61 @@ body {
 
     }
 
-    &-product {
+   .suggest-box {
 
         display: flex;
         justify-content: space-between;
+        padding: 12px 0 12px 65px;
+        position: relative;
+         border-bottom: 1px solid #DBE1E4;
+         min-height: 75px;
 
-        &-name {
-            padding-right: 15px;
+        a:first-child {
+            
+            flex-shrink: 0;
+            width: 60px;
+            position: absolute;
+            left: 0;
+            top: 12px;
         }
 
-        .small-text {
-            font-size: 12px;
-            line-height: 15px;
-            color: #616161;
-            display: block;
+        a:nth-child(2) {
+
+             font-size: 16px;
+            line-height: 19px;
+            color: #333;
             margin-bottom: 6px;
         }
 
 
-        b {
+        strong {
             font-size: 16px;
             line-height: 19px;
             color: #333;
             margin-bottom: 6px;
         }
 
-        &-price {
+        
+    }
 
-            flex-shrink: 0;
+    .suggest-price {
+         flex-shrink: 0;
             width: 120px;
-
-
-        }
+            font-size: 16px;
+            line-height: 19px;
+            color: #333;
+            margin-bottom: 6px;
+            font-family: 'ProximaSemi';
     }
 
 
 
-    .searchresult {
+    .suggest-image {
 
         position: relative;
         overflow: hidden;
+        height: 50px;
+        width: 50px; 
 
         &:after {
             content: '';
@@ -441,19 +455,7 @@ body {
 
         }
 
-        .pic {
-
-            position: absolute;
-            left: 3px;
-            top: 15px;
-            width: 48px;
-            height: 48px;
-            line-height: 48px;
-            text-align: center;
-            display: block;
-            border-radius: 50%;
-            overflow: hidden;
-            background: #fff;
+      
 
             img {
                 display: inline-block;
@@ -461,7 +463,7 @@ body {
                 height: auto;
                 vertical-align: middle;
             }
-        }
+        
 
 
         &.selected,
@@ -469,7 +471,7 @@ body {
             background: #F2F5F7;
         }
 
-        padding: 12px 0 12px 64px;
+   
     }
 }
 

@@ -4385,7 +4385,7 @@ body.is-mnavi .header-top-navi {
   background: url(../images/svg/icon-clock.svg) 50% 50% no-repeat;
 }
 
-.autocomplete-w1 {
+.autocomplete {
   width: 100% !important;
   position: absolute;
   left: 0;
@@ -4410,47 +4410,61 @@ body.is-mnavi .header-top-navi {
   padding: 32px 0 12px;
 }
 
-.autocomplete-product {
+.autocomplete .suggest-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 12px 0 12px 65px;
+  position: relative;
+  border-bottom: 1px solid #DBE1E4;
+  min-height: 75px;
 }
 
-.autocomplete-product-name {
-  padding-right: 15px;
+.autocomplete .suggest-box a:first-child {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 60px;
+  position: absolute;
+  left: 0;
+  top: 12px;
 }
 
-.autocomplete-product .small-text {
-  font-size: 12px;
-  line-height: 15px;
-  color: #616161;
-  display: block;
-  margin-bottom: 6px;
-}
-
-.autocomplete-product b {
+.autocomplete .suggest-box a:nth-child(2) {
   font-size: 16px;
   line-height: 19px;
   color: #333;
   margin-bottom: 6px;
 }
 
-.autocomplete-product-price {
+.autocomplete .suggest-box strong {
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.autocomplete .suggest-price {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 120px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  margin-bottom: 6px;
+  font-family: 'ProximaSemi';
 }
 
-.autocomplete .searchresult {
+.autocomplete .suggest-image {
   position: relative;
   overflow: hidden;
-  padding: 12px 0 12px 64px;
+  height: 50px;
+  width: 50px;
 }
 
-.autocomplete .searchresult:after {
+.autocomplete .suggest-image:after {
   content: '';
   width: 100%;
   bottom: 0;
@@ -4461,28 +4475,14 @@ body.is-mnavi .header-top-navi {
   position: absolute;
 }
 
-.autocomplete .searchresult .pic {
-  position: absolute;
-  left: 3px;
-  top: 15px;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  display: block;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #fff;
-}
-
-.autocomplete .searchresult .pic img {
+.autocomplete .suggest-image img {
   display: inline-block;
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
-.autocomplete .searchresult.selected, .autocomplete .searchresult:hover {
+.autocomplete .suggest-image.selected, .autocomplete .suggest-image:hover {
   background: #F2F5F7;
 }
 
