@@ -1938,12 +1938,18 @@ input[type="submit"] {
                     /* Firefox 18- */
                     color: #fff;
                 }
-
-
             }
-
-
         }
+    }
+
+
+
+    &-success {
+            display: block;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    outline:  #dbe1e4 solid 1px;
     }
 }
 

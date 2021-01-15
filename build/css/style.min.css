@@ -1870,6 +1870,14 @@ input[type="submit"] {
   color: #fff;
 }
 
+.form-success {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  outline: #dbe1e4 solid 1px;
+}
+
 .small-text {
   font-size: 12px;
   margin-bottom: 10px;
@@ -10532,6 +10540,10 @@ body.is-mnavi .header-top-navi {
             transform: translateY(50px);
     border: 1px solid #dbe1e4;
     background: #fff;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .change-box-right .data {
     padding: 30px 25px;

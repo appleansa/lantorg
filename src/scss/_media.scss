@@ -2711,6 +2711,8 @@ $blue: #007CC3;
                 transform: translateY(50px);
                 border: 1px solid #dbe1e4;
                 background: #fff;
+                width: 100%; 
+    height: fit-content;
 
                 .data {
                     padding: 30px 25px;
@@ -3793,10 +3795,6 @@ $blue: #007CC3;
 
             .accordion_content { padding-top: 15px; }
 
-
-
-
-
         }
 
         &-content-box {
@@ -3840,14 +3838,7 @@ $blue: #007CC3;
         .accordion_content {
             display: block !important;
         }
-
-
     }
-
-
-
-
-
 
 }
 
