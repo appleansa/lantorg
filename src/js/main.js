@@ -992,17 +992,14 @@
                      var obj = this;
 
                      obj.dd.on('click', function(event) {
-
-                         //  $('.j-dropdown-list').removeClass('active');
-
-                         if (!$(this).hasClass('active')) {
+                          if (!$(this).hasClass('active')) {
                              $('.j-dropdown-list').removeClass('active');
                              $(this).addClass('active');
 
                          } else {
                              $(this).removeClass('active');
                          }
-                         return false;
+                     //    return false;
                      });
 
                      obj.opts.on('click', function() {

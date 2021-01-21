@@ -7505,6 +7505,7 @@ body.is-mnavi .header-top-navi {
   padding: 25px 15px 20px;
   height: 100%;
   position: relative;
+  min-height: 110px;
   border-bottom: 1px solid #dbe1e4;
   border-right: 1px solid #dbe1e4;
 }
@@ -7597,6 +7598,10 @@ body.is-mnavi .header-top-navi {
 
 .pc-product_bottom .price .oldprice {
   text-decoration: line-through;
+}
+
+.pc-product_bottom .price .newprice {
+  white-space: nowrap;
 }
 
 .pc-filter {
@@ -8134,7 +8139,7 @@ body.is-mnavi .header-top-navi {
   border-bottom: 1px solid #dbe1e4;
 }
 
-.cart-box_item.first {
+.cart-box_item:first-child {
   border-top: 1px solid #dbe1e4;
 }
 
@@ -11165,7 +11170,9 @@ body.is-mnavi .header-top-navi {
     display: block;
   }
   .cart-box_item .options {
-    width: 100%;
+    width: 50%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11223,9 +11230,6 @@ body.is-mnavi .header-top-navi {
     top: 82px;
     background: #fff;
     z-index: 90;
-  }
-  .product-content {
-    min-height: 700px;
   }
   .product-content__anchor {
     width: 100%;
@@ -11403,25 +11407,29 @@ body.is-mnavi .header-top-navi {
     padding-right: 0;
   }
   .product-content-tabs {
-    width: calc(100% - 400px);
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    width: 100%;
+    padding-right: 20px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .product-content-tabs .accordion_content {
     padding-top: 15px;
   }
   .product-content-box {
     position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: calc(100% - 380px) 380px;
   }
   .product-sticky {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     width: 380px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .mobile-accordion-tabs .mobile-accordion {
     border-top: none;
@@ -11566,12 +11574,6 @@ body.is-mnavi .header-top-navi {
     width: 50px;
     height: 50px;
     line-height: 50px;
-  }
-  .product-content-tabs {
-    width: calc(100% - 600px);
-  }
-  .product-sticky {
-    width: 550px;
   }
   .pp-item_title {
     font-size: 18px;

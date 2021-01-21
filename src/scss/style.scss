@@ -3988,6 +3988,7 @@ body {
     padding: 25px 15px 20px;
     height: 100%;
     position: relative;
+    min-height: 110px; 
     border-bottom: 1px solid #dbe1e4;
     border-right: 1px solid #dbe1e4;
 
@@ -4084,8 +4085,11 @@ body {
 
 
             .oldprice {
-
                 text-decoration: line-through;
+            }
+
+            .newprice {
+                white-space: nowrap;
             }
 
         }
@@ -4752,7 +4756,7 @@ body {
         align-items: center;
         border-bottom: 1px solid #dbe1e4;
 
-        &.first {
+        &:first-child {
             border-top: 1px solid #dbe1e4;
         }
 
