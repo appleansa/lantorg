@@ -5855,6 +5855,20 @@ body.is-mnavi .header-top-navi {
           transform: scale(1.05);
 }
 
+.nm-slide_image:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 124, 195, 0.5);
+}
+
 .nm-slide_image img {
   display: block;
   width: 100%;
@@ -7505,7 +7519,7 @@ body.is-mnavi .header-top-navi {
   padding: 25px 15px 20px;
   height: 100%;
   position: relative;
-  min-height: 110px;
+  min-height: 140px;
   border-bottom: 1px solid #dbe1e4;
   border-right: 1px solid #dbe1e4;
 }
@@ -7544,7 +7558,7 @@ body.is-mnavi .header-top-navi {
   width: auto;
   max-width: 110px;
   height: auto;
-  max-height: 110px;
+  max-height: 100px;
   margin: 0 auto;
 }
 
