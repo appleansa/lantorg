@@ -4963,6 +4963,11 @@ body {
     &-galery {
 
         margin-bottom: 25px;
+        position: relative;
+
+        .pc-icon {
+            z-index: 10;
+        }
 
         &-slide {
 
