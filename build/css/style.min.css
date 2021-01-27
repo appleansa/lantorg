@@ -1737,6 +1737,11 @@ input[type="submit"] {
           mask: url(../images/svg/icon-download.svg) 50% 50% no-repeat;
 }
 
+.password-change a {
+  font-family: 'ProximaBold';
+  color: #333;
+}
+
 .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1777,6 +1782,12 @@ input[type="submit"] {
 .form-field {
   display: block;
   margin-bottom: 15px;
+}
+
+.form-field label {
+  font-size: 15px;
+  margin-bottom: 6px;
+  display: block;
 }
 
 .form-field.mgb24 {

@@ -1801,6 +1801,13 @@ input[type="submit"] {
 }
 
 
+.password-change {
+ a { font-family: 'ProximaBold';
+ color: #333;
+ }
+}
+
+
 .form {
 
     &-flex {
@@ -1847,6 +1854,12 @@ input[type="submit"] {
     &-field {
         display: block;
         margin-bottom: 15px;
+
+        label {
+            font-size: 15px;
+    margin-bottom: 6px;
+    display: block;
+        }
 
         &.mgb24 {
             margin-bottom: 24px;
