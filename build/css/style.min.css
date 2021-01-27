@@ -8589,6 +8589,15 @@ body.is-mnavi .header-top-navi {
   display: block;
 }
 
+.user {
+  display: block;
+  padding: 50px 0;
+}
+
+.user a {
+  color: #007CC3;
+}
+
 @media screen and (min-width: 400px) {
   .pc-catalog-sortby {
     margin-bottom: 0;
