@@ -376,9 +376,9 @@
 
 
              var myKnowlegeSwiper = new Swiper('.knowlege-slider', {
-                 loop: true,
+                 loop: false,
                  mode: 'horizontal',
-                 slidesPerView: 2,
+                 slidesPerView: 'auto',
                  spaceBetween: 0,
 
                  pagination: {
@@ -1091,25 +1091,7 @@
              $('.j-slick').slick();
 
 
-             function pgalHeight() {
-                 var pgalHeight = $('.product-galery').height();
 
-                 if ($('.product-inner').height() <= pgalHeight) {
-                     $('.product-inner').height(pgalHeight);
-
-                 }
-             }
-
-             pgalHeight();
-
-
-             $(window).resize(function() {
-                 var windowWidth = $(window).width();
-
-                 if (windowWidth >= 992) {
-                     pgalHeight();
-                 }
-             });
 
 
 

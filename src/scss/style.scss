@@ -237,6 +237,7 @@ body {
     &-catalog_box {
         width: 100%;
 
+      box-shadow: 1000px 0 0 0 rgba(0,0,0,0.5), -1000px 0 0 0 rgba(0,0,0,0.5);
     }
 
 
@@ -498,6 +499,8 @@ body {
     padding: 25px 15px;
     overflow: auto;
     height: calc(100vh - 82px);
+
+
 
 
     &_header {
