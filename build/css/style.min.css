@@ -5047,10 +5047,12 @@ body.is-mnavi .header-top-navi {
 
 .branch-item_pic.cisco {
   background: url(../images/im1.png) center center no-repeat;
+  background-size: contain;
 }
 
 .branch-item_pic.wifi {
   background: url(../images/im2.png) center center no-repeat;
+  background-size: contain;
 }
 
 .branch-item_pic.corp {
@@ -5068,7 +5070,6 @@ body.is-mnavi .header-top-navi {
 
 .branch-item_pic.volc {
   background: url(../images/im6.png) center center no-repeat;
-  background-size: contain;
 }
 
 .branch-item_title {

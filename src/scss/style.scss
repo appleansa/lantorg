@@ -1103,11 +1103,13 @@ body {
 
             &.cisco {
                 background: url(../images/im1.png) center center no-repeat;
+                background-size: contain;
 
             }
 
             &.wifi {
                 background: url(../images/im2.png) center center no-repeat;
+                 background-size: contain;
 
             }
 
@@ -1128,7 +1130,7 @@ body {
 
             &.volc {
                 background: url(../images/im6.png) center center no-repeat;
-                background-size: contain;
+               // background-size: contain;
             }
 
         }
