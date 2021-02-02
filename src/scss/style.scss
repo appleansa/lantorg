@@ -3828,6 +3828,17 @@ body {
     background: #F2F5F7;
     overflow: hidden;
 
+    &.nosubcats {
+       
+       .section-header {
+        margin: 0;
+       }
+
+       h1 {
+        margin: 0;
+       } 
+    }
+
     &-slider {
         padding-bottom: 35px;
 
@@ -4882,6 +4893,10 @@ body {
 
             &.m-border {
                 border-right: 1px solid #DBE1E4;
+
+                &:last-child {
+                    border-right: 0px;
+                }
             }
 
             span {
@@ -4922,17 +4937,14 @@ body {
 
             display: inline-block;
             vertical-align: top;
-
+              padding-right: 25px;       
             border-right: 1px solid #dbe1e4;
 
-
-            &:first-child {
-                padding-right: 25px;
-            }
 
             &:last-child {
                 padding-left: 25px;
                 border-right: none;
+                 padding-right: 0px; 
             }
 
             span {

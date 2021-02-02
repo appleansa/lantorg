@@ -188,12 +188,16 @@
                  $('.j-slick').slick("reinit");
              });
 
-             $('.accordion_single').each(function() {
-                 var elem = $(this).find('input[type=checkbox]');
-                 if (elem.prop('checked')) {
+             if ( $('.accordion_single').length ) {
+
+                $('.accordion_single').each(function() {
+                 var elem = $(this).find('input[type="checkbox"]');
+              if ( elem.is(":checked")) {
                      $(this).addClass('active');
                  }
-             });
+        });
+}
+
 
 
              $(".j-tabs-container").on("click", ".j-mt-btn:not(.active)", function() {

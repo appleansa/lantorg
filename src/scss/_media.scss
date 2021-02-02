@@ -3542,7 +3542,7 @@ $blue: #007CC3;
     grid-template-areas:
         "gallery rght"
         "gallery other";
-    grid-template-rows: 135px auto;
+    grid-template-rows:  max-content;
     grid-template-columns: 50% 50%;
     grid-gap: 10px;
         }
@@ -4185,14 +4185,6 @@ $blue: #007CC3;
     }
 
     .product {
-        &-inner {
-            position: relative;
-            padding-left: calc(100% - 550px);
-        }
-
-        &-galery {
-            width: 50%;
-        }
 
         &-controls {
 

@@ -2974,6 +2974,10 @@ input[type="number"] {
     -ms-touch-action: auto;
 }
 
+.slick-slide:focus {
+    outline: none;
+}
+
 .stuff-slider .slick-track {
 
     display: flex;
